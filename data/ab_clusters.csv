@@ -1,0 +1,141 @@
+cluster,variable,period,code,available
+Socioeconomic,Gender,2023,se2,1
+Socioeconomic,Gender,2021,SE2,1
+Socioeconomic,Gender,2016,se2,1
+Socioeconomic,Gender,2012,se2,1
+Socioeconomic,Age,2023,se3_1,1
+Socioeconomic,Age,2021,SE3_1,1
+Socioeconomic,Age,2016,se3_2,1
+Socioeconomic,Age,2012,se3a,1
+Socioeconomic,Highest education achieved: Secondary,2023,se5,1
+Socioeconomic,Highest education achieved: Secondary,2021,SE5,1
+Socioeconomic,Highest education achieved: Secondary,2016,se5,1
+Socioeconomic,Highest education achieved: Secondary,2012,se5,1
+Socioeconomic,Ethnicity,2023,se11a,1
+Socioeconomic,Ethnicity,2021,Se11a,1
+Socioeconomic,Ethnicity,2016,se11a,1
+Socioeconomic,Ethnicity,2012,,0
+Socioeconomic,Religion,2023,se6,1
+Socioeconomic,Religion,2021,SE6,1
+Socioeconomic,Religion,2016,se6,1
+Socioeconomic,Religion,2012,se6,1
+Socioeconomic,Married,2023,se4,1
+Socioeconomic,Married,2021,SE4,1
+Socioeconomic,Married,2016,se4,1
+Socioeconomic,Married,2012,se4,1
+Socioeconomic,Household size,2023,se8a,1
+Socioeconomic,Household size,2021,SE8A,1
+Socioeconomic,Household size,2016,se8a,1
+Socioeconomic,Household size,2012,se8a,1
+Socioeconomic,Household head,2023,se10,1
+Socioeconomic,Household head,2021,SE10,1
+Socioeconomic,Household head,2016,se10,1
+Socioeconomic,Household head,2012,se10,1
+Employment,Employed,2023,se9,1
+Employment,Employed,2021,SE9,1
+Employment,Employed,2016,se9,1
+Employment,Employed,2012,se9,1
+Employment,Self-employed/salaried,2023,se9a,1
+Employment,Self-employed/salaried,2021,SE9A,1
+Employment,Self-employed/salaried,2016,se9a,1
+Employment,Self-employed/salaried,2012,se9a,1
+Employment,Job sector,2023,se9a,1
+Employment,Job sector,2021,SE9A,1
+Employment,Job sector,2016,se9a,1
+Employment,Job sector,2012,se9a,1
+Access,Electricity,2023,ir11c,1
+Access,Electricity,2021,IR11c,1
+Access,Electricity,2016,ir11c,1
+Access,Electricity,2012,ir11c,1
+Access,Water,2023,ir11b,1
+Access,Water,2021,IR11b,1
+Access,Water,2016,ir11b_2,1
+Access,Water,2012,ir11b,1
+Access,Mobile phone,2023,se15g,1
+Access,Mobile phone,2021,SE15G,1
+Access,Mobile phone,2016,se15g,1
+Access,Mobile phone,2012,se14g,1
+Access,Internet user,2023,q50,1
+Access,Internet user,2021,q49,1
+Access,Internet user,2016,q49,1
+Access,Internet user,2012,q45,1
+Access,Safety of neighborhood,2023,q46,1
+Access,Safety of neighborhood,2021,q45,1
+Access,Safety of neighborhood,2016,q43,1
+Access,Safety of neighborhood,2012,q42,1
+Access,Urban,2023,level,1
+Access,Urban,2021,Level,1
+Access,Urban,2016,level,1
+Access,Urban,2012,level3,1
+Gender and social norms,Women should not be involved in politics as much as men,2023,q146,1
+Gender and social norms,Women should not be involved in politics as much as men,2021,q146,1
+Gender and social norms,Women should not be involved in politics as much as men,2016,q139,1
+Gender and social norms,Women should not be involved in politics as much as men,2012,q139,1
+Gender and social norms,"If one could have only one child, it is more preferable to have a boy than a girl",2023,q67,1
+Gender and social norms,"If one could have only one child, it is more preferable to have a boy than a girl",2021,q69,1
+Gender and social norms,"If one could have only one child, it is more preferable to have a boy than a girl",2016,q67,1
+Gender and social norms,"If one could have only one child, it is more preferable to have a boy than a girl",2012,q62,1
+Gender and social norms,Trust in people ( most people can be trusted),2023,q22,1
+Gender and social norms,Trust in people ( most people can be trusted),2021,q22,1
+Gender and social norms,Trust in people ( most people can be trusted),2016,q23,1
+Gender and social norms,Trust in people ( most people can be trusted),2012,q23,1
+Gender and social norms,Trust: courts,2023,q8,1
+Gender and social norms,Trust: courts,2021,q8,1
+Gender and social norms,Trust: courts,2016,q8,1
+Gender and social norms,Trust: courts,2012,q8,1
+Gender and social norms,Trust: national government,2023,q9,1
+Gender and social norms,Trust: national government,2021,q9,1
+Gender and social norms,Trust: national government,2016,q9,1
+Gender and social norms,Trust: national government,2012,q9,1
+Gender and social norms,Trust: political parties,2023,q10,1
+Gender and social norms,Trust: political parties,2021,q10 ,1
+Gender and social norms,Trust: political parties,2016,q10,1
+Gender and social norms,Trust: political parties,2012,q10,1
+Gender and social norms,Trust: parliament,2023,q11,1
+Gender and social norms,Trust: parliament,2021,q11,1
+Gender and social norms,Trust: parliament,2016,q11,1
+Gender and social norms,Trust: parliament,2012,q11,1
+Gender and social norms,Trust: police,2023,q14,1
+Gender and social norms,Trust: police,2021,q14,1
+Gender and social norms,Trust: police,2016,q14,1
+Gender and social norms,Trust: police,2012,q14,1
+Gender and social norms,Trust: local government,2023,q15 ,1
+Gender and social norms,Trust: local government,2021,q15 ,1
+Gender and social norms,Trust: local government,2016,q15,1
+Gender and social norms,Trust: local government,2012,q15,1
+Institutional,Democracy always preferable,2023,q124,1
+Institutional,Democracy always preferable,2021,q132,1
+Institutional,Democracy always preferable,2016,q141,1
+Institutional,Democracy always preferable,2012,q124,1
+Institutional,Interest in politics,2023,q47,1
+Institutional,Interest in politics,2021,q46,1
+Institutional,Interest in politics,2016,q44,1
+Institutional,Interest in politics,2012,q43,1
+Institutional,Freedom of speech,2023,q106,1
+Institutional,Freedom of speech,2021,q115,1
+Institutional,Freedom of speech,2016,q108,1
+Institutional,Freedom of speech,2012,q106,1
+Institutional,Got together with others to resolve local (community) problems,2023,q75,1
+Institutional,Got together with others to resolve local (community) problems,2021,q78,1
+Institutional,Got together with others to resolve local (community) problems,2016,q74,1
+Institutional,Got together with others to resolve local (community) problems,2012,q69,1
+Institutional,Voted in the last national election,2023,q33 ,1
+Institutional,Voted in the last national election,2021,q33,1
+Institutional,Voted in the last national election,2016,q33,1
+Institutional,Voted in the last national election,2012,q32,1
+Institutional,Contacted elected officials / legislators,2023,q68,1
+Institutional,Contacted elected officials / legislators,2021,q70,1
+Institutional,Contacted elected officials / legislators,2016,q69,1
+Institutional,Contacted elected officials / legislators,2012,q64,1
+Institutional,Satisfaction with democracy,2023,q71,1
+Institutional,Satisfaction with democracy,2021,q73,1
+Institutional,Satisfaction with democracy,2016,q73,1
+Institutional,Satisfaction with democracy,2012,q68,1
+Institutional,Attended a demonstration or protest march,2023,q76,1
+Institutional,Attended a demonstration or protest march,2021,q79,1
+Institutional,Attended a demonstration or protest march,2016,q76,1
+Institutional,Attended a demonstration or protest march,2012,q71,1
+Institutional,Support for democracy,2023,q80,1
+Institutional,Support for democracy,2021,q86,1
+Institutional,Support for democracy,2016,q83,1
+Institutional,Support for democracy,2012,q80,1
