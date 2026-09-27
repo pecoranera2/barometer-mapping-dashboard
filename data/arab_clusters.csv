@@ -1,0 +1,109 @@
+cluster,variable,period,code,available
+Socioeconomic,Gender,2023-2025,Q1002,1
+Socioeconomic,Gender,2020-2022,Q1002,1
+Socioeconomic,Gender,2016-2019,q1002,1
+Socioeconomic,Gender,2012-2016,q1002,1
+Socioeconomic,Age,2023-2025,Q1001,1
+Socioeconomic,Age,2020-2022,Q1001,1
+Socioeconomic,Age,2016-2019,q1001,1
+Socioeconomic,Age,2012-2016,,0
+Socioeconomic,Highest education achieved: Secondary,2023-2025,Q1003,1
+Socioeconomic,Highest education achieved: Secondary,2020-2022,Q1003,1
+Socioeconomic,Highest education achieved: Secondary,2016-2019,q1003,1
+Socioeconomic,Highest education achieved: Secondary,2012-2016,q1003,1
+Socioeconomic,Married,2023-2025,Q1010,1
+Socioeconomic,Married,2020-2022,Q1010,1
+Socioeconomic,Married,2016-2019,q1010,1
+Socioeconomic,Married,2012-2016,q1010,1
+Socioeconomic,Ethnicity,2023-2025,Q1012B2,1
+Socioeconomic,Ethnicity,2020-2022,Q1012B,1
+Socioeconomic,Ethnicity,2016-2019,,0
+Socioeconomic,Ethnicity,2012-2016,q2001irq,1
+Socioeconomic,Religion,2023-2025,Q1012,1
+Socioeconomic,Religion,2020-2022,Q1012,1
+Socioeconomic,Religion,2016-2019,q1012,1
+Socioeconomic,Religion,2012-2016,q1012,1
+Socioeconomic,Do you have children,2023-2025,Q1010B1,1
+Socioeconomic,Do you have children,2020-2022,Q1010B1.,1
+Socioeconomic,Do you have children,2016-2019,,0
+Socioeconomic,Do you have children,2012-2016,,0
+Socioeconomic,Religious,2023-2025,Q609,1
+Socioeconomic,Religious,2020-2022,Q609,1
+Socioeconomic,Religious,2016-2019,q609,1
+Socioeconomic,Religious,2012-2016,,0
+Employment,Employed,2023-2025,Q1005,1
+Employment,Employed,2020-2022,Q1005,1
+Employment,Employed,2016-2019,q1004,1
+Employment,Employed,2012-2016,q1004,1
+Employment,Self-employed,2023-2025,Q1005,1
+Employment,Self-employed,2020-2022,Q1005,1
+Employment,Self-employed,2016-2019,,0
+Employment,Self-employed,2012-2016,,0
+Employment,Full time or part time,2023-2025,Q1006,1
+Employment,Full time or part time,2020-2022,,0
+Employment,Full time or part time,2016-2019,q1006,1
+Employment,Full time or part time,2012-2016,q1006,1
+Access,Electricity,2023-2025,Q274A,1
+Access,Electricity,2020-2022,,0
+Access,Electricity,2016-2019,,0
+Access,Electricity,2012-2016,,0
+Access,Water,2023-2025,Q274B,1
+Access,Water,2020-2022,,0
+Access,Water,2016-2019,,0
+Access,Water,2012-2016,,0
+Access,Internet user,2023-2025,Q409,1
+Access,Internet user,2020-2022,Q409,1
+Access,Internet user,2016-2019,q409,1
+Access,Internet user,2012-2016,q409,1
+Access,Food insecure,2023-2025,Q112,1
+Access,Food insecure,2020-2022,Q112,1
+Access,Food insecure,2016-2019,,0
+Access,Food insecure,2012-2016,,0
+Access,Safety of neighborhood,2023-2025,Q105A,1
+Access,Safety of neighborhood,2020-2022,,0
+Access,Safety of neighborhood,2016-2019,,0
+Access,Safety of neighborhood,2012-2016,,0
+Access,Urban,2023-2025,Q13,1
+Access,Urban,2020-2022,Q13A ,1
+Access,Urban,2016-2019,q13,1
+Access,Urban,2012-2016,Q13,1
+Access,Able to save,2023-2025,Q116,1
+Access,Able to save,2020-2022,,0
+Access,Able to save,2016-2019,q1016.1,1
+Access,Able to save,2012-2016,q1016,1
+Access,Bank account,2023-2025,Q1025,1
+Access,Bank account,2020-2022,,0
+Access,Bank account,2016-2019,,0
+Access,Bank account,2012-2016,,0
+Gender and social norms,Men make better political leaders,2023-2025,Q601.3,1
+Gender and social norms,Men make better political leaders,2020-2022,,0
+Gender and social norms,Men make better political leaders,2016-2019,q601,1
+Gender and social norms,Men make better political leaders,2012-2016,q601,1
+Gender and social norms,Trust in people,2023-2025,Q103,1
+Gender and social norms,Trust in people,2020-2022,,0
+Gender and social norms,Trust in people,2016-2019,103q,1
+Gender and social norms,Trust in people,2012-2016,q103,1
+Gender and social norms,University more important for men,2023-2025,Q601.4,1
+Gender and social norms,University more important for men,2020-2022,Q601.4,1
+Gender and social norms,University more important for men,2016-2019,q601,1
+Gender and social norms,University more important for men,2012-2016,q601,1
+Gender and social norms,A man should have final say in all decisions concerning the family.,2023-2025,Q601,1
+Gender and social norms,A man should have final say in all decisions concerning the family.,2020-2022,Q601,1
+Gender and social norms,A man should have final say in all decisions concerning the family.,2016-2019,q601,1
+Gender and social norms,A man should have final say in all decisions concerning the family.,2012-2016,,0
+Institutional,Democracy always preferable,2023-2025,Q516A.3,1
+Institutional,Democracy always preferable,2020-2022,,0
+Institutional,Democracy always preferable,2016-2019,q516a,1
+Institutional,Democracy always preferable,2012-2016,,0
+Institutional,Interest in politics,2023-2025,Q404,1
+Institutional,Interest in politics,2020-2022,,0
+Institutional,Interest in politics,2016-2019,q404,1
+Institutional,Interest in politics,2012-2016,q404,1
+Institutional,Freedom of speech,2023-2025,Q521.1,1
+Institutional,Freedom of speech,2020-2022,Q521.1,1
+Institutional,Freedom of speech,2016-2019,q521,1
+Institutional,Freedom of speech,2012-2016,q521,1
+Institutional,Freedom to participate in protests,2023-2025,Q521.2,1
+Institutional,Freedom to participate in protests,2020-2022,Q521.4,1
+Institutional,Freedom to participate in protests,2016-2019,q521,1
+Institutional,Freedom to participate in protests,2012-2016,q521,1

@@ -1,0 +1,136 @@
+cluster,variable,period,code,available
+Socioeconomic,Gender,2024,d10,1
+Socioeconomic,Gender,2023,d10,1
+Socioeconomic,Gender,2019,d10,1
+Socioeconomic,Gender,2017,d10,1
+Socioeconomic,Gender,2015,d10,1
+Socioeconomic,Age,2024,d11,1
+Socioeconomic,Age,2023,d11,1
+Socioeconomic,Age,2019,d11,1
+Socioeconomic,Age,2017,d11,1
+Socioeconomic,Age,2015,d11,1
+Socioeconomic,Highest education achieved: Secondary,2024,d8,1
+Socioeconomic,Highest education achieved: Secondary,2023,d8,1
+Socioeconomic,Highest education achieved: Secondary,2019,d8,1
+Socioeconomic,Highest education achieved: Secondary,2017,d8,1
+Socioeconomic,Highest education achieved: Secondary,2015,d8,1
+Socioeconomic,Ethnicity,2024,,0
+Socioeconomic,Ethnicity,2023,qb1_1,1
+Socioeconomic,Ethnicity,2019,qc1_1,1
+Socioeconomic,Ethnicity,2017,,0
+Socioeconomic,Ethnicity,2015,qc1_1,1
+Socioeconomic,Married,2024,d7,1
+Socioeconomic,Married,2023,d7,1
+Socioeconomic,Married,2019,d7,1
+Socioeconomic,Married,2017,d7,1
+Socioeconomic,Married,2015,d7,1
+Socioeconomic,Household size,2024,d40abc_r1,1
+Socioeconomic,Household size,2023,d40abc,1
+Socioeconomic,Household size,2019,d40t,1
+Socioeconomic,Household size,2017,d40t,1
+Socioeconomic,Household size,2015,d40t,1
+Socioeconomic,Children in household,2024,d40b,1
+Socioeconomic,Children in household,2023,d40b,1
+Socioeconomic,Children in household,2019,d40b,1
+Socioeconomic,Children in household,2017,d40b,1
+Socioeconomic,Children in household,2015,d40b,1
+Employment,Employed,2024,d15a,1
+Employment,Employed,2023,d15a,1
+Employment,Employed,2019,d15a,1
+Employment,Employed,2017,d15a,1
+Employment,Employed,2015,d15a,1
+Employment,Self-employed/salaried,2024,d15a_r1 ,1
+Employment,Self-employed/salaried,2023,d15a_r1 ,1
+Employment,Self-employed/salaried,2019,d15a_r1 ,1
+Employment,Self-employed/salaried,2017,d15a_r1 ,1
+Employment,Self-employed/salaried,2015,d15a_r1 ,1
+Access,Food insecurity,2024,d60,1
+Access,Food insecurity,2023,d60,1
+Access,Food insecurity,2019,d60,1
+Access,Food insecurity,2017,d60,1
+Access,Food insecurity,2015,d60,1
+Access,Internet user,2024,d62_1,1
+Access,Internet user,2023,d62_1,1
+Access,Internet user,2019,d62_1,1
+Access,Internet user,2017,d62_1,1
+Access,Internet user,2015,d62_1,1
+Access,Urban,2024,d25,1
+Access,Urban,2023,d25,1
+Access,Urban,2019,d25,1
+Access,Urban,2017,d25,1
+Access,Urban,2015,d25,1
+Access,Neighbourhood/area where I live is secure,2024,,0
+Access,Neighbourhood/area where I live is secure,2023,,0
+Access,Neighbourhood/area where I live is secure,2019,,0
+Access,Neighbourhood/area where I live is secure,2017,qb1_4,1
+Access,Neighbourhood/area where I live is secure,2015,,0
+Gender and social norms,Felt discriminated against,2024,,0
+Gender and social norms,Felt discriminated against,2023,qb2_3,1
+Gender and social norms,Felt discriminated against,2019,qc2_1,1
+Gender and social norms,Felt discriminated against,2017,,0
+Gender and social norms,Felt discriminated against,2015,qc2_1,1
+Gender and social norms,Men make better political leaders,2024,qd7_1,1
+Gender and social norms,Men make better political leaders,2023,,0
+Gender and social norms,Men make better political leaders,2019,,0
+Gender and social norms,Men make better political leaders,2017,,0
+Gender and social norms,Men make better political leaders,2015,,0
+Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2024,,0
+Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2023,,0
+Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2019,,0
+Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2017,qc7_1,1
+Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2015,,0
+Gender and social norms,"All in all, family life suffers when the mother has a full-time job",2024,qd4_1,1
+Gender and social norms,"All in all, family life suffers when the mother has a full-time job",2023,,0
+Gender and social norms,"All in all, family life suffers when the mother has a full-time job",2019,,0
+Gender and social norms,"All in all, family life suffers when the mother has a full-time job",2017,,0
+Gender and social norms,"All in all, family life suffers when the mother has a full-time job",2015,,0
+Gender and social norms,Taking parental leave is enriching for a father,2024,qd4_2,1
+Gender and social norms,Taking parental leave is enriching for a father,2023,,0
+Gender and social norms,Taking parental leave is enriching for a father,2019,,0
+Gender and social norms,Taking parental leave is enriching for a father,2017,,0
+Gender and social norms,Taking parental leave is enriching for a father,2015,,0
+Gender and social norms,Women are more likely than men to make decisions based on their emotions,2024,qd2_2,1
+Gender and social norms,Women are more likely than men to make decisions based on their emotions,2023,,0
+Gender and social norms,Women are more likely than men to make decisions based on their emotions,2019,,0
+Gender and social norms,Women are more likely than men to make decisions based on their emotions,2017,qc1_2,1
+Gender and social norms,Women are more likely than men to make decisions based on their emotions,2015,,0
+Gender and social norms,The most important role of a woman is to take care of her home and family,2024,qd2_4,1
+Gender and social norms,The most important role of a woman is to take care of her home and family,2023,,0
+Gender and social norms,The most important role of a woman is to take care of her home and family,2019,,0
+Gender and social norms,The most important role of a woman is to take care of her home and family,2017,qc1_4,1
+Gender and social norms,The most important role of a woman is to take care of her home and family,2015,,0
+Institutional,Democracy always preferable,2024,,0
+Institutional,Democracy always preferable,2023,,0
+Institutional,Democracy always preferable,2019,,0
+Institutional,Democracy always preferable,2017,,0
+Institutional,Democracy always preferable,2015,,0
+Institutional,Life satisfaction,2024,d70,1
+Institutional,Life satisfaction,2023,d70,1
+Institutional,Life satisfaction,2019,d70,1
+Institutional,Life satisfaction,2017,d70,1
+Institutional,Life satisfaction,2015,d70,1
+Institutional,Participate as a volunteer in projects and actions,2024,,0
+Institutional,Participate as a volunteer in projects and actions,2023,,0
+Institutional,Participate as a volunteer in projects and actions,2019,,0
+Institutional,Participate as a volunteer in projects and actions,2017,,0
+Institutional,Participate as a volunteer in projects and actions,2015,qb14_4,1
+Institutional,Actions against discrimination: joined association/campaign,2024,,0
+Institutional,Actions against discrimination: joined association/campaign,2023,qb5_3,1
+Institutional,Actions against discrimination: joined association/campaign,2019,qc5_3,1
+Institutional,Actions against discrimination: joined association/campaign,2017,,0
+Institutional,Actions against discrimination: joined association/campaign,2015,,0
+Institutional,Contacted politicians,2024,,0
+Institutional,Contacted politicians,2023, qa9a_6,1
+Institutional,Contacted politicians,2019,,0
+Institutional,Contacted politicians,2017,,0
+Institutional,Contacted politicians,2015,,0
+Institutional,Contacted political parties,2024,,0
+Institutional,Contacted political parties,2023,qa9a_7,1
+Institutional,Contacted political parties,2019,,0
+Institutional,Contacted political parties,2017,,0
+Institutional,Contacted political parties,2015,,0
+Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2024,,0
+Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2023,qa11_6,1
+Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2019,,0
+Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2017,,0
+Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2015,,0
