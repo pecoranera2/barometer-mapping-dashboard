@@ -54,7 +54,7 @@ AR = {
  "IX":  ("2025-2026", "2023-2025", ["Egypt","Iraq","Jordan","Lebanon","Morocco","Palestine","Syria","Tunisia"]),
 }
 for r, (y, p, c) in AR.items():
-    add("Arab Barometer", f"Wave {r}", y, p, c, latest=(r == "IX"))
+    add("Arab Barometer", f"Wave {r}", y, p, c, latest=(r == "VIII"))
 
 # ---- Latinobarometro (latinobarometro.org/latinobarometro-YYYY) ----
 L18 = ["Argentina","Bolivia","Brazil","Chile","Colombia","Costa Rica","Dominican Republic","Ecuador","El Salvador","Guatemala",
