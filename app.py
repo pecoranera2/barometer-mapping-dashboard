@@ -40,14 +40,14 @@ LATEST_SHORT = {
 # source file + period columns per barometer (cluster pages)
 BAR_PAGES = {
     "Arab Barometer": ("arab_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
-                       "Waves pooled into 4-year periods.",
-                       "Source: Arab Barometer. Columns are 4-year period buckets, not individual waves."),
+                       "",
+                       "Source: Arab Barometer."),
     "Latinobarometro": ("latino_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
-                        "Waves pooled into 4-year periods.",
-                        "Source: Latinobarómetro. Columns are 4-year period buckets, not individual waves."),
+                        "",
+                        "Source: Latinobarómetro."),
     "Afrobarometer": ("afro_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
-                      "Rounds pooled into 4-year periods.",
-                      "Source: Afrobarometer. Columns are 4-year period buckets, not individual waves."),
+                      "",
+                      "Source: Afrobarometer."),
     "Asian Barometer": ("ab_clusters.csv", ["2012", "2016", "2021", "2023"],
                         "ABS waves 3-6, 2012-2023.",
                         "Source: Asian Barometer (W3 2010-12, W4 2014-16, W5 2018-21, W6 2021-23)."),
@@ -418,7 +418,7 @@ def _wave_matrix(df, periods):
     return avail.astype(bool), codes, cluster
 
 
-def timeline_html(df, periods, colour, bar_countries):
+def timeline_html(df, periods, colour, bar_countries, show_rounds=True):
     """One card per wave/period: countries, variables available, and variables added/dropped vs the previous one."""
     avail, _, _ = _wave_matrix(df, periods)
     cards = []
@@ -436,9 +436,9 @@ def timeline_html(df, periods, colour, bar_countries):
         cards.append(
             f'<div class="tl-card" style="border-top-color:{colour}">'
             f'<div class="tl-year">{html.escape(p)}</div>'
-            f'<div class="tl-sub">{html.escape(" · ".join(rounds)) if rounds else "&nbsp;"}</div>'
-            f'<div class="tl-stat"><b>{n_c}</b> countries</div>'
-            f'<div class="tl-stat"><b>{len(here)}</b> variables</div>{change}</div>')
+            f'<div class="tl-sub">{html.escape(" · ".join(rounds)) if (show_rounds and rounds) else "&nbsp;"}</div>'
+            + (f'<div class="tl-stat"><b>{n_c}</b> countries</div>' if show_rounds else "")
+            + f'<div class="tl-stat"><b>{len(here)}</b> variables</div>{change}</div>')
     return f'<div class="tl-row">{"".join(cards)}</div>'
 
 
@@ -642,14 +642,16 @@ def barometer_page():
                    format_func=lambda b: BAR_LABEL.get(b, b), label_visibility="collapsed") or BAROMETERS[0]
     csv_file, x_order, subtitle, source_note = BAR_PAGES[bar]
     st.subheader(f"{BAR_LABEL.get(bar, bar)}: coverage by cluster and wave")
-    st.caption(subtitle)
+    if subtitle:
+        st.caption(subtitle)
 
     tab_vars, tab_map, tab_grid = st.tabs(["Variables by wave", "Countries by round", "Detail grid"])
     df_all = load_csv(csv_file)
     with tab_vars:
         df, _ = cluster_pills(df_all, f"cluster_{bar}")
         bar_countries = cdf[cdf["barometer"] == bar]
-        st.markdown(timeline_html(df, x_order, BAR_COLOR[bar], bar_countries), unsafe_allow_html=True)
+        st.markdown(timeline_html(df, x_order, BAR_COLOR[bar], bar_countries,
+                                  show_rounds=bar in ("Asian Barometer", "Eurobarometer")), unsafe_allow_html=True)
         st.markdown(continuity_html(df, x_order, BAR_COLOR[bar]), unsafe_allow_html=True)
         st.caption(source_note)
     with tab_grid:
