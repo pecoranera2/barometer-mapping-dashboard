@@ -565,9 +565,11 @@ def barometer_page():
     with tab_map:
         d = cdf[cdf["barometer"] == bar]
         rounds = d.drop_duplicates("round")[["round", "year"]].reset_index(drop=True)
-        labels = [f"{r.round} ({r.year})" for r in rounds.itertuples()]
-        default = labels[-1]
-        pick = st.select_slider("Round", options=labels, value=default, key=f"round_{bar}")
+        labels = [str(r.year) if str(r.round) == str(r.year) else f"{r.round} ({r.year})" for r in rounds.itertuples()]
+        latest_rounds = d[d["latest"] == 1]["round"].unique()
+        default = labels[list(rounds["round"]).index(latest_rounds[0])] if len(latest_rounds) else labels[-1]
+        st.caption("Round")
+        pick = st.pills("Round", labels, default=default, key=f"round_{bar}", label_visibility="collapsed") or default
         rnd = rounds.iloc[labels.index(pick)]["round"]
         sel = d[d["round"] == rnd].drop_duplicates("iso3")
         c1, c2 = st.columns([3, 1.4])
@@ -579,8 +581,6 @@ def barometer_page():
             counts = d.groupby("round", sort=False)["iso3"].nunique()
             st.caption("Countries per round: " + " · ".join(f"{k}: {v}" for k, v in counts.items()))
             st.caption(", ".join(sorted(sel["country"])))
-        st.caption("Country lists: Arab Barometer, Latinobarómetro and Afrobarometer published documentation "
-                   "(rounds/waves as released); Asian Barometer and Eurobarometer read from the raw data files.")
 
 
 PAGE_OVERVIEW = st.Page(overview_page, title="Overview", url_path="overview", default=True)
