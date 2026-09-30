@@ -1,3 +1,4 @@
+import html
 import os
 
 import pandas as pd
@@ -65,6 +66,18 @@ st.markdown(
     .block-container {{ padding-top: 2rem; }}
     h1, h2, h3 {{ font-family: {FONT_FAMILY}; color: {COL_INK}; }}
     .lede {{ color: {COL_INK2}; font-size: 1.08rem; margin: -0.4rem 0 0.8rem 0; }}
+    .lad-legend {{ display:flex; flex-wrap:wrap; gap:1.1rem; margin:0.2rem 0 0.4rem 0; color:{COL_INK2}; font-size:0.92rem; }}
+    .lad-key {{ display:inline-flex; align-items:center; gap:0.4rem; }}
+    .lad-head {{ margin:1.4rem 0 0.5rem 0; font-size:1.15rem; font-weight:600; color:{COL_INK}; border-bottom:1px solid {COL_UNAVAILABLE}; padding-bottom:0.3rem; }}
+    .lad-num {{ display:inline-block; min-width:1.9em; text-align:center; background:{COL_INK}; color:{COL_SURFACE}; border-radius:999px; padding:0 0.45em; margin-right:0.5rem; font-size:0.95rem; }}
+    .lad-grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:0.6rem; }}
+    .lad-card {{ border:1px solid {COL_UNAVAILABLE}; border-radius:8px; padding:0.6rem 0.75rem; background:#fff; }}
+    .lad-card:hover {{ border-color:{COL_INK2}; }}
+    .lad-name {{ font-size:0.95rem; line-height:1.25; margin-bottom:0.45rem; color:{COL_INK}; }}
+    .lad-meta {{ display:flex; justify-content:space-between; align-items:center; gap:0.5rem; }}
+    .lad-dots {{ display:inline-flex; gap:5px; }}
+    .lad-dot {{ display:inline-block; width:13px; height:13px; border-radius:50%; border:2px solid {COL_UNAVAILABLE}; background:transparent; box-sizing:border-box; }}
+    .lad-cl {{ font-size:0.74rem; color:{COL_MUTED}; text-align:right; }}
     .legend-dot {{ display:inline-block; width:0.8em; height:0.8em; margin-right:0.35em; border-radius:2px; }}
     </style>
     """,
@@ -273,6 +286,89 @@ def round_map(cdf_round, colour, height=430):
     return fig
 
 
+# ------------------------------------------------------------------ latest-round views
+def _avail_matrix(df):
+    """variable x barometer boolean matrix (+ code lookup) from the long latest-round frame."""
+    d = df.assign(bar=df["barometer"].map(LATEST_SHORT), a=(df["available"] == "1"))
+    avail = d.pivot_table(index="variable", columns="bar", values="a", aggfunc="first").reindex(columns=BAROMETERS).fillna(False)
+    codes = d.pivot_table(index="variable", columns="bar", values="code", aggfunc="first").reindex(columns=BAROMETERS).fillna("")
+    cluster = d.drop_duplicates("variable").set_index("variable")["cluster"]
+    return avail.astype(bool), codes, cluster
+
+
+def ladder_html(df):
+    """Variables grouped by how many barometers cover them; one card per variable with
+    five dots in the barometer colours (filled = available, hollow = not)."""
+    avail, codes, cluster = _avail_matrix(df)
+    n_cov = avail.sum(axis=1)
+    rank = {c: i for i, c in enumerate(CLUSTER_ORDER)}
+    parts = []
+    legend = "".join(
+        f'<span class="lad-key"><span class="lad-dot" style="background:{BAR_COLOR[b]};border-color:{BAR_COLOR[b]}"></span>'
+        f'{html.escape(BAR_LABEL.get(b, b))}</span>' for b in BAROMETERS)
+    parts.append(f'<div class="lad-legend">{legend}<span class="lad-key"><span class="lad-dot"></span>not available</span></div>')
+    for k in range(5, 0, -1):
+        vs = [v for v in avail.index if n_cov[v] == k]
+        if not vs:
+            continue
+        vs.sort(key=lambda v: (rank.get(cluster[v], 9), v))
+        title = "In all 5 barometers" if k == 5 else f"In {k} of 5 barometers"
+        parts.append(f'<div class="lad-head"><span class="lad-num">{len(vs)}</span> {title}</div><div class="lad-grid">')
+        for v in vs:
+            dots = ""
+            tips = []
+            for b in BAROMETERS:
+                on = bool(avail.loc[v, b])
+                style = f"background:{BAR_COLOR[b]};border-color:{BAR_COLOR[b]}" if on else ""
+                dots += f'<span class="lad-dot" style="{style}"></span>'
+                tips.append(f"{BAR_LABEL.get(b, b)}: {codes.loc[v, b] if on else 'not available'}")
+            parts.append(
+                f'<div class="lad-card" title="{html.escape(chr(10).join(tips), quote=True)}">'
+                f'<div class="lad-name">{html.escape(v)}</div>'
+                f'<div class="lad-meta"><span class="lad-dots">{dots}</span>'
+                f'<span class="lad-cl">{html.escape(str(cluster[v]))}</span></div></div>')
+        parts.append("</div>")
+    return "".join(parts)
+
+
+def overlap_fig(df):
+    """5x5 matrix: number of variables available in both barometers (diagonal = barometer's own total)."""
+    avail, _, _ = _avail_matrix(df)
+    a = avail.astype(int)
+    m = a.T.dot(a).values.astype(float)
+    n_vars = len(avail)
+    names = [BAR_LABEL.get(b, b) for b in BAROMETERS]
+    off = m.copy()
+    for i in range(5):
+        off[i, i] = 0
+    vmax = max(off.max(), 1)
+    z = m.copy()
+    for i in range(5):
+        z[i, i] = None
+    hover = [[(f"<b>{names[i]}</b>: {int(m[i, i])} of {n_vars} variables" if i == j else
+               f"<b>{names[i]}</b> + <b>{names[j]}</b><br>{int(m[i, j])} shared of {n_vars} variables")
+              for j in range(5)] for i in range(5)]
+    fig = go.Figure(go.Heatmap(
+        z=z, x=names, y=names, text=hover, hovertemplate="%{text}<extra></extra>",
+        colorscale=[[0, "#eaf1fb"], [1, COL_AVAILABLE]], zmin=0, zmax=vmax,
+        showscale=False, xgap=3, ygap=3))
+    for i in range(5):
+        for j in range(5):
+            diag = i == j
+            light = (not diag) and m[i, j] > 0.6 * vmax
+            fig.add_annotation(x=names[j], y=names[i],
+                               text=(f"<i>{int(m[i, j])}</i>" if diag else f"<b>{int(m[i, j])}</b>"),
+                               showarrow=False,
+                               font=dict(size=16 if diag else 20,
+                                         color=("#ffffff" if light else (COL_MUTED if diag else COL_INK))))
+    fig.update_xaxes(side="top", showgrid=False, zeroline=False, type="category")
+    fig.update_yaxes(autorange="reversed", showgrid=False, zeroline=False, type="category")
+    fig.update_layout(height=470, margin=dict(l=10, r=10, t=60, b=10),
+                      font=dict(family=FONT_FAMILY, color=COL_INK, size=13),
+                      plot_bgcolor=COL_SURFACE, paper_bgcolor=COL_SURFACE)
+    return fig, m, names
+
+
 # ------------------------------------------------------------------ pages
 def overview_page():
     cdf = load_countries()
@@ -377,9 +473,30 @@ def latest_page():
         col.metric(BAR_LABEL.get(LATEST_SHORT[b], LATEST_SHORT[b]), f"{int(avail.get(b, 0))} of {n_vars}",
                    help="Variables available in this barometer's latest round")
 
-    fig = build_heatmap(df, x_col="barometer", x_order=bar_order, x_header_map=LATEST_SHORT)
-    if fig is not None:
-        st.plotly_chart(fig, use_container_width=True)
+    tab_ladder, tab_pair, tab_grid = st.tabs(["Comparability ladder", "Pairwise overlap", "Detail grid"])
+    with tab_ladder:
+        st.caption("Each card is a variable; the five dots show which barometers cover it in their latest round. "
+                   "Hover a card for the exact codes.")
+        st.markdown(ladder_html(df), unsafe_allow_html=True)
+    with tab_pair:
+        fig_o, m, names = overlap_fig(df)
+        st.caption("Number of variables available in both barometers (selected cluster). "
+                   "The diagonal is each barometer's own total.")
+        c1, c2 = st.columns([3, 2])
+        with c1:
+            st.plotly_chart(fig_o, use_container_width=True, config={"displayModeBar": False})
+        with c2:
+            pairs = sorted(((int(m[i, j]), names[i], names[j]) for i in range(5) for j in range(i + 1, 5)), reverse=True)
+            st.markdown("**Most comparable pairs**")
+            for n, a, b in pairs[:3]:
+                st.markdown(f"{a} + {b}: **{n}** shared")
+            st.markdown("**Least comparable**")
+            n, a, b = pairs[-1]
+            st.markdown(f"{a} + {b}: **{n}** shared")
+    with tab_grid:
+        fig = build_heatmap(df, x_col="barometer", x_order=bar_order, x_header_map=LATEST_SHORT)
+        if fig is not None:
+            st.plotly_chart(fig, use_container_width=True)
     st.caption(
         "Source: Map of Variables 09 04 2026.xlsx - 'Latest round' tab. Blank/gray = variable not "
         "coded (or not comparable) in that survey's latest round. Shading groups variables into the "
