@@ -39,10 +39,6 @@ Employment,Occupation,2023-2025,S19,1
 Employment,Occupation,2020-2022,S24A,1
 Employment,Occupation,2016-2019,S18A,1
 Employment,Occupation,2012-2016,S21A,1
-Access,Electricity,2023-2025,,0
-Access,Electricity,2020-2022,,0
-Access,Electricity,2016-2019,,0
-Access,Electricity,2012-2016,,0
 Access,Water,2023-2025,S20I,1
 Access,Water,2020-2022,S26.K,1
 Access,Water,2016-2019,S17.M,1
@@ -59,10 +55,6 @@ Access,Food insecure,2023-2025,S3,1
 Access,Food insecure,2020-2022,S2,1
 Access,Food insecure,2016-2019,S3,1
 Access,Food insecure,2012-2016,S1,1
-Access,Safety of neighborhood,2023-2025,,0
-Access,Safety of neighborhood,2020-2022,,0
-Access,Safety of neighborhood,2016-2019,,0
-Access,Safety of neighborhood,2012-2016,,0
 Access,Urban,2023-2025,TAMCIUD,1
 Access,Urban,2020-2022,TAMCIUD,1
 Access,Urban,2016-2019,TAMCIUD,1
@@ -79,10 +71,6 @@ Access,Victim of a crime,2023-2025,P50ST.A,1
 Access,Victim of a crime,2020-2022,P64ST,1
 Access,Victim of a crime,2016-2019,P65ST.B,1
 Access,Victim of a crime,2012-2016,P60ST,1
-Gender and social norms,Men make better political leaders,2023-2025,,0
-Gender and social norms,Men make better political leaders,2020-2022,,0
-Gender and social norms,Men make better political leaders,2016-2019,,0
-Gender and social norms,Men make better political leaders,2012-2016,,0
 Gender and social norms,Arrival of inmigrants,2023-2025,Q34ST,1
 Gender and social norms,Arrival of inmigrants,2020-2022,Q38N,1
 Gender and social norms,Arrival of inmigrants,2016-2019,,0

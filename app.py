@@ -215,7 +215,7 @@ if page == "Overview":
 
 elif page == "Latest round":
     st.header("What's available in the latest round?")
-    st.caption("51 variables x 5 barometers, most recent wave per survey")
+    st.caption("47 variables x 5 barometers, most recent wave per survey")
     counts = load_csv("latest_round_counts.csv")
     detail = "  ·  ".join(f"{r.barometer} ({r.n_countries} countries)" for r in counts.itertuples())
     st.caption(detail)
