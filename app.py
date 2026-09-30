@@ -41,20 +41,20 @@ LATEST_SHORT = {
 BAR_PAGES = {
     "Arab Barometer": ("arab_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
                        "Waves pooled into 4-year periods.",
-                       "Source: Arab Barometer, arabbarometer.org. Columns are 4-year period buckets, not individual waves."),
+                       "Source: Arab Barometer. Columns are 4-year period buckets, not individual waves."),
     "Latinobarometro": ("latino_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
                         "Waves pooled into 4-year periods.",
-                        "Source: Latinobarómetro, latinobarometro.org. Columns are 4-year period buckets, not individual waves."),
+                        "Source: Latinobarómetro. Columns are 4-year period buckets, not individual waves."),
     "Afrobarometer": ("afro_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
                       "Rounds pooled into 4-year periods.",
-                      "Source: Afrobarometer, afrobarometer.org. Columns are 4-year period buckets, not individual waves."),
+                      "Source: Afrobarometer. Columns are 4-year period buckets, not individual waves."),
     "Asian Barometer": ("ab_clusters.csv", ["2012", "2016", "2021", "2023"],
                         "ABS waves 3-6, 2012-2023.",
-                        "Source: Asian Barometer Survey, asianbarometer.org (W3 2010-12, W4 2014-16, W5 2018-21, W6 2021-23)."),
+                        "Source: Asian Barometer (W3 2010-12, W4 2014-16, W5 2018-21, W6 2021-23)."),
     "Eurobarometer": ("euro_clusters.csv", ["2015", "2017", "2019", "2023", "2024"],
                       "Special Eurobarometer modules, 2015-2024 (Discrimination 2015/2019/2023, Gender Equality "
                       "2017, Gender Stereotypes 2024) - not the Standard EB trend series.",
-                      "Source: Eurobarometer, europa.eu/eurobarometer."),
+                      "Source: Eurobarometer."),
 }
 
 st.set_page_config(page_title="Cross-Barometer Variable Mapping", layout="wide")
@@ -338,22 +338,27 @@ def coverage_fig(df):
     n_in = {c: d[d["cluster"] == c]["variable"].nunique() for c in clusters}
     ylabels = [f"{c} ({n_in[c]})" for c in clusters]
     fig = go.Figure()
+    # white text on the darker bars, dark text on the lighter (yellow / pink) ones
+    TEXT_ON = {"Arab Barometer": "#ffffff", "Latinobarometro": "#ffffff", "Afrobarometer": COL_INK,
+               "Asian Barometer": COL_INK, "Eurobarometer": "#ffffff"}
     for b in BAROMETERS:
         have = [int(d[(d["cluster"] == c) & (d["bar"] == b)]["a"].sum()) for c in clusters]
         pct = [100 * h / n_in[c] for h, c in zip(have, clusters)]
+        label = BAR_LABEL.get(b, b)
         fig.add_trace(go.Bar(
-            y=ylabels, x=pct, orientation="h", name=BAR_LABEL.get(b, b), marker_color=BAR_COLOR[b],
-            text=[f"{h}/{n_in[c]}" for h, c in zip(have, clusters)], textposition="outside",
-            textfont=dict(size=12, color=COL_INK2), cliponaxis=False,
-            hovertemplate="<b>" + BAR_LABEL.get(b, b) + "</b><br>%{y}<br>%{text} variables (%{x:.0f}%)<extra></extra>"))
-    fig.update_xaxes(range=[0, 112], ticksuffix="%", tickvals=[0, 25, 50, 75, 100], showgrid=True,
+            y=ylabels, x=pct, orientation="h", name=label, marker_color=BAR_COLOR[b],
+            text=[f"{label} · {h}/{n_in[c]}" for h, c in zip(have, clusters)],
+            textposition="auto", insidetextanchor="start", cliponaxis=False,
+            insidetextfont=dict(size=12, color=TEXT_ON[b]), outsidetextfont=dict(size=12, color=COL_INK2),
+            customdata=[[h, n_in[c]] for h, c in zip(have, clusters)],
+            hovertemplate="<b>" + label + "</b><br>%{y}<br>%{customdata[0]}/%{customdata[1]} variables (%{x:.0f}%)<extra></extra>"))
+    fig.update_xaxes(range=[0, 100], ticksuffix="%", tickvals=[0, 25, 50, 75, 100], showgrid=True,
                      gridcolor=COL_UNAVAILABLE, zeroline=False)
     fig.update_yaxes(autorange="reversed", showgrid=False, tickfont=dict(size=14))
-    fig.update_layout(barmode="group", bargap=0.28, bargroupgap=0.06, height=max(360, 150 * len(clusters)),
-                      margin=dict(l=10, r=30, t=50, b=20),
+    fig.update_layout(barmode="group", bargap=0.28, bargroupgap=0.06, height=max(400, 170 * len(clusters)),
+                      margin=dict(l=10, r=150, t=20, b=20), showlegend=False,
                       font=dict(family=FONT_FAMILY, color=COL_INK, size=13),
-                      plot_bgcolor=COL_SURFACE, paper_bgcolor=COL_SURFACE,
-                      legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="left", x=0, traceorder="normal"))
+                      plot_bgcolor=COL_SURFACE, paper_bgcolor=COL_SURFACE)
     return fig
 
 
@@ -528,7 +533,7 @@ def latest_page():
         if fig is not None:
             st.plotly_chart(fig, use_container_width=True)
     st.caption(
-        "Source: official websites of the " + "Arab Barometer (arabbarometer.org), Latinobarómetro (latinobarometro.org), Afrobarometer (afrobarometer.org), Asian Barometer (asianbarometer.org) and Eurobarometer (europa.eu/eurobarometer). Blank/gray = variable not "
+        "Source: Arab Barometer, Latinobarómetro, Afrobarometer, Asian Barometer and Eurobarometer. Blank/gray = variable not "
         "coded (or not comparable) in that survey's latest round. Shading groups variables into the "
         "mapping's 5 concept clusters; a handful of variables outside those clusters were classified "
         "by concept for this grouping only."
