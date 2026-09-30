@@ -78,6 +78,14 @@ st.markdown(
     .lad-dots {{ display:inline-flex; gap:5px; }}
     .lad-dot {{ display:inline-block; width:13px; height:13px; border-radius:50%; border:2px solid {COL_UNAVAILABLE}; background:transparent; box-sizing:border-box; }}
     .lad-cl {{ font-size:0.74rem; color:{COL_MUTED}; text-align:right; }}
+    .tl-row {{ display:flex; gap:0.6rem; flex-wrap:wrap; margin:0.4rem 0 0.6rem 0; }}
+    .tl-card {{ flex:1 1 150px; min-width:140px; background:#fff; border:1px solid {COL_UNAVAILABLE}; border-top:5px solid {COL_INK}; border-radius:8px; padding:0.6rem 0.8rem; }}
+    .tl-year {{ font-size:1.25rem; font-weight:600; color:{COL_INK}; }}
+    .tl-sub {{ font-size:0.76rem; color:{COL_MUTED}; margin-bottom:0.4rem; min-height:1.1em; }}
+    .tl-stat {{ font-size:0.92rem; color:{COL_INK2}; }}
+    .tl-stat b {{ color:{COL_INK}; font-size:1.05rem; }}
+    .tl-chg {{ margin-top:0.4rem; font-size:0.8rem; display:flex; gap:0.7rem; }}
+    .tl-add {{ color:#1a7f4b; }} .tl-drop {{ color:#b23a2e; }} .tl-muted {{ color:{COL_MUTED}; }}
     .legend-dot {{ display:inline-block; width:0.8em; height:0.8em; margin-right:0.35em; border-radius:2px; }}
     </style>
     """,
@@ -400,6 +408,90 @@ def overlap_fig(df):
     return fig, m, names
 
 
+# ------------------------------------------------------------------ barometer-by-wave views
+def _wave_matrix(df, periods):
+    """variable x period boolean matrix + code lookup from a long cluster frame."""
+    d = df.assign(a=(df["available"] == "1"))
+    avail = d.pivot_table(index="variable", columns="period", values="a", aggfunc="first").reindex(columns=periods).fillna(False)
+    codes = d.pivot_table(index="variable", columns="period", values="code", aggfunc="first").reindex(columns=periods).fillna("")
+    cluster = d.drop_duplicates("variable").set_index("variable")["cluster"]
+    return avail.astype(bool), codes, cluster
+
+
+def timeline_html(df, periods, colour, bar_countries):
+    """One card per wave/period: countries, variables available, and variables added/dropped vs the previous one."""
+    avail, _, _ = _wave_matrix(df, periods)
+    cards = []
+    for i, p in enumerate(periods):
+        here = set(avail.index[avail[p]])
+        rounds = bar_countries[bar_countries["period"] == p].drop_duplicates("round")["round"].tolist()
+        n_c = bar_countries[bar_countries["period"] == p]["iso3"].nunique()
+        change = ""
+        if i > 0:
+            before = set(avail.index[avail[periods[i - 1]]])
+            change = (f'<div class="tl-chg"><span class="tl-add">+{len(here - before)} added</span>'
+                      f'<span class="tl-drop">&minus;{len(before - here)} dropped</span></div>')
+        else:
+            change = '<div class="tl-chg"><span class="tl-muted">first period</span></div>'
+        cards.append(
+            f'<div class="tl-card" style="border-top-color:{colour}">'
+            f'<div class="tl-year">{html.escape(p)}</div>'
+            f'<div class="tl-sub">{html.escape(" · ".join(rounds)) if rounds else "&nbsp;"}</div>'
+            f'<div class="tl-stat"><b>{n_c}</b> countries</div>'
+            f'<div class="tl-stat"><b>{len(here)}</b> variables</div>{change}</div>')
+    return f'<div class="tl-row">{"".join(cards)}</div>'
+
+
+def continuity_html(df, periods, colour):
+    """Variables grouped by how they persist across waves; one dot per wave."""
+    avail, codes, cluster = _wave_matrix(df, periods)
+    last = len(periods) - 1
+    groups = {"every": [], "added": [], "dropped": [], "onoff": []}
+    note = {}
+    for v in avail.index:
+        idx = [i for i, p in enumerate(periods) if avail.loc[v, p]]
+        if not idx:
+            continue
+        contiguous = idx == list(range(idx[0], idx[-1] + 1))
+        if len(idx) == len(periods):
+            groups["every"].append(v)
+        elif contiguous and idx[-1] == last:
+            groups["added"].append(v)
+            note[v] = f"since {periods[idx[0]]}"
+        elif contiguous and idx[0] == 0:
+            groups["dropped"].append(v)
+            note[v] = f"until {periods[idx[-1]]}"
+        else:
+            groups["onoff"].append(v)
+            note[v] = "on and off"
+    titles = {"every": "Asked in every wave", "added": "Added later, still asked",
+              "dropped": "Dropped after an earlier wave", "onoff": "On and off"}
+    rank = {c: i for i, c in enumerate(CLUSTER_ORDER)}
+    parts = [f'<div class="lad-legend"><span class="lad-key">Dots, left to right: {html.escape(" · ".join(periods))}</span>'
+             f'<span class="lad-key"><span class="lad-dot" style="background:{colour};border-color:{colour}"></span>asked</span>'
+             f'<span class="lad-key"><span class="lad-dot"></span>not asked</span></div>']
+    for key in ("every", "added", "dropped", "onoff"):
+        vs = sorted(groups[key], key=lambda v: (rank.get(cluster[v], 9), v))
+        if not vs:
+            continue
+        parts.append(f'<div class="lad-head"><span class="lad-num">{len(vs)}</span> {titles[key]}</div><div class="lad-grid">')
+        for v in vs:
+            dots, tips = "", []
+            for p in periods:
+                on = bool(avail.loc[v, p])
+                style = f"background:{colour};border-color:{colour}" if on else ""
+                dots += f'<span class="lad-dot" style="{style}"></span>'
+                tips.append(f"{p}: {codes.loc[v, p] if on else 'not asked'}")
+            extra = f" · {note[v]}" if v in note else ""
+            parts.append(
+                f'<div class="lad-card" title="{html.escape(chr(10).join(tips), quote=True)}">'
+                f'<div class="lad-name">{html.escape(v)}</div>'
+                f'<div class="lad-meta"><span class="lad-dots">{dots}</span>'
+                f'<span class="lad-cl">{html.escape(str(cluster[v]))}{html.escape(extra)}</span></div></div>')
+        parts.append("</div>")
+    return "".join(parts)
+
+
 # ------------------------------------------------------------------ pages
 def overview_page():
     cdf = load_countries()
@@ -552,12 +644,17 @@ def barometer_page():
     st.subheader(f"{BAR_LABEL.get(bar, bar)}: coverage by cluster and wave")
     st.caption(subtitle)
 
-    tab_vars, tab_map = st.tabs(["Variables by wave", "Countries by round"])
+    tab_vars, tab_map, tab_grid = st.tabs(["Variables by wave", "Countries by round", "Detail grid"])
+    df_all = load_csv(csv_file)
     with tab_vars:
-        df_all = load_csv(csv_file)
         df, _ = cluster_pills(df_all, f"cluster_{bar}")
-        period_col = "period" if "period" in df.columns else "year"
-        fig = build_heatmap(df, x_col=period_col, x_order=x_order, cluster_col="cluster")
+        bar_countries = cdf[cdf["barometer"] == bar]
+        st.markdown(timeline_html(df, x_order, BAR_COLOR[bar], bar_countries), unsafe_allow_html=True)
+        st.markdown(continuity_html(df, x_order, BAR_COLOR[bar]), unsafe_allow_html=True)
+        st.caption(source_note)
+    with tab_grid:
+        dfg, _ = cluster_pills(df_all, f"cluster_grid_{bar}")
+        fig = build_heatmap(dfg, x_col="period", x_order=x_order, cluster_col="cluster")
         if fig is not None:
             st.plotly_chart(fig, use_container_width=True)
         st.caption(source_note)
