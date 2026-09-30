@@ -41,20 +41,20 @@ LATEST_SHORT = {
 BAR_PAGES = {
     "Arab Barometer": ("arab_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
                        "Waves pooled into 4-year periods.",
-                       "Source: Map of Variables 09 04 2026.xlsx - 'Clusters ARAB' tab. Columns are 4-year period buckets, not individual waves."),
+                       "Source: Arab Barometer, arabbarometer.org. Columns are 4-year period buckets, not individual waves."),
     "Latinobarometro": ("latino_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
                         "Waves pooled into 4-year periods.",
-                        "Source: Map of Variables 09 04 2026.xlsx - 'Clusters LATINO' tab. Columns are 4-year period buckets, not individual waves."),
+                        "Source: Latinobarómetro, latinobarometro.org. Columns are 4-year period buckets, not individual waves."),
     "Afrobarometer": ("afro_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
                       "Rounds pooled into 4-year periods.",
-                      "Source: Map of Variables 09 04 2026.xlsx - 'Clusters AFRO' tab. Columns are 4-year period buckets, not individual waves."),
+                      "Source: Afrobarometer, afrobarometer.org. Columns are 4-year period buckets, not individual waves."),
     "Asian Barometer": ("ab_clusters.csv", ["2012", "2016", "2021", "2023"],
                         "ABS waves 3-6, 2012-2023.",
-                        "Source: Map of Variables 09 04 2026.xlsx - 'AB CLUSTERS' tab (W3 2010-12, W4 2014-16, W5 2018-21, W6 2021-23)."),
+                        "Source: Asian Barometer Survey, asianbarometer.org (W3 2010-12, W4 2014-16, W5 2018-21, W6 2021-23)."),
     "Eurobarometer": ("euro_clusters.csv", ["2015", "2017", "2019", "2023", "2024"],
                       "Special Eurobarometer modules, 2015-2024 (Discrimination 2015/2019/2023, Gender Equality "
                       "2017, Gender Stereotypes 2024) - not the Standard EB trend series.",
-                      "Source: Map of Variables 09 04 2026.xlsx - 'EURO CLUSTERS' tab."),
+                      "Source: Eurobarometer, europa.eu/eurobarometer."),
 }
 
 st.set_page_config(page_title="Cross-Barometer Variable Mapping", layout="wide")
@@ -331,6 +331,32 @@ def ladder_html(df):
     return "".join(parts)
 
 
+def coverage_fig(df):
+    """Grouped horizontal bars: share of each cluster's variables available in each barometer's latest round."""
+    d = df.assign(bar=df["barometer"].map(LATEST_SHORT), a=(df["available"] == "1").astype(int))
+    clusters = [c for c in CLUSTER_ORDER if c in d["cluster"].unique()]
+    n_in = {c: d[d["cluster"] == c]["variable"].nunique() for c in clusters}
+    ylabels = [f"{c} ({n_in[c]})" for c in clusters]
+    fig = go.Figure()
+    for b in BAROMETERS:
+        have = [int(d[(d["cluster"] == c) & (d["bar"] == b)]["a"].sum()) for c in clusters]
+        pct = [100 * h / n_in[c] for h, c in zip(have, clusters)]
+        fig.add_trace(go.Bar(
+            y=ylabels, x=pct, orientation="h", name=BAR_LABEL.get(b, b), marker_color=BAR_COLOR[b],
+            text=[f"{h}/{n_in[c]}" for h, c in zip(have, clusters)], textposition="outside",
+            textfont=dict(size=12, color=COL_INK2), cliponaxis=False,
+            hovertemplate="<b>" + BAR_LABEL.get(b, b) + "</b><br>%{y}<br>%{text} variables (%{x:.0f}%)<extra></extra>"))
+    fig.update_xaxes(range=[0, 112], ticksuffix="%", tickvals=[0, 25, 50, 75, 100], showgrid=True,
+                     gridcolor=COL_UNAVAILABLE, zeroline=False)
+    fig.update_yaxes(autorange="reversed", showgrid=False, tickfont=dict(size=14))
+    fig.update_layout(barmode="group", bargap=0.28, bargroupgap=0.06, height=max(360, 150 * len(clusters)),
+                      margin=dict(l=10, r=30, t=50, b=20),
+                      font=dict(family=FONT_FAMILY, color=COL_INK, size=13),
+                      plot_bgcolor=COL_SURFACE, paper_bgcolor=COL_SURFACE,
+                      legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="left", x=0, traceorder="normal"))
+    return fig
+
+
 def overlap_fig(df):
     """5x5 matrix: number of variables available in both barometers (diagonal = barometer's own total)."""
     avail, _, _ = _avail_matrix(df)
@@ -424,7 +450,7 @@ Eurobarometer thematic modules) - and across time.
 
 - **Latest round** - what is available in the most recent wave of each
   barometer, side by side, one concept cluster at a time.
-- **Barometer** - coverage over time for one survey, by cluster and
+- **Barometer by wave** - coverage over time for one survey, by cluster and
   wave/period, plus the countries included in each round.
 
 Eurobarometer and Asian Barometer were independently checked against the raw
@@ -473,11 +499,15 @@ def latest_page():
         col.metric(BAR_LABEL.get(LATEST_SHORT[b], LATEST_SHORT[b]), f"{int(avail.get(b, 0))} of {n_vars}",
                    help="Variables available in this barometer's latest round")
 
-    tab_ladder, tab_pair, tab_grid = st.tabs(["Comparability ladder", "Pairwise overlap", "Detail grid"])
+    tab_ladder, tab_cov, tab_pair, tab_grid = st.tabs(["Comparability ladder", "Coverage profile", "Pairwise overlap", "Detail grid"])
     with tab_ladder:
         st.caption("Each card is a variable; the five dots show which barometers cover it in their latest round. "
                    "Hover a card for the exact codes.")
         st.markdown(ladder_html(df), unsafe_allow_html=True)
+    with tab_cov:
+        st.caption("Share of each cluster's variables that are available in each barometer's latest round "
+                   "(number of variables in brackets). Shows all clusters, regardless of the button above.")
+        st.plotly_chart(coverage_fig(df_all), use_container_width=True, config={"displayModeBar": False})
     with tab_pair:
         fig_o, m, names = overlap_fig(df)
         st.caption("Number of variables available in both barometers (selected cluster). "
@@ -498,7 +528,7 @@ def latest_page():
         if fig is not None:
             st.plotly_chart(fig, use_container_width=True)
     st.caption(
-        "Source: Map of Variables 09 04 2026.xlsx - 'Latest round' tab. Blank/gray = variable not "
+        "Source: official websites of the " + "Arab Barometer (arabbarometer.org), Latinobarómetro (latinobarometro.org), Afrobarometer (afrobarometer.org), Asian Barometer (asianbarometer.org) and Eurobarometer (europa.eu/eurobarometer). Blank/gray = variable not "
         "coded (or not comparable) in that survey's latest round. Shading groups variables into the "
         "mapping's 5 concept clusters; a handful of variables outside those clusters were classified "
         "by concept for this grouping only."
@@ -510,14 +540,14 @@ def barometer_page():
     st.session_state.setdefault("bar_pick", BAROMETERS[0])
     if "goto_bar_page" in st.session_state:
         st.session_state["bar_pick"] = st.session_state.pop("goto_bar_page")
-    st.header("Barometer by period")
+    st.header("Barometer by wave")
     bar = st.pills("Barometer", BAROMETERS, key="bar_pick",
                    format_func=lambda b: BAR_LABEL.get(b, b), label_visibility="collapsed") or BAROMETERS[0]
     csv_file, x_order, subtitle, source_note = BAR_PAGES[bar]
-    st.subheader(f"{BAR_LABEL.get(bar, bar)}: coverage by cluster and period")
+    st.subheader(f"{BAR_LABEL.get(bar, bar)}: coverage by cluster and wave")
     st.caption(subtitle)
 
-    tab_vars, tab_map = st.tabs(["Variables by period", "Countries by round"])
+    tab_vars, tab_map = st.tabs(["Variables by wave", "Countries by round"])
     with tab_vars:
         df_all = load_csv(csv_file)
         df, _ = cluster_pills(df_all, f"cluster_{bar}")
@@ -550,6 +580,6 @@ def barometer_page():
 
 PAGE_OVERVIEW = st.Page(overview_page, title="Overview", url_path="overview", default=True)
 PAGE_LATEST = st.Page(latest_page, title="Latest round", url_path="latest")
-PAGE_BAROMETER = st.Page(barometer_page, title="Barometer by period", url_path="barometer")
+PAGE_BAROMETER = st.Page(barometer_page, title="Barometer by wave", url_path="barometer")
 
 st.navigation([PAGE_OVERVIEW, PAGE_LATEST, PAGE_BAROMETER]).run()
