@@ -602,8 +602,7 @@ def latest_page():
     df, choice = cluster_pills(df_all, "latest_cluster")
     n_vars = df["variable"].nunique()
     st.caption(f"Common list of {df_all['variable'].nunique()} variables, the same for all five barometers, "
-               "checked in each barometer's most recent round. Barometer by wave uses a different list "
-               "of variables, specific to each barometer, so its counts are not comparable with these.")
+               "checked in each barometer's most recent round.")
 
     latest = cdf[cdf["latest"] == 1].groupby("barometer")["country"].nunique()
     bar_order = load_csv("latest_round_counts.csv")["barometer"].tolist()
@@ -667,9 +666,6 @@ def barometer_page():
         st.caption(subtitle)
 
     df_all = load_csv(csv_file)
-    st.caption(f"Counts on this page refer to the {df_all['variable'].nunique()} variables on this barometer's own list, "
-               "which is specific to each barometer. They are not the common list of variables used in Latest round, "
-               "so the numbers for the most recent round differ between the two pages.")
     tab_vars, tab_map, tab_grid = st.tabs(["Variables by wave", "Countries by round", "Detail grid"])
     with tab_vars:
         df, _ = cluster_pills(df_all, f"cluster_{bar}")
@@ -704,6 +700,10 @@ def barometer_page():
             counts = d.groupby("round", sort=False)["iso3"].nunique()
             st.caption("Countries per round: " + " · ".join(f"{k}: {v}" for k, v in counts.items()))
             st.caption(", ".join(sorted(sel["country"])))
+
+    st.caption(f"Counts on this page refer to the {df_all['variable'].nunique()} variables on this barometer's own list, "
+               "which is specific to each barometer. They are not the common list of variables used in Latest round, "
+               "so the numbers for the most recent round differ between the two pages.")
 
 
 PAGE_OVERVIEW = st.Page(overview_page, title="Overview", url_path="overview", default=True)
