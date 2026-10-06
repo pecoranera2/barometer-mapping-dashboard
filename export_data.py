@@ -93,22 +93,6 @@ header = rows[0]
 barometers = [h for h in header[1:] if h]  # drop trailing None
 unmatched = set()
 dropped = []
-
-# Cluster membership comes ONLY from the workbook's own 'Clusters Latest round' tab (variables were
-# selected for the clusters by how well available they are); nothing is assigned to a cluster here.
-ALIAS = {"self-employed": "self-employed/salaried", "interest in politics": "interested in politics",
-         "join political organization": "freedom of political participation"}
-OFFICIAL = {}
-_cur = None
-for r in wb["Clusters Latest round"].iter_rows(values_only=True):
-    if r[0] is None:
-        continue
-    lab = clean_label(r[0]).lower()
-    if lab.title() in CLUSTER_HEADERS or lab in {h.lower() for h in CLUSTER_HEADERS}:
-        _cur = [h for h in CLUSTER_ORDER if h.lower() == lab][0]
-        continue
-    OFFICIAL[ALIAS.get(lab, lab)] = _cur
-seen_latest = set()
 with open(f"{OUT}/latest_round.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["variable", "barometer", "code", "available", "chunk"])
@@ -119,11 +103,10 @@ with open(f"{OUT}/latest_round.csv", "w", newline="", encoding="utf-8") as f:
         label = clean_label(label)
         if label.lower().startswith("numero de paises"):
             continue
-        chunk = OFFICIAL.get(label.lower())
+        chunk = LATEST_ROUND_CLUSTER.get(label)
         if chunk is None:
-            dropped.append(("Latest round, not in any cluster", label))
-            continue
-        seen_latest.add(label.lower())
+            unmatched.add(label)
+            chunk = "Other"
         label = RELABEL.get(label, label)
         # drop concepts not available in any barometer's latest round
         if all(row[i + 1] in (None, "") for i in range(len(barometers))):
@@ -132,25 +115,8 @@ with open(f"{OUT}/latest_round.csv", "w", newline="", encoding="utf-8") as f:
         for i, bar in enumerate(barometers):
             code = row[i + 1]
             w.writerow([label, bar, code if code is not None else "", "1" if code not in (None, "") else "0", chunk])
-    # concepts in the cluster tab that have no row in the Latest round tab: take the code from each
-    # barometer's own cluster tab (most recent column); blank where that barometer has none
-    for concept, cl in OFFICIAL.items():
-        if concept in seen_latest:
-            continue
-        if concept != "trust in people":
-            print("CLUSTER CONCEPT WITHOUT LATEST-ROUND ROW:", concept)
-            continue
-        src = {"Arab Barometer 2024": "Clusters ARAB", "Latinobarometer 2024": "Clusters LATINO",
-               "Afro Barometer 2023": "Clusters AFRO", "Asian Barometer 2023": "Clusters AB",
-               "Eurobarometer 2025 (Standard)": None}
-        for bar in barometers:
-            code = None
-            if src.get(bar):
-                for r in wb[src[bar]].iter_rows(values_only=True):
-                    if r[0] and clean_label(r[0]).lower().startswith("trust in people"):
-                        code = r[1]
-                        break
-            w.writerow(["Trust in people", bar, code if code is not None else "", "1" if code not in (None, "") else "0", cl])
+if unmatched:
+    print("UNMATCHED (classified as 'Other'):", unmatched)
 
 # country counts row, for subtitle annotation
 n_row = [r for r in rows[1:] if r[0] and str(r[0]).strip().lower().startswith("numero de paises")]
