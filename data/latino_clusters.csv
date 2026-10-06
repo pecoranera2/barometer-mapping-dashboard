@@ -1,97 +1,101 @@
 cluster,variable,period,code,available
-Socioeconomic,Gender,2023-2025,SEXO,1
-Socioeconomic,Gender,2020-2022,SEXO,1
-Socioeconomic,Gender,2016-2019,SEXO,1
-Socioeconomic,Gender,2012-2016,SEXO,1
-Socioeconomic,Age,2023-2025,EDAD,1
-Socioeconomic,Age,2020-2022,EDAD,1
-Socioeconomic,Age,2016-2019,EDAD,1
-Socioeconomic,Age,2012-2016,EDAD,1
-Socioeconomic,Highest education achieved: Secondary,2023-2025,S11,1
-Socioeconomic,Highest education achieved: Secondary,2020-2022,S16,1
-Socioeconomic,Highest education achieved: Secondary,2016-2019,S14,1
-Socioeconomic,Highest education achieved: Secondary,2012-2016,S13,1
-Socioeconomic,Married,2023-2025,,0
-Socioeconomic,Married,2020-2022,,0
-Socioeconomic,Married,2016-2019,S6,1
-Socioeconomic,Married,2012-2016,S11,1
-Socioeconomic,Ethnicity,2023-2025,S7,1
-Socioeconomic,Ethnicity,2020-2022,S12,1
-Socioeconomic,Ethnicity,2016-2019,S10,1
-Socioeconomic,Ethnicity,2012-2016,S23,1
-Socioeconomic,Religion,2023-2025,S1,1
-Socioeconomic,Religion,2020-2022,S10,1
-Socioeconomic,Religion,2016-2019,S9,1
-Socioeconomic,Religion,2012-2016,S16,1
-Socioeconomic,household head,2023-2025,S9,1
-Socioeconomic,household head,2020-2022,S8.,1
-Socioeconomic,household head,2016-2019,S12,1
-Socioeconomic,household head,2012-2016,S17,1
-Employment,Employed,2023-2025,S18.A,1
-Employment,Employed,2020-2022,S24.A,1
-Employment,Employed,2016-2019,S18.A,1
-Employment,Employed,2012-2016,S21.A,1
-Employment,Self-employed,2023-2025,S19,1
-Employment,Self-employed,2020-2022,S15,1
-Employment,Self-employed,2016-2019,S19,1
-Employment,Self-employed,2012-2016,S20,1
-Employment,Occupation,2023-2025,S19,1
-Employment,Occupation,2020-2022,S24A,1
-Employment,Occupation,2016-2019,S18A,1
-Employment,Occupation,2012-2016,S21A,1
-Access,Water,2023-2025,S20I,1
-Access,Water,2020-2022,S26.K,1
-Access,Water,2016-2019,S17.M,1
-Access,Water,2012-2016,,0
-Access,Mobile phone,2023-2025,S20D,1
-Access,Mobile phone,2020-2022,S26.F,1
-Access,Mobile phone,2016-2019,S17.G,1
-Access,Mobile phone,2012-2016,S24.G,1
-Access,Internet conecction at home,2023-2025,S20K,1
-Access,Internet conecction at home,2020-2022,N.NI,1
-Access,Internet conecction at home,2016-2019,,0
-Access,Internet conecction at home,2012-2016,,0
-Access,Food insecure,2023-2025,S3,1
-Access,Food insecure,2020-2022,S2,1
-Access,Food insecure,2016-2019,S3,1
-Access,Food insecure,2012-2016,S1,1
-Access,Urban,2023-2025,TAMCIUD,1
-Access,Urban,2020-2022,TAMCIUD,1
-Access,Urban,2016-2019,TAMCIUD,1
-Access,Urban,2012-2016,TAMCIUD,1
-Access,Able to save,2023-2025,S5,1
-Access,Able to save,2020-2022,S4,1
-Access,Able to save,2016-2019,S5,1
-Access,Able to save,2012-2016,S4,1
-Access,Owns a house,2023-2025,S20B,1
-Access,Owns a house,2020-2022,S26.B,1
-Access,Owns a house,2016-2019,S17.B,1
-Access,Owns a house,2012-2016,S24.B,1
-Access,Victim of a crime,2023-2025,P50ST.A,1
-Access,Victim of a crime,2020-2022,P64ST,1
-Access,Victim of a crime,2016-2019,P65ST.B,1
-Access,Victim of a crime,2012-2016,P60ST,1
-Gender and social norms,Arrival of inmigrants,2023-2025,Q34ST,1
-Gender and social norms,Arrival of inmigrants,2020-2022,Q38N,1
-Gender and social norms,Arrival of inmigrants,2016-2019,,0
-Gender and social norms,Arrival of inmigrants,2012-2016,,0
-Gender and social norms,Trust in people,2023-2025,Q10STGBS,1
-Gender and social norms,Trust in people,2020-2022,Q9STGBS,1
-Gender and social norms,Trust in people,2016-2019,Q13STGBS,1
-Gender and social norms,Trust in people,2012-2016,Q15STGBS,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,2023-2025,Q48ST,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,2020-2022,Q63ST,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,2016-2019,Q64STB,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,2012-2016,,0
-Institutional,Support for democracy,2023-2025,P11STGBS,1
-Institutional,Support for democracy,2020-2022,P10STGBS,1
-Institutional,Support for democracy,2016-2019,P8STGBS,1
-Institutional,Support for democracy,2012-2016,P11STGBS,1
-Institutional,Interest in politics,2023-2025,P36STGBS,1
-Institutional,Interest in politics,2020-2022,P46STGBS,1
-Institutional,Interest in politics,2016-2019,,0
-Institutional,Interest in politics,2012-2016,,0
-Institutional,Political participation,2023-2025,,0
-Institutional,Political participation,2020-2022,P47ST.A,1
-Institutional,Political participation,2016-2019,,0
-Institutional,Political participation,2012-2016,P50ST.A,1
+Socioeconomic,Gender,Round 2024,SEXO,1
+Socioeconomic,Gender,Round 2020,SEXO,1
+Socioeconomic,Gender,Round 2017,SEXO,1
+Socioeconomic,Gender,Round 2015,SEXO,1
+Socioeconomic,Age,Round 2024,EDAD,1
+Socioeconomic,Age,Round 2020,EDAD,1
+Socioeconomic,Age,Round 2017,EDAD,1
+Socioeconomic,Age,Round 2015,EDAD,1
+Socioeconomic,Highest education achieved: Secondary,Round 2024,reeduc_1,1
+Socioeconomic,Highest education achieved: Secondary,Round 2020,S16,1
+Socioeconomic,Highest education achieved: Secondary,Round 2017,S14,1
+Socioeconomic,Highest education achieved: Secondary,Round 2015,S13,1
+Socioeconomic,Married,Round 2024,,0
+Socioeconomic,Married,Round 2020,,0
+Socioeconomic,Married,Round 2017,S6,1
+Socioeconomic,Married,Round 2015,S11,1
+Socioeconomic,Ethnicity,Round 2024,S7,1
+Socioeconomic,Ethnicity,Round 2020,S12,1
+Socioeconomic,Ethnicity,Round 2017,S10,1
+Socioeconomic,Ethnicity,Round 2015,S23,1
+Socioeconomic,Religion,Round 2024,S1,1
+Socioeconomic,Religion,Round 2020,S10,1
+Socioeconomic,Religion,Round 2017,S9,1
+Socioeconomic,Religion,Round 2015,S16,1
+Socioeconomic,household head,Round 2024,S9,1
+Socioeconomic,household head,Round 2020,S8.,1
+Socioeconomic,household head,Round 2017,S12,1
+Socioeconomic,household head,Round 2015,S17,1
+Employment,Employed,Round 2024,S18.A,1
+Employment,Employed,Round 2020,S24.A,1
+Employment,Employed,Round 2017,S18.A,1
+Employment,Employed,Round 2015,S21.A,1
+Employment,Self-employed,Round 2024,S19,1
+Employment,Self-employed,Round 2020,S15,1
+Employment,Self-employed,Round 2017,S19,1
+Employment,Self-employed,Round 2015,S20,1
+Employment,Occupation,Round 2024,,0
+Employment,Occupation,Round 2020,S24A,1
+Employment,Occupation,Round 2017,S18A,1
+Employment,Occupation,Round 2015,S21A,1
+Access,Water,Round 2024,S20I,1
+Access,Water,Round 2020,S26.K,1
+Access,Water,Round 2017,S17.M,1
+Access,Water,Round 2015,,0
+Access,Mobile phone,Round 2024,S20D,1
+Access,Mobile phone,Round 2020,S26.F,1
+Access,Mobile phone,Round 2017,S17.G,1
+Access,Mobile phone,Round 2015,S24.G,1
+Access,Internet conecction at home,Round 2024,S20K,1
+Access,Internet conecction at home,Round 2020,N.NI,1
+Access,Internet conecction at home,Round 2017,,0
+Access,Internet conecction at home,Round 2015,,0
+Access,Food insecure,Round 2024,S3,1
+Access,Food insecure,Round 2020,S2,1
+Access,Food insecure,Round 2017,S3,1
+Access,Food insecure,Round 2015,S1,1
+Access,Urban,Round 2024,TAMCIUD,1
+Access,Urban,Round 2020,TAMCIUD,1
+Access,Urban,Round 2017,TAMCIUD,1
+Access,Urban,Round 2015,TAMCIUD,1
+Access,Able to save,Round 2024,S5,1
+Access,Able to save,Round 2020,S4,1
+Access,Able to save,Round 2017,S5,1
+Access,Able to save,Round 2015,S4,1
+Access,Owns a house,Round 2024,S20B,1
+Access,Owns a house,Round 2020,S26.B,1
+Access,Owns a house,Round 2017,S17.B,1
+Access,Owns a house,Round 2015,S24.B,1
+Access,Victim of a crime,Round 2024,P50ST.A,1
+Access,Victim of a crime,Round 2020,P64ST,1
+Access,Victim of a crime,Round 2017,P65ST.B,1
+Access,Victim of a crime,Round 2015,P60ST,1
+Gender and social norms,Arrival of inmigrants,Round 2024,Q34ST,1
+Gender and social norms,Arrival of inmigrants,Round 2020,Q38N,1
+Gender and social norms,Arrival of inmigrants,Round 2017,,0
+Gender and social norms,Arrival of inmigrants,Round 2015,,0
+Gender and social norms,Trust in people,Round 2024,Q10STGBS,1
+Gender and social norms,Trust in people,Round 2020,Q9STGBS,1
+Gender and social norms,Trust in people,Round 2017,Q13STGBS,1
+Gender and social norms,Trust in people,Round 2015,Q15STGBS,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2024,Q48ST,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2020,Q63ST,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2017,Q64STB,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2015,,0
+Institutional,Support for democracy,Round 2024,P11STGBS,1
+Institutional,Support for democracy,Round 2020,P10STGBS,1
+Institutional,Support for democracy,Round 2017,P8STGBS,1
+Institutional,Support for democracy,Round 2015,P11STGBS,1
+Institutional,Interest in politics,Round 2024,P36STGBS,1
+Institutional,Interest in politics,Round 2020,P46STGBS,1
+Institutional,Interest in politics,Round 2017,,0
+Institutional,Interest in politics,Round 2015,,0
+Institutional,Political participation,Round 2024,,0
+Institutional,Political participation,Round 2020,P47ST.A,1
+Institutional,Political participation,Round 2017,,0
+Institutional,Political participation,Round 2015,P50ST.A,1
+Institutional,Satisfaction with democracy,Round 2024,p12stgbs_a,1
+Institutional,Satisfaction with democracy,Round 2020,,0
+Institutional,Satisfaction with democracy,Round 2017,,0
+Institutional,Satisfaction with democracy,Round 2015,,0

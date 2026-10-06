@@ -34,6 +34,7 @@ EB_ISO2 = {"AL":("Albania","ALB"),"AT":("Austria","AUT"),"BA":("Bosnia and Herze
  "PT":("Portugal","PRT"),"RO":("Romania","ROU"),"RS":("Serbia","SRB"),"RS-KM":("Serbia","SRB"),"SE":("Sweden","SWE"),
  "SI":("Slovenia","SVN"),"SK":("Slovakia","SVK"),"TR":("Turkey","TUR")}
 
+ROMAN = {"III": 3, "IV": 4, "VI": 6, "VIII": 8}
 rows = []  # barometer, round, year, period, country, iso3, latest
 
 
@@ -53,8 +54,11 @@ AR = {
  # Wave IX: only the countries already fielded (Mauritania planned, not yet surveyed)
  "IX":  ("2025-2026", "2023-2025", ["Egypt","Iraq","Jordan","Lebanon","Morocco","Palestine","Syria","Tunisia"]),
 }
+# only the waves Lucia mapped are shown: period label = year + wave
+AR_MAPPED = {"VIII": "2024 (Wave 8)", "VI": "2021 (Wave 6)", "IV": "2017 (Wave 4)", "III": "2014 (Wave 3)"}
 for r, (y, p, c) in AR.items():
-    add("Arab Barometer", f"Wave {r}", y, p, c, latest=(r == "VIII"))
+    if r in AR_MAPPED:
+        add("Arab Barometer", f"Wave {ROMAN[r]}", AR_MAPPED[r].split(" ")[0], AR_MAPPED[r], c, latest=(r == "VIII"))
 
 # ---- Latinobarometro (latinobarometro.org/latinobarometro-YYYY) ----
 L18 = ["Argentina","Bolivia","Brazil","Chile","Colombia","Costa Rica","Dominican Republic","Ecuador","El Salvador","Guatemala",
@@ -62,8 +66,11 @@ L18 = ["Argentina","Bolivia","Brazil","Chile","Colombia","Costa Rica","Dominican
 L17 = [c for c in L18 if c != "Nicaragua"]   # 2023 report: Nicaragua not surveyed
 LAT = [("2013","2012-2016",L18),("2015","2012-2016",L18),("2016","2012-2016",L18),("2017","2016-2019",L18),
        ("2018","2016-2019",L18),("2020","2020-2022",L18),("2023","2023-2025",L17),("2024","2023-2025",L17)]
+# only the rounds Lucia mapped are shown (Latinobarometro rounds have no number)
+LAT_MAPPED = {"2024": "Round 2024", "2020": "Round 2020", "2017": "Round 2017", "2015": "Round 2015"}
 for y, p, c in LAT:
-    add("Latinobarometro", y, y, p, c, latest=(y == "2024"))
+    if y in LAT_MAPPED:
+        add("Latinobarometro", LAT_MAPPED[y], y, LAT_MAPPED[y], c, latest=(y == "2024"))
 
 # ---- Afrobarometer (World Bank Microdata Library / DataFirst merged-round catalog) ----
 R5 = ["Algeria","Benin","Botswana","Burkina Faso","Burundi","Cameroon","Cabo Verde","Côte d'Ivoire","Egypt","Ghana","Guinea","Kenya",
@@ -83,10 +90,10 @@ R9 = ["Angola","Benin","Botswana","Burkina Faso","Cabo Verde","Cameroon","Congo-
       "Mozambique","Namibia","Niger","Nigeria","São Tomé and Príncipe","Senegal","Seychelles","Sierra Leone","South Africa","Sudan",
       "Tanzania","Togo","Tunisia","Uganda","Zambia","Zimbabwe"]
 assert [len(x) for x in (R5, R6, R7, R8, R9)] == [34, 36, 34, 34, 39], [len(x) for x in (R5, R6, R7, R8, R9)]
-for r, y, p, c in [("Round 5","2011-2013","2012-2016",R5), ("Round 6","2014-2015","2012-2016",R6),
-                   ("Round 7","2016-2018","2016-2019",R7), ("Round 8","2019-2021","2020-2022",R8),
-                   ("Round 9","2021-2023","2023-2025",R9)]:
-    add("Afrobarometer", r, y, p, c, latest=(r == "Round 9"))
+for r, y, p, c in [("Wave 5","2013","2013 (Wave 5)",R5), ("Wave 6","2016","2016 (Wave 6)",R6),
+                   ("Wave 7","2019/20","2019/20 (Wave 7)",R7), ("Wave 8","2022","2022 (Wave 8)",R8),
+                   ("Wave 9","2023","2023 (Wave 9)",R9)]:
+    add("Afrobarometer", r, y, p, c, latest=(r == "Wave 9"))
 
 # ---- Asian Barometer (raw .dta) ----
 AB_NAME = {"Korea": "South Korea", "Mainland China": "China"}

@@ -9,7 +9,7 @@ Socioeconomic,Age,2023,d11,1
 Socioeconomic,Age,2019,d11,1
 Socioeconomic,Age,2017,d11,1
 Socioeconomic,Age,2015,d11,1
-Socioeconomic,Highest education achieved: Secondary,2024,d8,1
+Socioeconomic,Highest education achieved: Secondary,2024,d9a_4,1
 Socioeconomic,Highest education achieved: Secondary,2023,d8,1
 Socioeconomic,Highest education achieved: Secondary,2019,d8,1
 Socioeconomic,Highest education achieved: Secondary,2017,d8,1
@@ -39,16 +39,16 @@ Employment,Employed,2023,d15a,1
 Employment,Employed,2019,d15a,1
 Employment,Employed,2017,d15a,1
 Employment,Employed,2015,d15a,1
-Employment,Self-employed/salaried,2024,d15a_r1 ,1
-Employment,Self-employed/salaried,2023,d15a_r1 ,1
-Employment,Self-employed/salaried,2019,d15a_r1 ,1
-Employment,Self-employed/salaried,2017,d15a_r1 ,1
-Employment,Self-employed/salaried,2015,d15a_r1 ,1
-Access,Food insecurity,2024,d60,1
-Access,Food insecurity,2023,d60,1
-Access,Food insecurity,2019,d60,1
-Access,Food insecurity,2017,d60,1
-Access,Food insecurity,2015,d60,1
+Employment,Occupation / Self,2024,d15a_r1 ,1
+Employment,Occupation / Self,2023,d15a_r1 ,1
+Employment,Occupation / Self,2019,d15a_r1 ,1
+Employment,Occupation / Self,2017,d15a_r1 ,1
+Employment,Occupation / Self,2015,d15a_r1 ,1
+Access,Food insecurity _difficulties paying bills,2024,d60,1
+Access,Food insecurity _difficulties paying bills,2023,d60,1
+Access,Food insecurity _difficulties paying bills,2019,d60,1
+Access,Food insecurity _difficulties paying bills,2017,d60,1
+Access,Food insecurity _difficulties paying bills,2015,d60,1
 Access,Internet user,2024,d62_1,1
 Access,Internet user,2023,d62_1,1
 Access,Internet user,2019,d62_1,1
@@ -59,11 +59,11 @@ Access,Urban,2023,d25,1
 Access,Urban,2019,d25,1
 Access,Urban,2017,d25,1
 Access,Urban,2015,d25,1
-Access,Neighbourhood/area where I live is secure,2024,,0
-Access,Neighbourhood/area where I live is secure,2023,,0
-Access,Neighbourhood/area where I live is secure,2019,,0
+Access,Neighbourhood/area where I live is secure,2024, ,1
+Access,Neighbourhood/area where I live is secure,2023, ,1
+Access,Neighbourhood/area where I live is secure,2019, ,1
 Access,Neighbourhood/area where I live is secure,2017,qb1_4,1
-Access,Neighbourhood/area where I live is secure,2015,,0
+Access,Neighbourhood/area where I live is secure,2015, ,1
 Gender and social norms,Felt discriminated against,2024,,0
 Gender and social norms,Felt discriminated against,2023,qb2_3,1
 Gender and social norms,Felt discriminated against,2019,qc2_1,1
@@ -129,3 +129,13 @@ Institutional,"If you wanted to complain about this case of corruption, who woul
 Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2019,,0
 Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2017,,0
 Institutional,"If you wanted to complain about this case of corruption, who would you trust most to deal with it?",2015,,0
+Institutional,Satisfaction with democracy,2024,sd18a,1
+Institutional,Satisfaction with democracy,2023,,0
+Institutional,Satisfaction with democracy,2019,,0
+Institutional,Satisfaction with democracy,2017,,0
+Institutional,Satisfaction with democracy,2015,,0
+Institutional,Interested in politics,2024,polintr_1,1
+Institutional,Interested in politics,2023,,0
+Institutional,Interested in politics,2019,,0
+Institutional,Interested in politics,2017,,0
+Institutional,Interested in politics,2015,,0

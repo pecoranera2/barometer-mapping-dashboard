@@ -1,121 +1,176 @@
 cluster,variable,period,code,available
-Socioeconomic,Gender,2023-2025,Q100,1
-Socioeconomic,Gender,2020-2022,Q101,1
-Socioeconomic,Gender,2016-2019,Q101,1
-Socioeconomic,Gender,2012-2016,Q101,1
-Socioeconomic,Age,2023-2025,Q1,1
-Socioeconomic,Age,2020-2022,Q1,1
-Socioeconomic,Age,2016-2019,Q1,1
-Socioeconomic,Age,2012-2016,Q1,1
-Socioeconomic,Highest education achieved: Secondary,2023-2025,Q94,1
-Socioeconomic,Highest education achieved: Secondary,2020-2022,Q97,1
-Socioeconomic,Highest education achieved: Secondary,2016-2019,Q97,1
-Socioeconomic,Highest education achieved: Secondary,2012-2016,Q97,1
-Socioeconomic,Ethnicity,2023-2025,Q101,1
-Socioeconomic,Ethnicity,2020-2022,Q81,1
-Socioeconomic,Ethnicity,2016-2019,Q84,1
-Socioeconomic,Ethnicity,2012-2016,Q86C,1
-Socioeconomic,Religion,2023-2025,Q95,1
-Socioeconomic,Religion,2020-2022,Q98A,1
-Socioeconomic,Religion,2016-2019,Q98,1
-Socioeconomic,Religion,2012-2016,Q86B,1
-Employment,Employed,2023-2025,Q93A,1
-Employment,Employed,2020-2022,Q95A,1
-Employment,Employed,2016-2019,Q94,1
-Employment,Employed,2012-2016,Q95,1
-Employment,Self-employed,2023-2025,Q93b.,1
-Employment,Self-employed,2020-2022,Q95C,1
-Employment,Self-employed,2016-2019,Q95a,1
-Employment,Self-employed,2012-2016,Q95A,1
-Employment,Occupation,2023-2025,Q93b.,1
-Employment,Occupation,2020-2022,Q95C,1
-Employment,Occupation,2016-2019,Q95a,1
-Employment,Occupation,2012-2016,Q95A,1
-Access,Electricity,2023-2025,Q92A,1
-Access,Electricity,2020-2022,Q94A,1
-Access,Electricity,2016-2019,Q93,1
-Access,Electricity,2012-2016,Q93,1
-Access,Water,2023-2025,Q6b.,1
-Access,Water,2020-2022,Q93A,1
-Access,Water,2016-2019,Q92A,1
-Access,Water,2012-2016,Q92A,1
-Access,Mobile phone,2023-2025,Q92f,1
-Access,Mobile phone,2020-2022,Q92F,1
-Access,Mobile phone,2016-2019,Q89F,1
-Access,Mobile phone,2012-2016,Q89F,1
-Access,Internet user,2023-2025,Q90I,1
-Access,Internet user,2020-2022,Q92I,1
-Access,Internet user,2016-2019,Q91B,1
-Access,Internet user,2012-2016,Q91B,1
-Access,Food insecure,2023-2025,Q6a,1
-Access,Food insecure,2020-2022,Q7A,1
-Access,Food insecure,2016-2019,Q8A,1
-Access,Food insecure,2012-2016,Q8A,1
-Access,How often gone without water,2023-2025,Q6B,1
-Access,How often gone without water,2020-2022,Q7b,1
-Access,How often gone without water,2016-2019,Q8b,1
-Access,How often gone without water,2012-2016,Q8b,1
-Access,How often feared crime in home,2023-2025,Q7b,1
-Access,How often feared crime in home,2020-2022,Q8b,1
-Access,How often feared crime in home,2016-2019,Q10b,1
-Access,How often feared crime in home,2012-2016,Q10b,1
-Access,Safety of neighborhood,2023-2025,Q7a,1
-Access,Safety of neighborhood,2020-2022,Q8A,1
-Access,Safety of neighborhood,2016-2019,Q10A,1
-Access,Safety of neighborhood,2012-2016,Q10A,1
-Access,Urban,2023-2025,URBRUR,1
-Access,Urban,2020-2022,URBRUR,1
-Access,Urban,2016-2019,URBRUR,1
-Access,Urban,2012-2016,URBRUR,1
-Access,Bank Account,2023-2025,Q90E,1
-Access,Bank Account,2020-2022,Q90E,1
-Access,Bank Account,2016-2019,Q89E,1
-Access,Bank Account,2012-2016,Q89E,1
-Gender and social norms,Men make better political leaders,2023-2025,Q20,1
-Gender and social norms,Men make better political leaders,2020-2022,,0
-Gender and social norms,Men make better political leaders,2016-2019,Q16,1
-Gender and social norms,Men make better political leaders,2012-2016,Q16,1
-Gender and social norms,Ethnic group treated unfairly by government,2023-2025,Q84b,1
-Gender and social norms,Ethnic group treated unfairly by government,2020-2022,Q82a.,1
-Gender and social norms,Ethnic group treated unfairly by government,2016-2019,Q85,1
-Gender and social norms,Ethnic group treated unfairly by government,2012-2016,Q88a,1
-Gender and social norms,Trust in people,2023-2025,Q86d,1
-Gender and social norms,Trust in people,2020-2022,,0
-Gender and social norms,Trust in people,2016-2019,,0
-Gender and social norms,Trust in people,2012-2016,,0
-Gender and social norms,Who decides how money is used,2023-2025,Q93C,1
-Gender and social norms,Who decides how money is used,2020-2022,Q96A,1
-Gender and social norms,Who decides how money is used,2016-2019,Q95C,1
-Gender and social norms,Who decides how money is used,2012-2016,Q95C,1
-Institutional,Democracy always preferable,2023-2025,Q23,1
-Institutional,Democracy always preferable,2020-2022,Q21,1
-Institutional,Democracy always preferable,2016-2019,Q28,1
-Institutional,Democracy always preferable,2012-2016,Q28,1
-Institutional,Interest in politics,2023-2025,Q8,1
-Institutional,Interest in politics,2020-2022,Q9,1
-Institutional,Interest in politics,2016-2019,Q13,1
-Institutional,Interest in politics,2012-2016,Q13,1
-Institutional,Freedom of speech,2023-2025,Q9a,1
-Institutional,Freedom of speech,2020-2022,Q10A,1
-Institutional,Freedom of speech,2016-2019,Q14,1
-Institutional,Freedom of speech,2012-2016,Q14,1
-Institutional,Freedom to join any political organization,2023-2025,Q9b.,1
-Institutional,Freedom to join any political organization,2020-2022,Q9b.,1
-Institutional,Freedom to join any political organization,2016-2019,Q19b,1
-Institutional,Freedom to join any political organization,2012-2016,Q15b,1
-Institutional,Difficulty to obtain identity document,2023-2025,Q42b,1
-Institutional,Difficulty to obtain identity document,2020-2022,Q44h,1
-Institutional,Difficulty to obtain identity document,2016-2019,Q49i,1
-Institutional,Difficulty to obtain identity document,2012-2016,Q55e,1
-Institutional,How free is news media,2023-2025,Q33H,1
-Institutional,How free is news media,2020-2022,Q56,1
-Institutional,How free is news media,2016-2019,Q17,1
-Institutional,How free is news media,2012-2016,Q17,1
-Institutional,Satisfaction with democracy,2023-2025,Q31,1
-Institutional,Satisfaction with democracy,2020-2022,Q37,1
-Institutional,Satisfaction with democracy,2016-2019,Q36,1
-Institutional,Satisfaction with democracy,2012-2016,Q41,1
-Institutional,Most important problems – 1 st response: gender issues,2023-2025,Q45pt1,1
-Institutional,Most important problems – 1 st response: gender issues,2020-2022,Q48pt1,1
-Institutional,Most important problems – 1 st response: gender issues,2016-2019,Q55pt1,1
-Institutional,Most important problems – 1 st response: gender issues,2012-2016,Q60pt1,1
+Socioeconomic,Gender,2023 (Wave 9),Q100,1
+Socioeconomic,Gender,2022 (Wave 8),Q101,1
+Socioeconomic,Gender,2019/20 (Wave 7),Q101,1
+Socioeconomic,Gender,2016 (Wave 6),Q101,1
+Socioeconomic,Gender,2013 (Wave 5),Q101,1
+Socioeconomic,Age,2023 (Wave 9),Q1,1
+Socioeconomic,Age,2022 (Wave 8),Q1,1
+Socioeconomic,Age,2019/20 (Wave 7),Q1,1
+Socioeconomic,Age,2016 (Wave 6),Q1,1
+Socioeconomic,Age,2013 (Wave 5),Q1,1
+Socioeconomic,Highest education achieved: Secondary,2023 (Wave 9),Q94,1
+Socioeconomic,Highest education achieved: Secondary,2022 (Wave 8),Q97,1
+Socioeconomic,Highest education achieved: Secondary,2019/20 (Wave 7),Q97,1
+Socioeconomic,Highest education achieved: Secondary,2016 (Wave 6),Q97,1
+Socioeconomic,Highest education achieved: Secondary,2013 (Wave 5),Q97,1
+Socioeconomic,Ethnicity,2023 (Wave 9),Q101,1
+Socioeconomic,Ethnicity,2022 (Wave 8),Q81,1
+Socioeconomic,Ethnicity,2019/20 (Wave 7),Q84,1
+Socioeconomic,Ethnicity,2016 (Wave 6),q102,1
+Socioeconomic,Ethnicity,2013 (Wave 5),q102,1
+Socioeconomic,Religion,2023 (Wave 9),Q95,1
+Socioeconomic,Religion,2022 (Wave 8),Q98A,1
+Socioeconomic,Religion,2019/20 (Wave 7),Q98,1
+Socioeconomic,Religion,2016 (Wave 6),q98a,1
+Socioeconomic,Religion,2013 (Wave 5),Q86a,1
+Socioeconomic,Head of household,2023 (Wave 9),,0
+Socioeconomic,Head of household,2022 (Wave 8),q96b,1
+Socioeconomic,Head of household,2019/20 (Wave 7),q96a,1
+Socioeconomic,Head of household,2016 (Wave 6),,0
+Socioeconomic,Head of household,2013 (Wave 5),,0
+Employment,Employed,2023 (Wave 9),Q93A,1
+Employment,Employed,2022 (Wave 8),Q95A,1
+Employment,Employed,2019/20 (Wave 7),Q94,1
+Employment,Employed,2016 (Wave 6),q95,1
+Employment,Employed,2013 (Wave 5),Q96,1
+Employment,Occupation,2023 (Wave 9),Q93b.,1
+Employment,Occupation,2022 (Wave 8),Q95C,1
+Employment,Occupation,2019/20 (Wave 7),Q95a,1
+Employment,Occupation,2016 (Wave 6),q96a,1
+Employment,Occupation,2013 (Wave 5),q96_arb,1
+Access,Electricity,2023 (Wave 9),Q92A,1
+Access,Electricity,2022 (Wave 8),Q94A,1
+Access,Electricity,2019/20 (Wave 7),Q93,1
+Access,Electricity,2016 (Wave 6),q94,1
+Access,Electricity,2013 (Wave 5),,0
+Access,Water,2023 (Wave 9),Q91a,1
+Access,Water,2022 (Wave 8),Q93A,1
+Access,Water,2019/20 (Wave 7),Q92A,1
+Access,Water,2016 (Wave 6),q93a,1
+Access,Water,2013 (Wave 5),Q95A,1
+Access,Mobile phone,2023 (Wave 9),q90f,1
+Access,Mobile phone,2022 (Wave 8),Q92F,1
+Access,Mobile phone,2019/20 (Wave 7),Q89F,1
+Access,Mobile phone,2016 (Wave 6),q91d,1
+Access,Mobile phone,2013 (Wave 5),q92,1
+Access,Internet user,2023 (Wave 9),Q90I,1
+Access,Internet user,2022 (Wave 8),Q92I,1
+Access,Internet user,2019/20 (Wave 7),Q91B,1
+Access,Internet user,2016 (Wave 6),q12d,1
+Access,Internet user,2013 (Wave 5),q13d,1
+Access,Food insecure,2023 (Wave 9),Q6a,1
+Access,Food insecure,2022 (Wave 8),Q7A,1
+Access,Food insecure,2019/20 (Wave 7),Q8A,1
+Access,Food insecure,2016 (Wave 6),q8a,1
+Access,Food insecure,2013 (Wave 5),Q8A,1
+Access,How often gone without water,2023 (Wave 9),Q6B,1
+Access,How often gone without water,2022 (Wave 8),Q7b,1
+Access,How often gone without water,2019/20 (Wave 7),Q8b,1
+Access,How often gone without water,2016 (Wave 6),Q8b,1
+Access,How often gone without water,2013 (Wave 5),Q8b,1
+Access,How often feared crime in home,2023 (Wave 9),Q7b,1
+Access,How often feared crime in home,2022 (Wave 8),Q8b,1
+Access,How often feared crime in home,2019/20 (Wave 7),Q10b,1
+Access,How often feared crime in home,2016 (Wave 6),Q10b,1
+Access,How often feared crime in home,2013 (Wave 5),Q9b,1
+Access,Safety of neighborhood,2023 (Wave 9),Q7a,1
+Access,Safety of neighborhood,2022 (Wave 8),Q8A,1
+Access,Safety of neighborhood,2019/20 (Wave 7),Q10A,1
+Access,Safety of neighborhood,2016 (Wave 6),Q10A,1
+Access,Safety of neighborhood,2013 (Wave 5),Q9A,1
+Access,Urban,2023 (Wave 9),URBRUR,1
+Access,Urban,2022 (Wave 8),URBRUR,1
+Access,Urban,2019/20 (Wave 7),URBRUR,1
+Access,Urban,2016 (Wave 6),URBRUR,1
+Access,Urban,2013 (Wave 5),URBRUR,1
+Access,Bank Account,2023 (Wave 9),Q90E,1
+Access,Bank Account,2022 (Wave 8),Q92E,1
+Access,Bank Account,2019/20 (Wave 7),Q89E,1
+Access,Bank Account,2016 (Wave 6),,0
+Access,Bank Account,2013 (Wave 5),,0
+Gender and social norms,Men make better political leaders,2023 (Wave 9),Q20,1
+Gender and social norms,Men make better political leaders,2022 (Wave 8),,0
+Gender and social norms,Men make better political leaders,2019/20 (Wave 7),Q16,1
+Gender and social norms,Men make better political leaders,2016 (Wave 6),q18,1
+Gender and social norms,Men make better political leaders,2013 (Wave 5),Q22,1
+Gender and social norms,Ethnic group treated unfairly by government,2023 (Wave 9),Q84b,1
+Gender and social norms,Ethnic group treated unfairly by government,2022 (Wave 8),Q82a.,1
+Gender and social norms,Ethnic group treated unfairly by government,2019/20 (Wave 7),Q85,1
+Gender and social norms,Ethnic group treated unfairly by government,2016 (Wave 6), q88a,1
+Gender and social norms,Ethnic group treated unfairly by government,2013 (Wave 5),Q85a,1
+Gender and social norms,Trust in people,2023 (Wave 9),Q86d,1
+Gender and social norms,Trust in people,2022 (Wave 8),q83,1
+Gender and social norms,Trust in people,2019/20 (Wave 7),,0
+Gender and social norms,Trust in people,2016 (Wave 6),,0
+Gender and social norms,Trust in people,2013 (Wave 5),q87,1
+Gender and social norms,trust in local government (a lot),2023 (Wave 9),q37d,1
+Gender and social norms,trust in local government (a lot),2022 (Wave 8),q41d,1
+Gender and social norms,trust in local government (a lot),2019/20 (Wave 7),q43d,1
+Gender and social norms,trust in local government (a lot),2016 (Wave 6),q52e,1
+Gender and social norms,trust in local government (a lot),2013 (Wave 5),q59e,1
+Gender and social norms,trust in president/prime minister (a lot),2023 (Wave 9),q37a,1
+Gender and social norms,trust in president/prime minister (a lot),2022 (Wave 8),q41a,1
+Gender and social norms,trust in president/prime minister (a lot),2019/20 (Wave 7),q43a,1
+Gender and social norms,trust in president/prime minister (a lot),2016 (Wave 6),q52a,1
+Gender and social norms,trust in president/prime minister (a lot),2013 (Wave 5),q59a,1
+Gender and social norms,Who decides how money is used,2023 (Wave 9),Q93C,1
+Gender and social norms,Who decides how money is used,2022 (Wave 8),Q96A,1
+Gender and social norms,Who decides how money is used,2019/20 (Wave 7),Q95C,1
+Gender and social norms,Who decides how money is used,2016 (Wave 6),,0
+Gender and social norms,Who decides how money is used,2013 (Wave 5),,0
+Gender and social norms,Women and men have equal chance to own/inherit land,2023 (Wave 9),q49b ,1
+Gender and social norms,Women and men have equal chance to own/inherit land,2022 (Wave 8),,0
+Gender and social norms,Women and men have equal chance to own/inherit land,2019/20 (Wave 7),q77d,1
+Gender and social norms,Women and men have equal chance to own/inherit land,2016 (Wave 6),,0
+Gender and social norms,Women and men have equal chance to own/inherit land,2013 (Wave 5),q73c_arb,1
+Gender and social norms,women right to land (agree and strongly agree),2023 (Wave 9),q21b,1
+Gender and social norms,women right to land (agree and strongly agree),2022 (Wave 8),,0
+Gender and social norms,women right to land (agree and strongly agree),2019/20 (Wave 7),q38e,1
+Gender and social norms,women right to land (agree and strongly agree),2016 (Wave 6),,0
+Gender and social norms,women right to land (agree and strongly agree),2013 (Wave 5),,0
+Gender and social norms,handle promoting equality,2023 (Wave 9),q46n,1
+Gender and social norms,handle promoting equality,2022 (Wave 8),,0
+Gender and social norms,handle promoting equality,2019/20 (Wave 7),q56q,1
+Gender and social norms,handle promoting equality,2016 (Wave 6),,0
+Gender and social norms,handle promoting equality,2013 (Wave 5),,0
+Gender and social norms,equality on paying job (agree and strongly agree),2023 (Wave 9),q49a,1
+Gender and social norms,equality on paying job (agree and strongly agree),2022 (Wave 8),,0
+Gender and social norms,equality on paying job (agree and strongly agree),2019/20 (Wave 7),q77c,1
+Gender and social norms,equality on paying job (agree and strongly agree),2016 (Wave 6),,0
+Gender and social norms,equality on paying job (agree and strongly agree),2013 (Wave 5),,0
+Institutional,Democracy always preferable,2023 (Wave 9),Q23,1
+Institutional,Democracy always preferable,2022 (Wave 8),Q21,1
+Institutional,Democracy always preferable,2019/20 (Wave 7),Q28,1
+Institutional,Democracy always preferable,2016 (Wave 6),q30,1
+Institutional,Democracy always preferable,2013 (Wave 5),Q32,1
+Institutional,Interest in politics,2023 (Wave 9),Q8,1
+Institutional,Interest in politics,2022 (Wave 8),Q9,1
+Institutional,Interest in politics,2019/20 (Wave 7),Q13,1
+Institutional,Interest in politics,2016 (Wave 6),q14,1
+Institutional,Interest in politics,2013 (Wave 5),Q15,1
+Institutional,Freedom of speech,2023 (Wave 9),Q9a,1
+Institutional,Freedom of speech,2022 (Wave 8),Q10A,1
+Institutional,Freedom of speech,2019/20 (Wave 7),Q14,1
+Institutional,Freedom of speech,2016 (Wave 6),q15a,1
+Institutional,Freedom of speech,2013 (Wave 5),Q17a,1
+Institutional,Freedom to join any political organization,2023 (Wave 9),Q9b.,1
+Institutional,Freedom to join any political organization,2022 (Wave 8),Q10b.,1
+Institutional,Freedom to join any political organization,2019/20 (Wave 7),Q19b,1
+Institutional,Freedom to join any political organization,2016 (Wave 6),q15b,1
+Institutional,Freedom to join any political organization,2013 (Wave 5),Q17b,1
+Institutional,How free is news media,2023 (Wave 9),Q33H,1
+Institutional,How free is news media,2022 (Wave 8),Q56,1
+Institutional,How free is news media,2019/20 (Wave 7),Q17,1
+Institutional,How free is news media,2016 (Wave 6),q19b,1
+Institutional,How free is news media,2013 (Wave 5),q20,1
+Institutional,Satisfaction with democracy,2023 (Wave 9),Q31,1
+Institutional,Satisfaction with democracy,2022 (Wave 8),Q37,1
+Institutional,Satisfaction with democracy,2019/20 (Wave 7),Q36,1
+Institutional,Satisfaction with democracy,2016 (Wave 6),q30,1
+Institutional,Satisfaction with democracy,2013 (Wave 5),Q43,1
+Institutional,Most important problems – 1 st response: gender issues,2023 (Wave 9),Q45pt1,1
+Institutional,Most important problems – 1 st response: gender issues,2022 (Wave 8),Q48pt1,1
+Institutional,Most important problems – 1 st response: gender issues,2019/20 (Wave 7),Q55pt1,1
+Institutional,Most important problems – 1 st response: gender issues,2016 (Wave 6),q60pt1,1
+Institutional,Most important problems – 1 st response: gender issues,2013 (Wave 5),q63pt1,1
