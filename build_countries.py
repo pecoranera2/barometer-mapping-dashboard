@@ -126,8 +126,7 @@ for rnd, y, f in [("Special EB 83.4","2015","Special EB modules/ZA6595_v3-0-0.dt
                   ("Special EB 91.4","2019","Special EB modules/ZA7575_v2-0-0.dta"),
                   ("Special EB 99.2","2023","Special EB modules/ZA7955_v1-0-0.dta"),
                   ("Special EB 100.3","2024","Special EB modules/ZA8840_v1-0-0.dta")]:
-    add_eb(rnd, y, y, os.path.join(EB, f))
-add_eb("Standard EB 104.1", "2025", "2025", os.path.join(EB, "Raw data/ZA9130_v1-0-0.dta"), latest=True)
+    add_eb(rnd, y, y, os.path.join(EB, f), latest=(rnd == "Special EB 100.3"))
 
 with open(OUT, "w", newline="", encoding="utf-8") as fh:
     w = csv.writer(fh)
