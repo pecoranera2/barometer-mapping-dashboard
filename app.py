@@ -167,12 +167,22 @@ def build_heatmap(df, x_col, x_order, cluster_col="cluster", code_col="code",
                              name="Not available"), row=1, col=2)
 
     shapes = []
+    annotations = []
     boundary = 0
     for c in CLUSTER_ORDER:
         n_in_cluster = sum(1 for v in var_order if cluster_of[v] == c)
         if n_in_cluster == 0:
             continue
+        start = boundary
         boundary += n_in_cluster
+        # cluster name next to the grid, with a thin bracket spanning its rows
+        annotations.append(dict(
+            xref="paper", x=1.02, yref="y", y=start + (n_in_cluster - 1) / 2, text=f"<b>{c}</b>",
+            showarrow=False, xanchor="left", yanchor="middle", align="left",
+            font=dict(size=13, color=COL_INK)))
+        shapes.append(dict(
+            type="line", xref="paper", x0=1.008, x1=1.008, yref="y",
+            y0=start - 0.4, y1=boundary - 0.6, line=dict(color=COL_MUTED, width=2)))
         if boundary < n_rows:
             shapes.append(dict(
                 type="line", xref="paper", x0=0, x1=1,
@@ -192,10 +202,10 @@ def build_heatmap(df, x_col, x_order, cluster_col="cluster", code_col="code",
 
     fig.update_layout(
         height=height or max(300, 30 * n_rows + 170),
-        margin=dict(l=10, r=10, t=90, b=40),
+        margin=dict(l=10, r=190, t=90, b=40),
         font=dict(family=FONT_FAMILY, color=COL_INK, size=13),
         plot_bgcolor=COL_SURFACE, paper_bgcolor=COL_SURFACE,
-        shapes=shapes,
+        shapes=shapes, annotations=annotations,
         legend=dict(orientation="h", yanchor="top", y=-0.01, xanchor="left", x=0,
                     font=dict(size=13)),
     )
@@ -621,10 +631,10 @@ def latest_page():
         fig = build_heatmap(df, x_col="barometer", x_order=bar_order, x_header_map=LATEST_SHORT)
         if fig is not None:
             st.plotly_chart(fig, use_container_width=True)
+
     st.caption(
         "Source: Arab Barometer, Latinobarómetro, Afrobarometer, Asian Barometer and Eurobarometer. Blank/gray = variable not "
-        "coded (or not comparable) in that survey's latest round. Shading groups the variables into the "
-        "five concept clusters."
+        "coded (or not comparable) in that survey's latest round."
     )
 
 
