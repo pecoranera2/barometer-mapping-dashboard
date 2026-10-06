@@ -93,14 +93,27 @@ st.markdown(
 )
 
 
+def _mtime(name):
+    return os.path.getmtime(os.path.join(DATA_DIR, name))
+
+
 @st.cache_data
-def load_csv(name):
+def _read_csv(name, mtime):
     return pd.read_csv(os.path.join(DATA_DIR, name), dtype=str)
 
 
+def load_csv(name):
+    # the file's modification time is part of the cache key, so a data update is never served from a stale cache
+    return _read_csv(name, _mtime(name))
+
+
 @st.cache_data
-def load_countries():
+def _read_countries(mtime):
     return pd.read_csv(os.path.join(DATA_DIR, "countries.csv"), dtype={"latest": int})
+
+
+def load_countries():
+    return _read_countries(_mtime("countries.csv"))
 
 
 def ordered_variables(df, cluster_col="cluster"):
