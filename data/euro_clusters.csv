@@ -15,16 +15,16 @@ Socioeconomic,Highest education achieved: Secondary,2019,d8,1
 Socioeconomic,Highest education achieved: Secondary,2017,d8,1
 Socioeconomic,Highest education achieved: Secondary,2015,d8,1
 Socioeconomic,Ethnicity,2024,,0
-Socioeconomic,Ethnicity,2023,qb1_1,1
-Socioeconomic,Ethnicity,2019,qc1_1,1
+Socioeconomic,Ethnicity,2023,,0
+Socioeconomic,Ethnicity,2019,sd2_1,1
 Socioeconomic,Ethnicity,2017,,0
-Socioeconomic,Ethnicity,2015,qc1_1,1
+Socioeconomic,Ethnicity,2015,sd2_1,1
 Socioeconomic,Married,2024,d7,1
 Socioeconomic,Married,2023,d7,1
 Socioeconomic,Married,2019,d7,1
 Socioeconomic,Married,2017,d7,1
 Socioeconomic,Married,2015,d7,1
-Socioeconomic,Household size,2024,d40abc_r1,1
+Socioeconomic,Household size,2024,d40abc_r1-r4,1
 Socioeconomic,Household size,2023,d40abc,1
 Socioeconomic,Household size,2019,d40t,1
 Socioeconomic,Household size,2017,d40t,1

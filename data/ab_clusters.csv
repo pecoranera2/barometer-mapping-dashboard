@@ -42,7 +42,7 @@ Employment,Self-employed/salaried,2012,se9a,1
 Employment,Job sector,2023,,0
 Employment,Job sector,2021,SE9A,1
 Employment,Job sector,2016,se9a,1
-Employment,Job sector,2012,se9a,1
+Employment,Job sector,2012,,0
 Access,Electricity,2023,ir11c,1
 Access,Electricity,2021,IR11c,1
 Access,Electricity,2016,ir11c,1
@@ -105,7 +105,7 @@ Gender and social norms,Trust: local government,2016,q15,1
 Gender and social norms,Trust: local government,2012,q15,1
 Institutional,Democracy always preferable,2023,q124,1
 Institutional,Democracy always preferable,2021,q132,1
-Institutional,Democracy always preferable,2016,q141,1
+Institutional,Democracy always preferable,2016,q125,1
 Institutional,Democracy always preferable,2012,q124,1
 Institutional,Interest in politics,2023,q47,1
 Institutional,Interest in politics,2021,q46,1
@@ -127,10 +127,10 @@ Institutional,Contacted elected officials / legislators,2023,q68,1
 Institutional,Contacted elected officials / legislators,2021,q70,1
 Institutional,Contacted elected officials / legislators,2016,q69,1
 Institutional,Contacted elected officials / legislators,2012,q64,1
-Institutional,Satisfaction with democracy,2023,q71,1
-Institutional,Satisfaction with democracy,2021,q73,1
-Institutional,Satisfaction with democracy,2016,q73,1
-Institutional,Satisfaction with democracy,2012,q68,1
+Institutional,Satisfaction with democracy,2023,q90,1
+Institutional,Satisfaction with democracy,2021,q99,1
+Institutional,Satisfaction with democracy,2016,q92,1
+Institutional,Satisfaction with democracy,2012,q89,1
 Institutional,Attended a demonstration or protest march,2023,q76,1
 Institutional,Attended a demonstration or protest march,2021,q79,1
 Institutional,Attended a demonstration or protest march,2016,q76,1
