@@ -35,7 +35,7 @@ BAR_LABEL = {"Latinobarometro": "Latinobarómetro"}
 LATEST_SHORT = {
     "Arab Barometer 2024": "Arab Barometer", "Latinobarometer 2024": "Latinobarometro",
     "Afro Barometer 2023": "Afrobarometer", "Asian Barometer 2023": "Asian Barometer",
-    "Eurobarometer 2025 (Standard)": "Eurobarometer",
+    "Eurobarometer 2024 (Special)": "Eurobarometer",
 }
 # source file + period columns per barometer (cluster pages)
 BAR_PAGES = {
@@ -588,7 +588,9 @@ def latest_page():
     df_all = load_csv("latest_round.csv").rename(columns={"chunk": "cluster"})
     df, choice = cluster_pills(df_all, "latest_cluster")
     n_vars = df["variable"].nunique()
-    st.caption(f"{n_vars} variables x 5 barometers, most recent wave per survey")
+    st.caption(f"Common list of {df_all['variable'].nunique()} variables, the same for all five barometers, "
+               "checked in each barometer's most recent round. Barometer by wave uses a different list "
+               "of variables, specific to each barometer, so its counts are not comparable with these.")
 
     latest = cdf[cdf["latest"] == 1].groupby("barometer")["country"].nunique()
     bar_order = load_csv("latest_round_counts.csv")["barometer"].tolist()
@@ -601,7 +603,7 @@ def latest_page():
     cols = st.columns(5)
     for col, b in zip(cols, bar_order):
         col.metric(BAR_LABEL.get(LATEST_SHORT[b], LATEST_SHORT[b]), f"{int(avail.get(b, 0))} of {n_vars}",
-                   help="Variables available in this barometer's latest round")
+                   help="Variables of the common list available in this barometer's latest round")
 
     tab_ladder, tab_cov, tab_pair, tab_grid = st.tabs(["Comparability ladder", "Coverage profile", "Pairwise overlap", "Detail grid"])
     with tab_ladder:
@@ -651,8 +653,11 @@ def barometer_page():
     if subtitle:
         st.caption(subtitle)
 
-    tab_vars, tab_map, tab_grid = st.tabs(["Variables by wave", "Countries by round", "Detail grid"])
     df_all = load_csv(csv_file)
+    st.caption(f"Counts on this page refer to the {df_all['variable'].nunique()} variables on this barometer's own list, "
+               "which is specific to each barometer. They are not the common list of variables used in Latest round, "
+               "so the numbers for the most recent round differ between the two pages.")
+    tab_vars, tab_map, tab_grid = st.tabs(["Variables by wave", "Countries by round", "Detail grid"])
     with tab_vars:
         df, _ = cluster_pills(df_all, f"cluster_{bar}")
         bar_countries = cdf[cdf["barometer"] == bar]

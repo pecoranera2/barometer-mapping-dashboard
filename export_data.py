@@ -89,10 +89,54 @@ wb = openpyxl.load_workbook(SRC, read_only=True, data_only=True)
 # ---- 1. Latest round ----
 ws = wb["Latest round"]
 rows = list(ws.iter_rows(values_only=True))
-header = rows[0]
+header = list(rows[0])
+# the European latest round is the most recent SPECIAL Eurobarometer (2024), not the Standard edition
+header = [("Eurobarometer 2024 (Special)" if (h and str(h).startswith("Eurobarometer")) else h) for h in header]
 barometers = [h for h in header[1:] if h]  # drop trailing None
 unmatched = set()
 dropped = []
+
+
+# ---- codes in each barometer's own sheet take precedence over the 'Latest round' tab ----
+def _norm(x):
+    return re.sub(r"[^a-z0-9]", "", str(x).lower())
+
+
+_ALIAS = {
+    "interestinpolitics": ["interestedinpolitics"],
+    "selfemployed": ["selfemployedsalaried"],
+    "foodinsecuritydifficultiespayingbills": ["foodinsecure"],
+    "jobsector": ["jobsectorprivateandpublic"],
+    "occupation": ["positionatworkoccupation"],
+    "occupationself": ["positionatworkoccupation", "selfemployedsalaried"],
+    "womenshouldnotbeinvolvedinpoliticsasmuchasmen": ["menmakebetterpoliticalleaders"],
+    "freedomtojoinanypoliticalorganization": ["freedomofpoliticalparticipation"],
+    "equalityonpayingjobagreeandstronglyagree": ["menandwomenshouldhaveequalworkopportunities"],
+    "abletosave": ["savings"],
+    "internetconecctionathome": ["internetconnectionathome"],
+    "headofhousehold": ["householdhead"],
+}
+_EURO_ALIAS = {"satisfactionwithdemocracy": ["supportfordemocracy"]}
+_SHEET = {"Arab Barometer 2024": "Clusters ARAB", "Latinobarometer 2024": "Clusters LATINO",
+          "Afro Barometer 2023": "Clusters AFRO", "Asian Barometer 2023": "Clusters AB",
+          "Eurobarometer 2024 (Special)": "Clusters Euro"}
+OVERRIDE = {}
+for _bar, _sh in _SHEET.items():
+    OVERRIDE[_bar] = {}
+    for _r in wb[_sh].iter_rows(values_only=True):
+        if _r[0] is None:
+            continue
+        _lab = clean_label(_r[0])
+        if _lab in CLUSTER_HEADERS:
+            continue
+        _code = _r[1] if len(_r) > 1 else None
+        _code = None if _code in (None, "") or str(_code).strip() in ("", "\xa0") else str(_code).strip()
+        _k = _norm(_lab)
+        _targets = list(_ALIAS.get(_k, [])) + (_EURO_ALIAS.get(_k, []) if _bar.startswith("Eurobarometer") else []) + [_k]
+        for _t in _targets:
+            if _t not in OVERRIDE[_bar] or OVERRIDE[_bar][_t] is None:
+                OVERRIDE[_bar][_t] = _code
+OVERRIDE_LOG = []
 with open(f"{OUT}/latest_round.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["variable", "barometer", "code", "available", "chunk"])
@@ -114,6 +158,16 @@ with open(f"{OUT}/latest_round.csv", "w", newline="", encoding="utf-8") as f:
             continue
         for i, bar in enumerate(barometers):
             code = row[i + 1]
+            _k = _norm(clean_label(row[0]))
+            if bar.startswith("Eurobarometer"):
+                # Special-edition column is built only from the Eurobarometer sheet
+                new_code = OVERRIDE[bar].get(_k)
+                code = new_code
+            elif _k in OVERRIDE[bar]:
+                new_code = OVERRIDE[bar][_k]
+                if (str(code).strip().lower() if code else "") != (str(new_code).strip().lower() if new_code else ""):
+                    OVERRIDE_LOG.append((bar, label, code, new_code))
+                code = new_code
             w.writerow([label, bar, code if code is not None else "", "1" if code not in (None, "") else "0", chunk])
 if unmatched:
     print("UNMATCHED (classified as 'Other'):", unmatched)
@@ -182,6 +236,9 @@ export_cluster_tab("Clusters LATINO", "latino_clusters")
 export_cluster_tab("Clusters AFRO", "afro_clusters")
 
 print("dropped:", dropped)
+print("OVERRIDES (latest tab -> own sheet):")
+for _x in OVERRIDE_LOG:
+    print("  ", _x)
 print("done")
 
 # ---- override workbook country counts with the published latest-round counts (data/countries.csv) ----
@@ -190,7 +247,7 @@ _c = pd.read_csv(f"{OUT}/countries.csv")
 _pub = _c[_c["latest"] == 1].groupby("barometer")["country"].nunique()
 _short = {"Arab Barometer 2024": "Arab Barometer", "Latinobarometer 2024": "Latinobarometro",
           "Afro Barometer 2023": "Afrobarometer", "Asian Barometer 2023": "Asian Barometer",
-          "Eurobarometer 2025 (Standard)": "Eurobarometer"}
+          "Eurobarometer 2024 (Special)": "Eurobarometer"}
 _cnt = pd.read_csv(f"{OUT}/latest_round_counts.csv")
 _cnt["n_countries"] = _cnt["barometer"].map(lambda b: int(_pub[_short[b]]))
 _cnt.to_csv(f"{OUT}/latest_round_counts.csv", index=False)
