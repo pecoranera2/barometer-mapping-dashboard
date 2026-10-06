@@ -53,7 +53,7 @@ BAR_PAGES = {
                         "Source: Asian Barometer (W3 2010-12, W4 2014-16, W5 2018-21, W6 2021-23)."),
     "Eurobarometer": ("euro_clusters.csv", ["2015", "2017", "2019", "2023", "2024"],
                       "Special Eurobarometer modules, 2015-2024 (Discrimination 2015/2019/2023, Gender Equality "
-                      "2017, Gender Stereotypes 2024) - not the Standard EB trend series.",
+                      "2017, Gender Stereotypes 2024).",
                       "Source: Eurobarometer."),
 }
 
@@ -550,9 +550,6 @@ Eurobarometer thematic modules) - and across time.
 - **Barometer by wave** - coverage over time for one survey, by cluster and
   wave/period, plus the countries included in each round.
 
-Eurobarometer and Asian Barometer were independently checked against the raw
-survey data files; Arab Barometer, Latinobarómetro, and Afrobarometer were
-mapped separately and are shown as provided.
             """
         )
     with right:
@@ -626,9 +623,8 @@ def latest_page():
             st.plotly_chart(fig, use_container_width=True)
     st.caption(
         "Source: Arab Barometer, Latinobarómetro, Afrobarometer, Asian Barometer and Eurobarometer. Blank/gray = variable not "
-        "coded (or not comparable) in that survey's latest round. Shading groups variables into the "
-        "mapping's 5 concept clusters; a handful of variables outside those clusters were classified "
-        "by concept for this grouping only."
+        "coded (or not comparable) in that survey's latest round. Shading groups the variables into the "
+        "five concept clusters."
     )
 
 
