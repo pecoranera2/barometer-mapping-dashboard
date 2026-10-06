@@ -1,390 +1,287 @@
 barometer,round,year,period,country,iso3,latest
-Arab Barometer,Wave III,2012-2014,2012-2016,Algeria,DZA,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Egypt,EGY,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Iraq,IRQ,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Jordan,JOR,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Kuwait,KWT,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Lebanon,LBN,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Libya,LBY,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Morocco,MAR,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Palestine,PSE,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Sudan,SDN,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Tunisia,TUN,0
-Arab Barometer,Wave III,2012-2014,2012-2016,Yemen,YEM,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Algeria,DZA,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Egypt,EGY,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Jordan,JOR,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Lebanon,LBN,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Morocco,MAR,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Palestine,PSE,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Qatar,QAT,0
-Arab Barometer,Wave IV,2016-2017,2016-2019,Tunisia,TUN,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Algeria,DZA,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Egypt,EGY,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Iraq,IRQ,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Jordan,JOR,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Kuwait,KWT,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Lebanon,LBN,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Libya,LBY,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Morocco,MAR,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Palestine,PSE,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Sudan,SDN,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Tunisia,TUN,0
-Arab Barometer,Wave V,2018-2019,2016-2019,Yemen,YEM,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Algeria,DZA,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Iraq,IRQ,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Jordan,JOR,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Lebanon,LBN,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Libya,LBY,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Morocco,MAR,0
-Arab Barometer,Wave VI,2020-2021,2020-2022,Tunisia,TUN,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Algeria,DZA,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Egypt,EGY,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Iraq,IRQ,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Jordan,JOR,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Kuwait,KWT,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Lebanon,LBN,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Libya,LBY,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Mauritania,MRT,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Morocco,MAR,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Palestine,PSE,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Sudan,SDN,0
-Arab Barometer,Wave VII,2021-2022,2020-2022,Tunisia,TUN,0
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Iraq,IRQ,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Jordan,JOR,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Kuwait,KWT,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Lebanon,LBN,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Mauritania,MRT,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Morocco,MAR,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Palestine,PSE,1
-Arab Barometer,Wave VIII,2023-2024,2023-2025,Tunisia,TUN,1
-Arab Barometer,Wave IX,2025-2026,2023-2025,Egypt,EGY,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Iraq,IRQ,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Jordan,JOR,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Lebanon,LBN,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Morocco,MAR,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Palestine,PSE,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Syria,SYR,0
-Arab Barometer,Wave IX,2025-2026,2023-2025,Tunisia,TUN,0
-Latinobarometro,2013,2013,2012-2016,Argentina,ARG,0
-Latinobarometro,2013,2013,2012-2016,Bolivia,BOL,0
-Latinobarometro,2013,2013,2012-2016,Brazil,BRA,0
-Latinobarometro,2013,2013,2012-2016,Chile,CHL,0
-Latinobarometro,2013,2013,2012-2016,Colombia,COL,0
-Latinobarometro,2013,2013,2012-2016,Costa Rica,CRI,0
-Latinobarometro,2013,2013,2012-2016,Dominican Republic,DOM,0
-Latinobarometro,2013,2013,2012-2016,Ecuador,ECU,0
-Latinobarometro,2013,2013,2012-2016,El Salvador,SLV,0
-Latinobarometro,2013,2013,2012-2016,Guatemala,GTM,0
-Latinobarometro,2013,2013,2012-2016,Honduras,HND,0
-Latinobarometro,2013,2013,2012-2016,Mexico,MEX,0
-Latinobarometro,2013,2013,2012-2016,Nicaragua,NIC,0
-Latinobarometro,2013,2013,2012-2016,Panama,PAN,0
-Latinobarometro,2013,2013,2012-2016,Paraguay,PRY,0
-Latinobarometro,2013,2013,2012-2016,Peru,PER,0
-Latinobarometro,2013,2013,2012-2016,Uruguay,URY,0
-Latinobarometro,2013,2013,2012-2016,Venezuela,VEN,0
-Latinobarometro,2015,2015,2012-2016,Argentina,ARG,0
-Latinobarometro,2015,2015,2012-2016,Bolivia,BOL,0
-Latinobarometro,2015,2015,2012-2016,Brazil,BRA,0
-Latinobarometro,2015,2015,2012-2016,Chile,CHL,0
-Latinobarometro,2015,2015,2012-2016,Colombia,COL,0
-Latinobarometro,2015,2015,2012-2016,Costa Rica,CRI,0
-Latinobarometro,2015,2015,2012-2016,Dominican Republic,DOM,0
-Latinobarometro,2015,2015,2012-2016,Ecuador,ECU,0
-Latinobarometro,2015,2015,2012-2016,El Salvador,SLV,0
-Latinobarometro,2015,2015,2012-2016,Guatemala,GTM,0
-Latinobarometro,2015,2015,2012-2016,Honduras,HND,0
-Latinobarometro,2015,2015,2012-2016,Mexico,MEX,0
-Latinobarometro,2015,2015,2012-2016,Nicaragua,NIC,0
-Latinobarometro,2015,2015,2012-2016,Panama,PAN,0
-Latinobarometro,2015,2015,2012-2016,Paraguay,PRY,0
-Latinobarometro,2015,2015,2012-2016,Peru,PER,0
-Latinobarometro,2015,2015,2012-2016,Uruguay,URY,0
-Latinobarometro,2015,2015,2012-2016,Venezuela,VEN,0
-Latinobarometro,2016,2016,2012-2016,Argentina,ARG,0
-Latinobarometro,2016,2016,2012-2016,Bolivia,BOL,0
-Latinobarometro,2016,2016,2012-2016,Brazil,BRA,0
-Latinobarometro,2016,2016,2012-2016,Chile,CHL,0
-Latinobarometro,2016,2016,2012-2016,Colombia,COL,0
-Latinobarometro,2016,2016,2012-2016,Costa Rica,CRI,0
-Latinobarometro,2016,2016,2012-2016,Dominican Republic,DOM,0
-Latinobarometro,2016,2016,2012-2016,Ecuador,ECU,0
-Latinobarometro,2016,2016,2012-2016,El Salvador,SLV,0
-Latinobarometro,2016,2016,2012-2016,Guatemala,GTM,0
-Latinobarometro,2016,2016,2012-2016,Honduras,HND,0
-Latinobarometro,2016,2016,2012-2016,Mexico,MEX,0
-Latinobarometro,2016,2016,2012-2016,Nicaragua,NIC,0
-Latinobarometro,2016,2016,2012-2016,Panama,PAN,0
-Latinobarometro,2016,2016,2012-2016,Paraguay,PRY,0
-Latinobarometro,2016,2016,2012-2016,Peru,PER,0
-Latinobarometro,2016,2016,2012-2016,Uruguay,URY,0
-Latinobarometro,2016,2016,2012-2016,Venezuela,VEN,0
-Latinobarometro,2017,2017,2016-2019,Argentina,ARG,0
-Latinobarometro,2017,2017,2016-2019,Bolivia,BOL,0
-Latinobarometro,2017,2017,2016-2019,Brazil,BRA,0
-Latinobarometro,2017,2017,2016-2019,Chile,CHL,0
-Latinobarometro,2017,2017,2016-2019,Colombia,COL,0
-Latinobarometro,2017,2017,2016-2019,Costa Rica,CRI,0
-Latinobarometro,2017,2017,2016-2019,Dominican Republic,DOM,0
-Latinobarometro,2017,2017,2016-2019,Ecuador,ECU,0
-Latinobarometro,2017,2017,2016-2019,El Salvador,SLV,0
-Latinobarometro,2017,2017,2016-2019,Guatemala,GTM,0
-Latinobarometro,2017,2017,2016-2019,Honduras,HND,0
-Latinobarometro,2017,2017,2016-2019,Mexico,MEX,0
-Latinobarometro,2017,2017,2016-2019,Nicaragua,NIC,0
-Latinobarometro,2017,2017,2016-2019,Panama,PAN,0
-Latinobarometro,2017,2017,2016-2019,Paraguay,PRY,0
-Latinobarometro,2017,2017,2016-2019,Peru,PER,0
-Latinobarometro,2017,2017,2016-2019,Uruguay,URY,0
-Latinobarometro,2017,2017,2016-2019,Venezuela,VEN,0
-Latinobarometro,2018,2018,2016-2019,Argentina,ARG,0
-Latinobarometro,2018,2018,2016-2019,Bolivia,BOL,0
-Latinobarometro,2018,2018,2016-2019,Brazil,BRA,0
-Latinobarometro,2018,2018,2016-2019,Chile,CHL,0
-Latinobarometro,2018,2018,2016-2019,Colombia,COL,0
-Latinobarometro,2018,2018,2016-2019,Costa Rica,CRI,0
-Latinobarometro,2018,2018,2016-2019,Dominican Republic,DOM,0
-Latinobarometro,2018,2018,2016-2019,Ecuador,ECU,0
-Latinobarometro,2018,2018,2016-2019,El Salvador,SLV,0
-Latinobarometro,2018,2018,2016-2019,Guatemala,GTM,0
-Latinobarometro,2018,2018,2016-2019,Honduras,HND,0
-Latinobarometro,2018,2018,2016-2019,Mexico,MEX,0
-Latinobarometro,2018,2018,2016-2019,Nicaragua,NIC,0
-Latinobarometro,2018,2018,2016-2019,Panama,PAN,0
-Latinobarometro,2018,2018,2016-2019,Paraguay,PRY,0
-Latinobarometro,2018,2018,2016-2019,Peru,PER,0
-Latinobarometro,2018,2018,2016-2019,Uruguay,URY,0
-Latinobarometro,2018,2018,2016-2019,Venezuela,VEN,0
-Latinobarometro,2020,2020,2020-2022,Argentina,ARG,0
-Latinobarometro,2020,2020,2020-2022,Bolivia,BOL,0
-Latinobarometro,2020,2020,2020-2022,Brazil,BRA,0
-Latinobarometro,2020,2020,2020-2022,Chile,CHL,0
-Latinobarometro,2020,2020,2020-2022,Colombia,COL,0
-Latinobarometro,2020,2020,2020-2022,Costa Rica,CRI,0
-Latinobarometro,2020,2020,2020-2022,Dominican Republic,DOM,0
-Latinobarometro,2020,2020,2020-2022,Ecuador,ECU,0
-Latinobarometro,2020,2020,2020-2022,El Salvador,SLV,0
-Latinobarometro,2020,2020,2020-2022,Guatemala,GTM,0
-Latinobarometro,2020,2020,2020-2022,Honduras,HND,0
-Latinobarometro,2020,2020,2020-2022,Mexico,MEX,0
-Latinobarometro,2020,2020,2020-2022,Nicaragua,NIC,0
-Latinobarometro,2020,2020,2020-2022,Panama,PAN,0
-Latinobarometro,2020,2020,2020-2022,Paraguay,PRY,0
-Latinobarometro,2020,2020,2020-2022,Peru,PER,0
-Latinobarometro,2020,2020,2020-2022,Uruguay,URY,0
-Latinobarometro,2020,2020,2020-2022,Venezuela,VEN,0
-Latinobarometro,2023,2023,2023-2025,Argentina,ARG,0
-Latinobarometro,2023,2023,2023-2025,Bolivia,BOL,0
-Latinobarometro,2023,2023,2023-2025,Brazil,BRA,0
-Latinobarometro,2023,2023,2023-2025,Chile,CHL,0
-Latinobarometro,2023,2023,2023-2025,Colombia,COL,0
-Latinobarometro,2023,2023,2023-2025,Costa Rica,CRI,0
-Latinobarometro,2023,2023,2023-2025,Dominican Republic,DOM,0
-Latinobarometro,2023,2023,2023-2025,Ecuador,ECU,0
-Latinobarometro,2023,2023,2023-2025,El Salvador,SLV,0
-Latinobarometro,2023,2023,2023-2025,Guatemala,GTM,0
-Latinobarometro,2023,2023,2023-2025,Honduras,HND,0
-Latinobarometro,2023,2023,2023-2025,Mexico,MEX,0
-Latinobarometro,2023,2023,2023-2025,Panama,PAN,0
-Latinobarometro,2023,2023,2023-2025,Paraguay,PRY,0
-Latinobarometro,2023,2023,2023-2025,Peru,PER,0
-Latinobarometro,2023,2023,2023-2025,Uruguay,URY,0
-Latinobarometro,2023,2023,2023-2025,Venezuela,VEN,0
-Latinobarometro,2024,2024,2023-2025,Argentina,ARG,1
-Latinobarometro,2024,2024,2023-2025,Bolivia,BOL,1
-Latinobarometro,2024,2024,2023-2025,Brazil,BRA,1
-Latinobarometro,2024,2024,2023-2025,Chile,CHL,1
-Latinobarometro,2024,2024,2023-2025,Colombia,COL,1
-Latinobarometro,2024,2024,2023-2025,Costa Rica,CRI,1
-Latinobarometro,2024,2024,2023-2025,Dominican Republic,DOM,1
-Latinobarometro,2024,2024,2023-2025,Ecuador,ECU,1
-Latinobarometro,2024,2024,2023-2025,El Salvador,SLV,1
-Latinobarometro,2024,2024,2023-2025,Guatemala,GTM,1
-Latinobarometro,2024,2024,2023-2025,Honduras,HND,1
-Latinobarometro,2024,2024,2023-2025,Mexico,MEX,1
-Latinobarometro,2024,2024,2023-2025,Panama,PAN,1
-Latinobarometro,2024,2024,2023-2025,Paraguay,PRY,1
-Latinobarometro,2024,2024,2023-2025,Peru,PER,1
-Latinobarometro,2024,2024,2023-2025,Uruguay,URY,1
-Latinobarometro,2024,2024,2023-2025,Venezuela,VEN,1
-Afrobarometer,Round 5,2011-2013,2012-2016,Algeria,DZA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Benin,BEN,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Botswana,BWA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Burkina Faso,BFA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Burundi,BDI,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Cabo Verde,CPV,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Cameroon,CMR,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Côte d'Ivoire,CIV,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Egypt,EGY,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Ghana,GHA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Guinea,GIN,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Kenya,KEN,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Lesotho,LSO,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Liberia,LBR,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Madagascar,MDG,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Malawi,MWI,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Mali,MLI,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Mauritius,MUS,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Morocco,MAR,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Mozambique,MOZ,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Namibia,NAM,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Niger,NER,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Nigeria,NGA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Senegal,SEN,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Sierra Leone,SLE,0
-Afrobarometer,Round 5,2011-2013,2012-2016,South Africa,ZAF,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Sudan,SDN,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Tanzania,TZA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Togo,TGO,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Tunisia,TUN,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Uganda,UGA,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Zambia,ZMB,0
-Afrobarometer,Round 5,2011-2013,2012-2016,Zimbabwe,ZWE,0
-Afrobarometer,Round 5,2011-2013,2012-2016,eSwatini,SWZ,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Algeria,DZA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Benin,BEN,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Botswana,BWA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Burkina Faso,BFA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Burundi,BDI,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Cabo Verde,CPV,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Cameroon,CMR,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Côte d'Ivoire,CIV,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Egypt,EGY,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Gabon,GAB,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Ghana,GHA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Guinea,GIN,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Kenya,KEN,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Lesotho,LSO,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Liberia,LBR,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Madagascar,MDG,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Malawi,MWI,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Mali,MLI,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Mauritius,MUS,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Morocco,MAR,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Mozambique,MOZ,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Namibia,NAM,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Niger,NER,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Nigeria,NGA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Senegal,SEN,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Sierra Leone,SLE,0
-Afrobarometer,Round 6,2014-2015,2012-2016,South Africa,ZAF,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Sudan,SDN,0
-Afrobarometer,Round 6,2014-2015,2012-2016,São Tomé and Príncipe,STP,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Tanzania,TZA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Togo,TGO,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Tunisia,TUN,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Uganda,UGA,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Zambia,ZMB,0
-Afrobarometer,Round 6,2014-2015,2012-2016,Zimbabwe,ZWE,0
-Afrobarometer,Round 6,2014-2015,2012-2016,eSwatini,SWZ,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Benin,BEN,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Botswana,BWA,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Burkina Faso,BFA,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Cabo Verde,CPV,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Cameroon,CMR,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Côte d'Ivoire,CIV,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Gabon,GAB,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Gambia,GMB,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Ghana,GHA,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Guinea,GIN,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Kenya,KEN,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Lesotho,LSO,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Liberia,LBR,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Madagascar,MDG,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Malawi,MWI,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Mali,MLI,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Mauritius,MUS,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Morocco,MAR,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Mozambique,MOZ,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Namibia,NAM,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Niger,NER,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Nigeria,NGA,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Senegal,SEN,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Sierra Leone,SLE,0
-Afrobarometer,Round 7,2016-2018,2016-2019,South Africa,ZAF,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Sudan,SDN,0
-Afrobarometer,Round 7,2016-2018,2016-2019,São Tomé and Príncipe,STP,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Tanzania,TZA,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Togo,TGO,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Tunisia,TUN,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Uganda,UGA,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Zambia,ZMB,0
-Afrobarometer,Round 7,2016-2018,2016-2019,Zimbabwe,ZWE,0
-Afrobarometer,Round 7,2016-2018,2016-2019,eSwatini,SWZ,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Angola,AGO,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Benin,BEN,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Botswana,BWA,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Burkina Faso,BFA,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Cabo Verde,CPV,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Cameroon,CMR,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Côte d'Ivoire,CIV,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Ethiopia,ETH,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Gabon,GAB,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Gambia,GMB,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Ghana,GHA,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Guinea,GIN,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Kenya,KEN,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Lesotho,LSO,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Liberia,LBR,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Malawi,MWI,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Mali,MLI,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Mauritius,MUS,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Morocco,MAR,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Mozambique,MOZ,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Namibia,NAM,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Niger,NER,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Nigeria,NGA,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Senegal,SEN,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Sierra Leone,SLE,0
-Afrobarometer,Round 8,2019-2021,2020-2022,South Africa,ZAF,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Sudan,SDN,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Tanzania,TZA,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Togo,TGO,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Tunisia,TUN,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Uganda,UGA,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Zambia,ZMB,0
-Afrobarometer,Round 8,2019-2021,2020-2022,Zimbabwe,ZWE,0
-Afrobarometer,Round 8,2019-2021,2020-2022,eSwatini,SWZ,0
-Afrobarometer,Round 9,2021-2023,2023-2025,Angola,AGO,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Benin,BEN,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Botswana,BWA,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Burkina Faso,BFA,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Cabo Verde,CPV,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Cameroon,CMR,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Congo-Brazzaville,COG,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Côte d'Ivoire,CIV,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Ethiopia,ETH,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Gabon,GAB,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Gambia,GMB,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Ghana,GHA,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Guinea,GIN,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Kenya,KEN,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Lesotho,LSO,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Liberia,LBR,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Madagascar,MDG,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Malawi,MWI,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Mali,MLI,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Mauritania,MRT,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Mauritius,MUS,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Morocco,MAR,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Mozambique,MOZ,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Namibia,NAM,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Niger,NER,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Nigeria,NGA,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Senegal,SEN,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Seychelles,SYC,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Sierra Leone,SLE,1
-Afrobarometer,Round 9,2021-2023,2023-2025,South Africa,ZAF,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Sudan,SDN,1
-Afrobarometer,Round 9,2021-2023,2023-2025,São Tomé and Príncipe,STP,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Tanzania,TZA,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Togo,TGO,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Tunisia,TUN,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Uganda,UGA,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Zambia,ZMB,1
-Afrobarometer,Round 9,2021-2023,2023-2025,Zimbabwe,ZWE,1
-Afrobarometer,Round 9,2021-2023,2023-2025,eSwatini,SWZ,1
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Algeria,DZA,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Egypt,EGY,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Iraq,IRQ,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Jordan,JOR,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Kuwait,KWT,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Lebanon,LBN,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Libya,LBY,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Morocco,MAR,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Palestine,PSE,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Sudan,SDN,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Tunisia,TUN,0
+Arab Barometer,Wave 3,2014,2014 (Wave 3),Yemen,YEM,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Algeria,DZA,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Egypt,EGY,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Jordan,JOR,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Lebanon,LBN,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Morocco,MAR,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Palestine,PSE,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Qatar,QAT,0
+Arab Barometer,Wave 4,2017,2017 (Wave 4),Tunisia,TUN,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Algeria,DZA,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Iraq,IRQ,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Jordan,JOR,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Lebanon,LBN,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Libya,LBY,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Morocco,MAR,0
+Arab Barometer,Wave 6,2021,2021 (Wave 6),Tunisia,TUN,0
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Iraq,IRQ,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Jordan,JOR,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Kuwait,KWT,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Lebanon,LBN,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Mauritania,MRT,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Morocco,MAR,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Palestine,PSE,1
+Arab Barometer,Wave 8,2024,2024 (Wave 8),Tunisia,TUN,1
+Latinobarometro,Round 2015,2015,Round 2015,Argentina,ARG,0
+Latinobarometro,Round 2015,2015,Round 2015,Bolivia,BOL,0
+Latinobarometro,Round 2015,2015,Round 2015,Brazil,BRA,0
+Latinobarometro,Round 2015,2015,Round 2015,Chile,CHL,0
+Latinobarometro,Round 2015,2015,Round 2015,Colombia,COL,0
+Latinobarometro,Round 2015,2015,Round 2015,Costa Rica,CRI,0
+Latinobarometro,Round 2015,2015,Round 2015,Dominican Republic,DOM,0
+Latinobarometro,Round 2015,2015,Round 2015,Ecuador,ECU,0
+Latinobarometro,Round 2015,2015,Round 2015,El Salvador,SLV,0
+Latinobarometro,Round 2015,2015,Round 2015,Guatemala,GTM,0
+Latinobarometro,Round 2015,2015,Round 2015,Honduras,HND,0
+Latinobarometro,Round 2015,2015,Round 2015,Mexico,MEX,0
+Latinobarometro,Round 2015,2015,Round 2015,Nicaragua,NIC,0
+Latinobarometro,Round 2015,2015,Round 2015,Panama,PAN,0
+Latinobarometro,Round 2015,2015,Round 2015,Paraguay,PRY,0
+Latinobarometro,Round 2015,2015,Round 2015,Peru,PER,0
+Latinobarometro,Round 2015,2015,Round 2015,Uruguay,URY,0
+Latinobarometro,Round 2015,2015,Round 2015,Venezuela,VEN,0
+Latinobarometro,Round 2017,2017,Round 2017,Argentina,ARG,0
+Latinobarometro,Round 2017,2017,Round 2017,Bolivia,BOL,0
+Latinobarometro,Round 2017,2017,Round 2017,Brazil,BRA,0
+Latinobarometro,Round 2017,2017,Round 2017,Chile,CHL,0
+Latinobarometro,Round 2017,2017,Round 2017,Colombia,COL,0
+Latinobarometro,Round 2017,2017,Round 2017,Costa Rica,CRI,0
+Latinobarometro,Round 2017,2017,Round 2017,Dominican Republic,DOM,0
+Latinobarometro,Round 2017,2017,Round 2017,Ecuador,ECU,0
+Latinobarometro,Round 2017,2017,Round 2017,El Salvador,SLV,0
+Latinobarometro,Round 2017,2017,Round 2017,Guatemala,GTM,0
+Latinobarometro,Round 2017,2017,Round 2017,Honduras,HND,0
+Latinobarometro,Round 2017,2017,Round 2017,Mexico,MEX,0
+Latinobarometro,Round 2017,2017,Round 2017,Nicaragua,NIC,0
+Latinobarometro,Round 2017,2017,Round 2017,Panama,PAN,0
+Latinobarometro,Round 2017,2017,Round 2017,Paraguay,PRY,0
+Latinobarometro,Round 2017,2017,Round 2017,Peru,PER,0
+Latinobarometro,Round 2017,2017,Round 2017,Uruguay,URY,0
+Latinobarometro,Round 2017,2017,Round 2017,Venezuela,VEN,0
+Latinobarometro,Round 2020,2020,Round 2020,Argentina,ARG,0
+Latinobarometro,Round 2020,2020,Round 2020,Bolivia,BOL,0
+Latinobarometro,Round 2020,2020,Round 2020,Brazil,BRA,0
+Latinobarometro,Round 2020,2020,Round 2020,Chile,CHL,0
+Latinobarometro,Round 2020,2020,Round 2020,Colombia,COL,0
+Latinobarometro,Round 2020,2020,Round 2020,Costa Rica,CRI,0
+Latinobarometro,Round 2020,2020,Round 2020,Dominican Republic,DOM,0
+Latinobarometro,Round 2020,2020,Round 2020,Ecuador,ECU,0
+Latinobarometro,Round 2020,2020,Round 2020,El Salvador,SLV,0
+Latinobarometro,Round 2020,2020,Round 2020,Guatemala,GTM,0
+Latinobarometro,Round 2020,2020,Round 2020,Honduras,HND,0
+Latinobarometro,Round 2020,2020,Round 2020,Mexico,MEX,0
+Latinobarometro,Round 2020,2020,Round 2020,Nicaragua,NIC,0
+Latinobarometro,Round 2020,2020,Round 2020,Panama,PAN,0
+Latinobarometro,Round 2020,2020,Round 2020,Paraguay,PRY,0
+Latinobarometro,Round 2020,2020,Round 2020,Peru,PER,0
+Latinobarometro,Round 2020,2020,Round 2020,Uruguay,URY,0
+Latinobarometro,Round 2020,2020,Round 2020,Venezuela,VEN,0
+Latinobarometro,Round 2024,2024,Round 2024,Argentina,ARG,1
+Latinobarometro,Round 2024,2024,Round 2024,Bolivia,BOL,1
+Latinobarometro,Round 2024,2024,Round 2024,Brazil,BRA,1
+Latinobarometro,Round 2024,2024,Round 2024,Chile,CHL,1
+Latinobarometro,Round 2024,2024,Round 2024,Colombia,COL,1
+Latinobarometro,Round 2024,2024,Round 2024,Costa Rica,CRI,1
+Latinobarometro,Round 2024,2024,Round 2024,Dominican Republic,DOM,1
+Latinobarometro,Round 2024,2024,Round 2024,Ecuador,ECU,1
+Latinobarometro,Round 2024,2024,Round 2024,El Salvador,SLV,1
+Latinobarometro,Round 2024,2024,Round 2024,Guatemala,GTM,1
+Latinobarometro,Round 2024,2024,Round 2024,Honduras,HND,1
+Latinobarometro,Round 2024,2024,Round 2024,Mexico,MEX,1
+Latinobarometro,Round 2024,2024,Round 2024,Panama,PAN,1
+Latinobarometro,Round 2024,2024,Round 2024,Paraguay,PRY,1
+Latinobarometro,Round 2024,2024,Round 2024,Peru,PER,1
+Latinobarometro,Round 2024,2024,Round 2024,Uruguay,URY,1
+Latinobarometro,Round 2024,2024,Round 2024,Venezuela,VEN,1
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Algeria,DZA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Benin,BEN,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Botswana,BWA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Burkina Faso,BFA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Burundi,BDI,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Cabo Verde,CPV,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Cameroon,CMR,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Côte d'Ivoire,CIV,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Egypt,EGY,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Ghana,GHA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Guinea,GIN,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Kenya,KEN,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Lesotho,LSO,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Liberia,LBR,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Madagascar,MDG,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Malawi,MWI,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Mali,MLI,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Mauritius,MUS,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Morocco,MAR,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Mozambique,MOZ,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Namibia,NAM,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Niger,NER,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Nigeria,NGA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Senegal,SEN,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Sierra Leone,SLE,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),South Africa,ZAF,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Sudan,SDN,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Tanzania,TZA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Togo,TGO,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Tunisia,TUN,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Uganda,UGA,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Zambia,ZMB,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),Zimbabwe,ZWE,0
+Afrobarometer,Wave 5,2013,2013 (Wave 5),eSwatini,SWZ,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Algeria,DZA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Benin,BEN,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Botswana,BWA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Burkina Faso,BFA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Burundi,BDI,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Cabo Verde,CPV,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Cameroon,CMR,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Côte d'Ivoire,CIV,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Egypt,EGY,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Gabon,GAB,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Ghana,GHA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Guinea,GIN,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Kenya,KEN,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Lesotho,LSO,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Liberia,LBR,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Madagascar,MDG,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Malawi,MWI,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Mali,MLI,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Mauritius,MUS,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Morocco,MAR,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Mozambique,MOZ,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Namibia,NAM,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Niger,NER,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Nigeria,NGA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Senegal,SEN,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Sierra Leone,SLE,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),South Africa,ZAF,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Sudan,SDN,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),São Tomé and Príncipe,STP,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Tanzania,TZA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Togo,TGO,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Tunisia,TUN,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Uganda,UGA,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Zambia,ZMB,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),Zimbabwe,ZWE,0
+Afrobarometer,Wave 6,2016,2016 (Wave 6),eSwatini,SWZ,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Benin,BEN,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Botswana,BWA,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Burkina Faso,BFA,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Cabo Verde,CPV,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Cameroon,CMR,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Côte d'Ivoire,CIV,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Gabon,GAB,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Gambia,GMB,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Ghana,GHA,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Guinea,GIN,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Kenya,KEN,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Lesotho,LSO,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Liberia,LBR,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Madagascar,MDG,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Malawi,MWI,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Mali,MLI,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Mauritius,MUS,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Morocco,MAR,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Mozambique,MOZ,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Namibia,NAM,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Niger,NER,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Nigeria,NGA,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Senegal,SEN,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Sierra Leone,SLE,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),South Africa,ZAF,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Sudan,SDN,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),São Tomé and Príncipe,STP,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Tanzania,TZA,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Togo,TGO,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Tunisia,TUN,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Uganda,UGA,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Zambia,ZMB,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),Zimbabwe,ZWE,0
+Afrobarometer,Wave 7,2019/20,2019/20 (Wave 7),eSwatini,SWZ,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Angola,AGO,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Benin,BEN,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Botswana,BWA,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Burkina Faso,BFA,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Cabo Verde,CPV,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Cameroon,CMR,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Côte d'Ivoire,CIV,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Ethiopia,ETH,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Gabon,GAB,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Gambia,GMB,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Ghana,GHA,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Guinea,GIN,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Kenya,KEN,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Lesotho,LSO,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Liberia,LBR,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Malawi,MWI,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Mali,MLI,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Mauritius,MUS,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Morocco,MAR,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Mozambique,MOZ,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Namibia,NAM,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Niger,NER,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Nigeria,NGA,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Senegal,SEN,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Sierra Leone,SLE,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),South Africa,ZAF,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Sudan,SDN,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Tanzania,TZA,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Togo,TGO,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Tunisia,TUN,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Uganda,UGA,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Zambia,ZMB,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),Zimbabwe,ZWE,0
+Afrobarometer,Wave 8,2022,2022 (Wave 8),eSwatini,SWZ,0
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Angola,AGO,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Benin,BEN,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Botswana,BWA,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Burkina Faso,BFA,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Cabo Verde,CPV,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Cameroon,CMR,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Congo-Brazzaville,COG,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Côte d'Ivoire,CIV,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Ethiopia,ETH,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Gabon,GAB,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Gambia,GMB,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Ghana,GHA,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Guinea,GIN,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Kenya,KEN,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Lesotho,LSO,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Liberia,LBR,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Madagascar,MDG,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Malawi,MWI,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Mali,MLI,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Mauritania,MRT,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Mauritius,MUS,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Morocco,MAR,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Mozambique,MOZ,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Namibia,NAM,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Niger,NER,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Nigeria,NGA,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Senegal,SEN,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Seychelles,SYC,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Sierra Leone,SLE,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),South Africa,ZAF,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Sudan,SDN,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),São Tomé and Príncipe,STP,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Tanzania,TZA,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Togo,TGO,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Tunisia,TUN,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Uganda,UGA,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Zambia,ZMB,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),Zimbabwe,ZWE,1
+Afrobarometer,Wave 9,2023,2023 (Wave 9),eSwatini,SWZ,1
 Asian Barometer,Wave 3,2010-2012,2012,Cambodia,KHM,0
 Asian Barometer,Wave 3,2010-2012,2012,China,CHN,0
 Asian Barometer,Wave 3,2010-2012,2012,Hong Kong,HKG,0

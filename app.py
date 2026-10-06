@@ -39,13 +39,13 @@ LATEST_SHORT = {
 }
 # source file + period columns per barometer (cluster pages)
 BAR_PAGES = {
-    "Arab Barometer": ("arab_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
+    "Arab Barometer": ("arab_clusters.csv", ["2014 (Wave 3)", "2017 (Wave 4)", "2021 (Wave 6)", "2024 (Wave 8)"],
                        "",
                        "Source: Arab Barometer."),
-    "Latinobarometro": ("latino_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
+    "Latinobarometro": ("latino_clusters.csv", ["Round 2015", "Round 2017", "Round 2020", "Round 2024"],
                         "",
                         "Source: Latinobarómetro."),
-    "Afrobarometer": ("afro_clusters.csv", ["2012-2016", "2016-2019", "2020-2022", "2023-2025"],
+    "Afrobarometer": ("afro_clusters.csv", ["2013 (Wave 5)", "2016 (Wave 6)", "2019/20 (Wave 7)", "2022 (Wave 8)", "2023 (Wave 9)"],
                       "",
                       "Source: Afrobarometer."),
     "Asian Barometer": ("ab_clusters.csv", ["2012", "2016", "2021", "2023"],
@@ -651,7 +651,7 @@ def barometer_page():
         df, _ = cluster_pills(df_all, f"cluster_{bar}")
         bar_countries = cdf[cdf["barometer"] == bar]
         st.markdown(timeline_html(df, x_order, BAR_COLOR[bar], bar_countries,
-                                  show_rounds=bar in ("Asian Barometer", "Eurobarometer")), unsafe_allow_html=True)
+                                  show_rounds=bar in ("Asian Barometer", "Eurobarometer", "Arab Barometer", "Latinobarometro", "Afrobarometer")), unsafe_allow_html=True)
         st.markdown(continuity_html(df, x_order, BAR_COLOR[bar]), unsafe_allow_html=True)
         st.caption(source_note)
     with tab_grid:
@@ -664,7 +664,7 @@ def barometer_page():
     with tab_map:
         d = cdf[cdf["barometer"] == bar]
         rounds = d.drop_duplicates("round")[["round", "year"]].reset_index(drop=True)
-        labels = [str(r.year) if str(r.round) == str(r.year) else f"{r.round} ({r.year})" for r in rounds.itertuples()]
+        labels = [str(r.year) if str(r.year) in str(r.round) else f"{r.round} ({r.year})" for r in rounds.itertuples()]
         latest_rounds = d[d["latest"] == 1]["round"].unique()
         default = labels[list(rounds["round"]).index(latest_rounds[0])] if len(latest_rounds) else labels[-1]
         st.caption("Round")
