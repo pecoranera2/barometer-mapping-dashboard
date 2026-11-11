@@ -617,7 +617,7 @@ def latest_page():
         col.metric(BAR_LABEL.get(LATEST_SHORT[b], LATEST_SHORT[b]), f"{int(avail.get(b, 0))} of {n_vars}",
                    help="Variables of the common list available in this barometer's latest round")
 
-    tab_ladder, tab_cov, tab_pair, tab_grid = st.tabs(["Comparability ladder", "Coverage profile", "Pairwise overlap", "Detail grid"])
+    tab_ladder, tab_cov, tab_pair, tab_grid = st.tabs(["Comparability ladder", "Coverage profile", "Overlap matrix", "Detail grid"])
     with tab_ladder:
         st.caption("Each card is a variable; the five dots show which barometers cover it in their latest round. "
                    "Hover a card for the exact codes.")
