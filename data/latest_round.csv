@@ -1,236 +1,331 @@
 variable,barometer,code,available,chunk
-Gender,Arab Barometer 2024,Q1002,1,Socioeconomic
-Gender,Latinobarometer 2024,SEXO,1,Socioeconomic
-Gender,Afro Barometer 2023,Q100,1,Socioeconomic
+Gender,Arab Barometer 2024,q1002,1,Socioeconomic
+Gender,Latinobarometer 2024,sexo,1,Socioeconomic
+Gender,Afro Barometer 2023,q100,1,Socioeconomic
 Gender,Asian Barometer 2023,se2,1,Socioeconomic
 Gender,Eurobarometer 2024 (Special),d10,1,Socioeconomic
-Employed,Arab Barometer 2024,Q1005,1,Employment
-Employed,Latinobarometer 2024,S18.A,1,Employment
-Employed,Afro Barometer 2023,Q93A,1,Employment
-Employed,Asian Barometer 2023,se9,1,Employment
-Employed,Eurobarometer 2024 (Special),d15a,1,Employment
-Age,Arab Barometer 2024,Q1001,1,Socioeconomic
-Age,Latinobarometer 2024,EDAD,1,Socioeconomic
-Age,Afro Barometer 2023,Q1,1,Socioeconomic
+Age,Arab Barometer 2024,q1001,1,Socioeconomic
+Age,Latinobarometer 2024,edad,1,Socioeconomic
+Age,Afro Barometer 2023,q1,1,Socioeconomic
 Age,Asian Barometer 2023,se3_1,1,Socioeconomic
 Age,Eurobarometer 2024 (Special),d11,1,Socioeconomic
-Highest education achieved: Secondary,Arab Barometer 2024,Q1003,1,Socioeconomic
+Highest education achieved: Secondary,Arab Barometer 2024,q1003,1,Socioeconomic
 Highest education achieved: Secondary,Latinobarometer 2024,reeduc_1,1,Socioeconomic
-Highest education achieved: Secondary,Afro Barometer 2023,Q94,1,Socioeconomic
+Highest education achieved: Secondary,Afro Barometer 2023,q94,1,Socioeconomic
 Highest education achieved: Secondary,Asian Barometer 2023,se5,1,Socioeconomic
 Highest education achieved: Secondary,Eurobarometer 2024 (Special),d9a_4,1,Socioeconomic
-Married,Arab Barometer 2024,Q1010,1,Socioeconomic
+Married,Arab Barometer 2024,q1010,1,Socioeconomic
 Married,Latinobarometer 2024,,0,Socioeconomic
 Married,Afro Barometer 2023,,0,Socioeconomic
 Married,Asian Barometer 2023,se4,1,Socioeconomic
 Married,Eurobarometer 2024 (Special),d7,1,Socioeconomic
-Bank Account,Arab Barometer 2024,Q1025,1,Access
-Bank Account,Latinobarometer 2024,,0,Access
-Bank Account,Afro Barometer 2023,Q90E,1,Access
-Bank Account,Asian Barometer 2023,,0,Access
-Bank Account,Eurobarometer 2024 (Special),,0,Access
-Savings,Arab Barometer 2024,Q116,1,Access
-Savings,Latinobarometer 2024,S5,1,Access
-Savings,Afro Barometer 2023,,0,Access
-Savings,Asian Barometer 2023,,0,Access
-Savings,Eurobarometer 2024 (Special),,0,Access
-Household size,Arab Barometer 2024,Q1014C,1,Socioeconomic
-Household size,Latinobarometer 2024,,0,Socioeconomic
-Household size,Afro Barometer 2023,,0,Socioeconomic
-Household size,Asian Barometer 2023,se8a,1,Socioeconomic
-Household size,Eurobarometer 2024 (Special),d40abc_r1-r4,1,Socioeconomic
-Internet user,Arab Barometer 2024,Q409,1,Access
-Internet user,Latinobarometer 2024,,0,Access
-Internet user,Afro Barometer 2023,Q90I,1,Access
-Internet user,Asian Barometer 2023,q50,1,Access
-Internet user,Eurobarometer 2024 (Special),d62_1,1,Access
-Electricity,Arab Barometer 2024,,0,Access
-Electricity,Latinobarometer 2024,,0,Access
-Electricity,Afro Barometer 2023,Q92A,1,Access
-Electricity,Asian Barometer 2023,ir11c,1,Access
-Electricity,Eurobarometer 2024 (Special),,0,Access
-Water,Arab Barometer 2024,,0,Access
-Water,Latinobarometer 2024,S20I,1,Access
-Water,Afro Barometer 2023,Q91a,1,Access
-Water,Asian Barometer 2023,ir11b,1,Access
-Water,Eurobarometer 2024 (Special),,0,Access
-Food insecure,Arab Barometer 2024,q112_2,1,Access
-Food insecure,Latinobarometer 2024,S3,1,Access
-Food insecure,Afro Barometer 2023,Q6a,1,Access
-Food insecure,Asian Barometer 2023,,0,Access
-Food insecure,Eurobarometer 2024 (Special),d60,1,Access
-Urban,Arab Barometer 2024,Q13,1,Access
-Urban,Latinobarometer 2024,TAMCIUD,1,Access
-Urban,Afro Barometer 2023,URBRUR,1,Access
-Urban,Asian Barometer 2023,level,1,Access
-Urban,Eurobarometer 2024 (Special),d25,1,Access
-Religion,Arab Barometer 2024,Q1012,1,Socioeconomic
-Religion,Latinobarometer 2024,S1,1,Socioeconomic
-Religion,Afro Barometer 2023,Q95,1,Socioeconomic
+Race / ethnic group,Arab Barometer 2024,q1012b2,1,Socioeconomic
+Race / ethnic group,Latinobarometer 2024,s7,1,Socioeconomic
+Race / ethnic group,Afro Barometer 2023,q101,1,Socioeconomic
+Race / ethnic group,Asian Barometer 2023,se11a,1,Socioeconomic
+Race / ethnic group,Eurobarometer 2024 (Special),,0,Socioeconomic
+Belongs to the majority race in the country,Arab Barometer 2024,q1012b2,1,Socioeconomic
+Belongs to the majority race in the country,Latinobarometer 2024,s7,1,Socioeconomic
+Belongs to the majority race in the country,Afro Barometer 2023,q101,1,Socioeconomic
+Belongs to the majority race in the country,Asian Barometer 2023,se11a,1,Socioeconomic
+Belongs to the majority race in the country,Eurobarometer 2024 (Special),,0,Socioeconomic
+Religion,Arab Barometer 2024,q1012,1,Socioeconomic
+Religion,Latinobarometer 2024,s1,1,Socioeconomic
+Religion,Afro Barometer 2023,q95,1,Socioeconomic
 Religion,Asian Barometer 2023,se6,1,Socioeconomic
 Religion,Eurobarometer 2024 (Special),,0,Socioeconomic
-Religious,Arab Barometer 2024,Q609,1,Socioeconomic
-Religious,Latinobarometer 2024,S1A,1,Socioeconomic
+Belongs to the majority religion in the country,Arab Barometer 2024,q1012,1,Socioeconomic
+Belongs to the majority religion in the country,Latinobarometer 2024,s1,1,Socioeconomic
+Belongs to the majority religion in the country,Afro Barometer 2023,q95,1,Socioeconomic
+Belongs to the majority religion in the country,Asian Barometer 2023,se6,1,Socioeconomic
+Belongs to the majority religion in the country,Eurobarometer 2024 (Special),,0,Socioeconomic
+Do you have children?,Arab Barometer 2024,q1010b1,1,Socioeconomic
+Do you have children?,Latinobarometer 2024,,0,Socioeconomic
+Do you have children?,Afro Barometer 2023,,0,Socioeconomic
+Do you have children?,Asian Barometer 2023,,0,Socioeconomic
+Do you have children?,Eurobarometer 2024 (Special),,0,Socioeconomic
+Religious,Arab Barometer 2024,q609,1,Socioeconomic
+Religious,Latinobarometer 2024,,0,Socioeconomic
 Religious,Afro Barometer 2023,,0,Socioeconomic
-Religious,Asian Barometer 2023,se7,1,Socioeconomic
+Religious,Asian Barometer 2023,,0,Socioeconomic
 Religious,Eurobarometer 2024 (Special),,0,Socioeconomic
-Ethnicity,Arab Barometer 2024,Q1012B2,1,Socioeconomic
-Ethnicity,Latinobarometer 2024,S7,1,Socioeconomic
-Ethnicity,Afro Barometer 2023,Q101,1,Socioeconomic
-Ethnicity,Asian Barometer 2023,se11a,1,Socioeconomic
-Ethnicity,Eurobarometer 2024 (Special),,0,Socioeconomic
-Interested in Politics,Arab Barometer 2024,Q404,1,Institutional
-Interested in Politics,Latinobarometer 2024,P36STGBS,1,Institutional
-Interested in Politics,Afro Barometer 2023,Q8,1,Institutional
-Interested in Politics,Asian Barometer 2023,q47,1,Institutional
-Interested in Politics,Eurobarometer 2024 (Special),polintr_1,1,Institutional
-Men make better political leaders,Arab Barometer 2024,Q601.3,1,Gender and social norms
-Men make better political leaders,Latinobarometer 2024,,0,Gender and social norms
-Men make better political leaders,Afro Barometer 2023,Q20,1,Gender and social norms
-Men make better political leaders,Asian Barometer 2023,q146,1,Gender and social norms
-Men make better political leaders,Eurobarometer 2024 (Special),qd7_1,1,Gender and social norms
-University more important for men,Arab Barometer 2024,Q601.4,1,Gender and social norms
-University more important for men,Latinobarometer 2024,,0,Gender and social norms
-University more important for men,Afro Barometer 2023,,0,Gender and social norms
-University more important for men,Asian Barometer 2023,,0,Gender and social norms
-University more important for men,Eurobarometer 2024 (Special),,0,Gender and social norms
-Freedom of speech,Arab Barometer 2024,Q521.1,1,Institutional
-Freedom of speech,Latinobarometer 2024,,0,Institutional
-Freedom of speech,Afro Barometer 2023,Q9a,1,Institutional
-Freedom of speech,Asian Barometer 2023,q106,1,Institutional
-Freedom of speech,Eurobarometer 2024 (Special),,0,Institutional
-Freedom to participate in protests,Arab Barometer 2024,Q521.2,1,Institutional
-Freedom to participate in protests,Latinobarometer 2024,,0,Institutional
-Freedom to participate in protests,Afro Barometer 2023,Q10C,1,Institutional
-Freedom to participate in protests,Asian Barometer 2023,,0,Institutional
-Freedom to participate in protests,Eurobarometer 2024 (Special),,0,Institutional
-Freedom of religion,Arab Barometer 2024,Q521.6,1,Institutional
-Freedom of religion,Latinobarometer 2024,,0,Institutional
-Freedom of religion,Afro Barometer 2023,,0,Institutional
-Freedom of religion,Asian Barometer 2023,,0,Institutional
-Freedom of religion,Eurobarometer 2024 (Special),,0,Institutional
-Inequality is a problem,Arab Barometer 2024,Q112B.3,1,Institutional
-Inequality is a problem,Latinobarometer 2024,,0,Institutional
-Inequality is a problem,Afro Barometer 2023,,0,Institutional
-Inequality is a problem,Asian Barometer 2023,q159,1,Institutional
-Inequality is a problem,Eurobarometer 2024 (Special),,0,Institutional
-Democracy always preferable,Arab Barometer 2024,Q516A.3,1,Institutional
-Democracy always preferable,Latinobarometer 2024,Q11STGBS,1,Institutional
-Democracy always preferable,Afro Barometer 2023,Q23,1,Institutional
-Democracy always preferable,Asian Barometer 2023,q124,1,Institutional
-Democracy always preferable,Eurobarometer 2024 (Special),,0,Institutional
-Owns a house,Arab Barometer 2024,,0,Access
-Owns a house,Latinobarometer 2024,S20B,1,Access
-Owns a house,Afro Barometer 2023,,0,Access
-Owns a house,Asian Barometer 2023,,0,Access
-Owns a house,Eurobarometer 2024 (Special),,0,Access
-Victim of a crime,Arab Barometer 2024,,0,Access
-Victim of a crime,Latinobarometer 2024,P50ST.A,1,Access
-Victim of a crime,Afro Barometer 2023,,0,Access
-Victim of a crime,Asian Barometer 2023,,0,Access
-Victim of a crime,Eurobarometer 2024 (Special),,0,Access
-Felt discriminated against,Arab Barometer 2024,Q882,1,Gender and social norms
-Felt discriminated against,Latinobarometer 2024,,0,Gender and social norms
-Felt discriminated against,Afro Barometer 2023,,0,Gender and social norms
-Felt discriminated against,Asian Barometer 2023,,0,Gender and social norms
-Felt discriminated against,Eurobarometer 2024 (Special),,0,Gender and social norms
-Life satisfaction,Arab Barometer 2024,,0,Institutional
-Life satisfaction,Latinobarometer 2024,P1ST,1,Institutional
-Life satisfaction,Afro Barometer 2023,,0,Institutional
-Life satisfaction,Asian Barometer 2023,,0,Institutional
-Life satisfaction,Eurobarometer 2024 (Special),d70,1,Institutional
 Household head,Arab Barometer 2024,q1001f,1,Socioeconomic
-Household head,Latinobarometer 2024,S9,1,Socioeconomic
+Household head,Latinobarometer 2024,s9,1,Socioeconomic
 Household head,Afro Barometer 2023,,0,Socioeconomic
 Household head,Asian Barometer 2023,se10,1,Socioeconomic
 Household head,Eurobarometer 2024 (Special),,0,Socioeconomic
-Self-employed/Salaried,Arab Barometer 2024,Q1005,1,Employment
-Self-employed/Salaried,Latinobarometer 2024,S19,1,Employment
-Self-employed/Salaried,Afro Barometer 2023,,0,Employment
-Self-employed/Salaried,Asian Barometer 2023,se9a,1,Employment
-Self-employed/Salaried,Eurobarometer 2024 (Special),d15a_r1,1,Employment
-Mobile phone,Arab Barometer 2024,,0,Access
-Mobile phone,Latinobarometer 2024,S20D,1,Access
-Mobile phone,Afro Barometer 2023,q90f,1,Access
-Mobile phone,Asian Barometer 2023,se15g,1,Access
-Mobile phone,Eurobarometer 2024 (Special),,0,Access
-Internet connection at home,Arab Barometer 2024,,0,Access
-Internet connection at home,Latinobarometer 2024,S20K,1,Access
-Internet connection at home,Afro Barometer 2023,,0,Access
-Internet connection at home,Asian Barometer 2023,se15p,1,Access
-Internet connection at home,Eurobarometer 2024 (Special),,0,Access
-How often: adults use physical discipline with children,Arab Barometer 2024,,0,Gender and social norms
-How often: adults use physical discipline with children,Latinobarometer 2024,,0,Gender and social norms
-How often: adults use physical discipline with children,Afro Barometer 2023,Q55a,1,Gender and social norms
-How often: adults use physical discipline with children,Asian Barometer 2023,,0,Gender and social norms
-How often: adults use physical discipline with children,Eurobarometer 2024 (Special),,0,Gender and social norms
-Children belong more to mother’s or father’s side,Arab Barometer 2024,,0,Gender and social norms
-Children belong more to mother’s or father’s side,Latinobarometer 2024,,0,Gender and social norms
-Children belong more to mother’s or father’s side,Afro Barometer 2023,Q85b,1,Gender and social norms
-Children belong more to mother’s or father’s side,Asian Barometer 2023,,0,Gender and social norms
-Children belong more to mother’s or father’s side,Eurobarometer 2024 (Special),,0,Gender and social norms
-Who decides how money is used,Arab Barometer 2024,Q624,1,Gender and social norms
-Who decides how money is used,Latinobarometer 2024,,0,Gender and social norms
-Who decides how money is used,Afro Barometer 2023,Q93C,1,Gender and social norms
-Who decides how money is used,Asian Barometer 2023,,0,Gender and social norms
-Who decides how money is used,Eurobarometer 2024 (Special),,0,Gender and social norms
-Men and women should have equal work opportunities.,Arab Barometer 2024,Q601.5,1,Gender and social norms
-Men and women should have equal work opportunities.,Latinobarometer 2024,,0,Gender and social norms
-Men and women should have equal work opportunities.,Afro Barometer 2023,q49a,1,Gender and social norms
-Men and women should have equal work opportunities.,Asian Barometer 2023,,0,Gender and social norms
-Men and women should have equal work opportunities.,Eurobarometer 2024 (Special),,0,Gender and social norms
-Do you have children,Arab Barometer 2024,Q1010B1,1,Socioeconomic
-Do you have children,Latinobarometer 2024,,0,Socioeconomic
-Do you have children,Afro Barometer 2023,,0,Socioeconomic
-Do you have children,Asian Barometer 2023,,0,Socioeconomic
-Do you have children,Eurobarometer 2024 (Special),,0,Socioeconomic
-Children in household,Arab Barometer 2024,Q1001E.3,1,Socioeconomic
-Children in household,Latinobarometer 2024,,0,Socioeconomic
-Children in household,Afro Barometer 2023,,0,Socioeconomic
-Children in household,Asian Barometer 2023,,0,Socioeconomic
-Children in household,Eurobarometer 2024 (Special),d40b,1,Socioeconomic
-Safety of neighborhood,Arab Barometer 2024,Q105A,1,Access
-Safety of neighborhood,Latinobarometer 2024,,0,Access
-Safety of neighborhood,Afro Barometer 2023,Q7a,1,Access
-Safety of neighborhood,Asian Barometer 2023,q46,1,Access
-Safety of neighborhood,Eurobarometer 2024 (Special),,0,Access
-Full time or part time,Arab Barometer 2024,Q1006,1,Employment
-Full time or part time,Latinobarometer 2024,S18.A.,1,Employment
-Full time or part time,Afro Barometer 2023,Q93a,1,Employment
-Full time or part time,Asian Barometer 2023,,0,Employment
-Full time or part time,Eurobarometer 2024 (Special),,0,Employment
-Job sector (private and public),Arab Barometer 2024,,0,Employment
-Job sector (private and public),Latinobarometer 2024,,0,Employment
-Job sector (private and public),Afro Barometer 2023,,0,Employment
-Job sector (private and public),Asian Barometer 2023,se9a,1,Employment
-Job sector (private and public),Eurobarometer 2024 (Special),,0,Employment
-Position at work (occupation),Arab Barometer 2024,,0,Employment
-Position at work (occupation),Latinobarometer 2024,,0,Employment
-Position at work (occupation),Afro Barometer 2023,Q93b.,1,Employment
-Position at work (occupation),Asian Barometer 2023,se9c_3,1,Employment
-Position at work (occupation),Eurobarometer 2024 (Special),d15a_r1,1,Employment
-Neighbors,Arab Barometer 2024,,0,Gender and social norms
-Neighbors,Latinobarometer 2024,Q3NOIJ,1,Gender and social norms
-Neighbors,Afro Barometer 2023,Q87C,1,Gender and social norms
-Neighbors,Asian Barometer 2023,,0,Gender and social norms
-Neighbors,Eurobarometer 2024 (Special),,0,Gender and social norms
-Support for democracy,Arab Barometer 2024,,0,Institutional
-Support for democracy,Latinobarometer 2024,P11STGBS,1,Institutional
-Support for democracy,Afro Barometer 2023,,0,Institutional
-Support for democracy,Asian Barometer 2023,q80,1,Institutional
-Support for democracy,Eurobarometer 2024 (Special),sd18a,1,Institutional
-Freedom of political participation,Arab Barometer 2024,,0,Institutional
-Freedom of political participation,Latinobarometer 2024,,0,Institutional
-Freedom of political participation,Afro Barometer 2023,Q9b.,1,Institutional
-Freedom of political participation,Asian Barometer 2023,q107,1,Institutional
-Freedom of political participation,Eurobarometer 2024 (Special),,0,Institutional
-"If one could have only one child, it is more preferable to have a boy than a girl",Arab Barometer 2024,,0,Gender and social norms
-"If one could have only one child, it is more preferable to have a boy than a girl",Latinobarometer 2024,,0,Gender and social norms
-"If one could have only one child, it is more preferable to have a boy than a girl",Afro Barometer 2023,,0,Gender and social norms
-"If one could have only one child, it is more preferable to have a boy than a girl",Asian Barometer 2023,q67,1,Gender and social norms
-"If one could have only one child, it is more preferable to have a boy than a girl",Eurobarometer 2024 (Special),,0,Gender and social norms
-Most important problems facing the country: Gender issues/women's rights,Arab Barometer 2024,,0,Gender and social norms
-Most important problems facing the country: Gender issues/women's rights,Latinobarometer 2024,,0,Gender and social norms
-Most important problems facing the country: Gender issues/women's rights,Afro Barometer 2023,Q45pt1,1,Gender and social norms
-Most important problems facing the country: Gender issues/women's rights,Asian Barometer 2023,q97,1,Gender and social norms
-Most important problems facing the country: Gender issues/women's rights,Eurobarometer 2024 (Special),,0,Gender and social norms
+Household size,Arab Barometer 2024,q1014c,1,Socioeconomic
+Household size,Latinobarometer 2024,,0,Socioeconomic
+Household size,Afro Barometer 2023,,0,Socioeconomic
+Household size,Asian Barometer 2023,se8a,1,Socioeconomic
+Household size,Eurobarometer 2024 (Special),"d40abc_r1, d40abc_r2, d40abc_r3, d40abc_r4",1,Socioeconomic
+How many children live in this household,Arab Barometer 2024,q1014e,1,Socioeconomic
+How many children live in this household,Latinobarometer 2024,,0,Socioeconomic
+How many children live in this household,Afro Barometer 2023,,0,Socioeconomic
+How many children live in this household,Asian Barometer 2023,,0,Socioeconomic
+How many children live in this household,Eurobarometer 2024 (Special),d40b,1,Socioeconomic
+Employed,Arab Barometer 2024,q1005,1,Employment
+Employed,Latinobarometer 2024,s18_a,1,Employment
+Employed,Afro Barometer 2023,q93a,1,Employment
+Employed,Asian Barometer 2023,se9,1,Employment
+Employed,Eurobarometer 2024 (Special),d15a,1,Employment
+Self-employed,Arab Barometer 2024,q1005,1,Employment
+Self-employed,Latinobarometer 2024,s18_a,1,Employment
+Self-employed,Afro Barometer 2023,,0,Employment
+Self-employed,Asian Barometer 2023,se9a,1,Employment
+Self-employed,Eurobarometer 2024 (Special),d15a,1,Employment
+Full time work,Arab Barometer 2024,q1006,1,Employment
+Full time work,Latinobarometer 2024,,0,Employment
+Full time work,Afro Barometer 2023,q93a,1,Employment
+Full time work,Asian Barometer 2023,,0,Employment
+Full time work,Eurobarometer 2024 (Special),,0,Employment
+Private sector worker,Arab Barometer 2024,q1006a,1,Employment
+Private sector worker,Latinobarometer 2024,,0,Employment
+Private sector worker,Afro Barometer 2023,,0,Employment
+Private sector worker,Asian Barometer 2023,,0,Employment
+Private sector worker,Eurobarometer 2024 (Special),,0,Employment
+Supervisor,Arab Barometer 2024,,0,Employment
+Supervisor,Latinobarometer 2024,,0,Employment
+Supervisor,Afro Barometer 2023,q93b,1,Employment
+Supervisor,Asian Barometer 2023,,0,Employment
+Supervisor,Eurobarometer 2024 (Special),d15a,1,Employment
+Supervisor that is female,Arab Barometer 2024,,0,Employment
+Supervisor that is female,Latinobarometer 2024,,0,Employment
+Supervisor that is female,Afro Barometer 2023,q93b,1,Employment
+Supervisor that is female,Asian Barometer 2023,,0,Employment
+Supervisor that is female,Eurobarometer 2024 (Special),d15a,1,Employment
+Manual work,Arab Barometer 2024,,0,Employment
+Manual work,Latinobarometer 2024,,0,Employment
+Manual work,Afro Barometer 2023,q93b,1,Employment
+Manual work,Asian Barometer 2023,,0,Employment
+Manual work,Eurobarometer 2024 (Special),d15a,1,Employment
+Manual worker that is female,Arab Barometer 2024,,0,Employment
+Manual worker that is female,Latinobarometer 2024,,0,Employment
+Manual worker that is female,Afro Barometer 2023,q93b,1,Employment
+Manual worker that is female,Asian Barometer 2023,,0,Employment
+Manual worker that is female,Eurobarometer 2024 (Special),d15a,1,Employment
+Electricity,Arab Barometer 2024,,0,Access
+Electricity,Latinobarometer 2024,,0,Access
+Electricity,Afro Barometer 2023,q92a,1,Access
+Electricity,Asian Barometer 2023,ir11c,1,Access
+Electricity,Eurobarometer 2024 (Special),,0,Access
+Water,Arab Barometer 2024,,0,Access
+Water,Latinobarometer 2024,s20i,1,Access
+Water,Afro Barometer 2023,q91a,1,Access
+Water,Asian Barometer 2023,ir11b,1,Access
+Water,Eurobarometer 2024 (Special),,0,Access
+Internet user,Arab Barometer 2024,q409,1,Access
+Internet user,Latinobarometer 2024,,0,Access
+Internet user,Afro Barometer 2023,q90i,1,Access
+Internet user,Asian Barometer 2023,q50,1,Access
+Internet user,Eurobarometer 2024 (Special),,0,Access
+Internet at home,Arab Barometer 2024,,0,Access
+Internet at home,Latinobarometer 2024,s20j,1,Access
+Internet at home,Afro Barometer 2023,,0,Access
+Internet at home,Asian Barometer 2023,,0,Access
+Internet at home,Eurobarometer 2024 (Special),d62_1,1,Access
+Food secure,Arab Barometer 2024,q112_2,1,Access
+Food secure,Latinobarometer 2024,s3,1,Access
+Food secure,Afro Barometer 2023,q6a,1,Access
+Food secure,Asian Barometer 2023,,0,Access
+Food secure,Eurobarometer 2024 (Special),,0,Access
+Water secure,Arab Barometer 2024,q540b_3,1,Access
+Water secure,Latinobarometer 2024,,0,Access
+Water secure,Afro Barometer 2023,q6b,1,Access
+Water secure,Asian Barometer 2023,,0,Access
+Water secure,Eurobarometer 2024 (Special),,0,Access
+Feel safe in neighborhood,Arab Barometer 2024,q105a,1,Access
+Feel safe in neighborhood,Latinobarometer 2024,,0,Access
+Feel safe in neighborhood,Afro Barometer 2023,q7a,1,Access
+Feel safe in neighborhood,Asian Barometer 2023,q46,1,Access
+Feel safe in neighborhood,Eurobarometer 2024 (Special),,0,Access
+Urban,Arab Barometer 2024,q13,1,Access
+Urban,Latinobarometer 2024,tamciud,1,Access
+Urban,Afro Barometer 2023,urbrur,1,Access
+Urban,Asian Barometer 2023,level,1,Access
+Urban,Eurobarometer 2024 (Special),d25,1,Access
+Able to save,Arab Barometer 2024,q116,1,Access
+Able to save,Latinobarometer 2024,s5,1,Access
+Able to save,Afro Barometer 2023,,0,Access
+Able to save,Asian Barometer 2023,,0,Access
+Able to save,Eurobarometer 2024 (Special),,0,Access
+Has a bank account,Arab Barometer 2024,q1025,1,Access
+Has a bank account,Latinobarometer 2024,,0,Access
+Has a bank account,Afro Barometer 2023,q90e,1,Access
+Has a bank account,Asian Barometer 2023,,0,Access
+Has a bank account,Eurobarometer 2024 (Special),,0,Access
+Owns a home,Arab Barometer 2024,q1001g,1,Access
+Owns a home,Latinobarometer 2024,s20b,1,Access
+Owns a home,Afro Barometer 2023,,0,Access
+Owns a home,Asian Barometer 2023,,0,Access
+Owns a home,Eurobarometer 2024 (Special),,0,Access
+Mobile,Arab Barometer 2024,,0,Access
+Mobile,Latinobarometer 2024,s20d,1,Access
+Mobile,Afro Barometer 2023,q90f,1,Access
+Mobile,Asian Barometer 2023,se15g,1,Access
+Mobile,Eurobarometer 2024 (Special),,0,Access
+No fear of crime in home,Arab Barometer 2024,,0,Access
+No fear of crime in home,Latinobarometer 2024,,0,Access
+No fear of crime in home,Afro Barometer 2023,q7b,1,Access
+No fear of crime in home,Asian Barometer 2023,,0,Access
+No fear of crime in home,Eurobarometer 2024 (Special),,0,Access
+Victim of a crime,Arab Barometer 2024,,0,Access
+Victim of a crime,Latinobarometer 2024,p50st_a,1,Access
+Victim of a crime,Afro Barometer 2023,,0,Access
+Victim of a crime,Asian Barometer 2023,,0,Access
+Victim of a crime,Eurobarometer 2024 (Special),,0,Access
+Men are better leaders,Arab Barometer 2024,q601_3,1,Gender and social norms
+Men are better leaders,Latinobarometer 2024,,0,Gender and social norms
+Men are better leaders,Afro Barometer 2023,q20,1,Gender and social norms
+Men are better leaders,Asian Barometer 2023,,0,Gender and social norms
+Men are better leaders,Eurobarometer 2024 (Special),qd7_1,1,Gender and social norms
+Arrival of immigrants beneficial,Arab Barometer 2024,,0,Gender and social norms
+Arrival of immigrants beneficial,Latinobarometer 2024,p34st,1,Gender and social norms
+Arrival of immigrants beneficial,Afro Barometer 2023,,0,Gender and social norms
+Arrival of immigrants beneficial,Asian Barometer 2023,,0,Gender and social norms
+Arrival of immigrants beneficial,Eurobarometer 2024 (Special),,0,Gender and social norms
+Trust in people,Arab Barometer 2024,q103,1,Gender and social norms
+Trust in people,Latinobarometer 2024,p10stgbs,1,Gender and social norms
+Trust in people,Afro Barometer 2023,q86d,1,Gender and social norms
+Trust in people,Asian Barometer 2023,q22,1,Gender and social norms
+Trust in people,Eurobarometer 2024 (Special),,0,Gender and social norms
+Trust in president/prime minister (a lot),Arab Barometer 2024,,0,Gender and social norms
+Trust in president/prime minister (a lot),Latinobarometer 2024,p14st_i,1,Gender and social norms
+Trust in president/prime minister (a lot),Afro Barometer 2023,q37a,1,Gender and social norms
+Trust in president/prime minister (a lot),Asian Barometer 2023,q7,1,Gender and social norms
+Trust in president/prime minister (a lot),Eurobarometer 2024 (Special),,0,Gender and social norms
+Trust in local government (a lot),Arab Barometer 2024,,0,Gender and social norms
+Trust in local government (a lot),Latinobarometer 2024,,0,Gender and social norms
+Trust in local government (a lot),Afro Barometer 2023,q37d,1,Gender and social norms
+Trust in local government (a lot),Asian Barometer 2023,q15,1,Gender and social norms
+Trust in local government (a lot),Eurobarometer 2024 (Special),,0,Gender and social norms
+University more important for males,Arab Barometer 2024,q601_4,1,Gender and social norms
+University more important for males,Latinobarometer 2024,,0,Gender and social norms
+University more important for males,Afro Barometer 2023,,0,Gender and social norms
+University more important for males,Asian Barometer 2023,,0,Gender and social norms
+University more important for males,Eurobarometer 2024 (Special),,0,Gender and social norms
+Man should have final say,Arab Barometer 2024,q601_18,1,Gender and social norms
+Man should have final say,Latinobarometer 2024,,0,Gender and social norms
+Man should have final say,Afro Barometer 2023,,0,Gender and social norms
+Man should have final say,Asian Barometer 2023,,0,Gender and social norms
+Man should have final say,Eurobarometer 2024 (Special),,0,Gender and social norms
+Equality on paying job (agree and strongly agree),Arab Barometer 2024,q601_5,1,Gender and social norms
+Equality on paying job (agree and strongly agree),Latinobarometer 2024,,0,Gender and social norms
+Equality on paying job (agree and strongly agree),Afro Barometer 2023,q49a,1,Gender and social norms
+Equality on paying job (agree and strongly agree),Asian Barometer 2023,,0,Gender and social norms
+Equality on paying job (agree and strongly agree),Eurobarometer 2024 (Special),,0,Gender and social norms
+Feels fairly treated,Arab Barometer 2024,,0,Gender and social norms
+Feels fairly treated,Latinobarometer 2024,,0,Gender and social norms
+Feels fairly treated,Afro Barometer 2023,q84b,1,Gender and social norms
+Feels fairly treated,Asian Barometer 2023,q103,1,Gender and social norms
+Feels fairly treated,Eurobarometer 2024 (Special),,0,Gender and social norms
+Men decide how to spend money,Arab Barometer 2024,,0,Gender and social norms
+Men decide how to spend money,Latinobarometer 2024,,0,Gender and social norms
+Men decide how to spend money,Afro Barometer 2023,q93c,1,Gender and social norms
+Men decide how to spend money,Asian Barometer 2023,,0,Gender and social norms
+Men decide how to spend money,Eurobarometer 2024 (Special),,0,Gender and social norms
+Women can inherit land,Arab Barometer 2024,,0,Gender and social norms
+Women can inherit land,Latinobarometer 2024,,0,Gender and social norms
+Women can inherit land,Afro Barometer 2023,q49b,1,Gender and social norms
+Women can inherit land,Asian Barometer 2023,,0,Gender and social norms
+Women can inherit land,Eurobarometer 2024 (Special),,0,Gender and social norms
+Women have right to land,Arab Barometer 2024,,0,Gender and social norms
+Women have right to land,Latinobarometer 2024,,0,Gender and social norms
+Women have right to land,Afro Barometer 2023,q21b,1,Gender and social norms
+Women have right to land,Asian Barometer 2023,,0,Gender and social norms
+Women have right to land,Eurobarometer 2024 (Special),,0,Gender and social norms
+Handle promoting equality,Arab Barometer 2024,,0,Gender and social norms
+Handle promoting equality,Latinobarometer 2024,,0,Gender and social norms
+Handle promoting equality,Afro Barometer 2023,q46n,1,Gender and social norms
+Handle promoting equality,Asian Barometer 2023,,0,Gender and social norms
+Handle promoting equality,Eurobarometer 2024 (Special),,0,Gender and social norms
+Preference for a boy instead of a girl,Arab Barometer 2024,,0,Gender and social norms
+Preference for a boy instead of a girl,Latinobarometer 2024,,0,Gender and social norms
+Preference for a boy instead of a girl,Afro Barometer 2023,,0,Gender and social norms
+Preference for a boy instead of a girl,Asian Barometer 2023,q67,1,Gender and social norms
+Preference for a boy instead of a girl,Eurobarometer 2024 (Special),,0,Gender and social norms
+Women should not be involved in politics,Arab Barometer 2024,,0,Gender and social norms
+Women should not be involved in politics,Latinobarometer 2024,,0,Gender and social norms
+Women should not be involved in politics,Afro Barometer 2023,,0,Gender and social norms
+Women should not be involved in politics,Asian Barometer 2023,q146,1,Gender and social norms
+Women should not be involved in politics,Eurobarometer 2024 (Special),,0,Gender and social norms
+Family suffers if mother has full time job,Arab Barometer 2024,,0,Gender and social norms
+Family suffers if mother has full time job,Latinobarometer 2024,,0,Gender and social norms
+Family suffers if mother has full time job,Afro Barometer 2023,,0,Gender and social norms
+Family suffers if mother has full time job,Asian Barometer 2023,,0,Gender and social norms
+Family suffers if mother has full time job,Eurobarometer 2024 (Special),qd4_1,1,Gender and social norms
+Parental leave is bad,Arab Barometer 2024,,0,Gender and social norms
+Parental leave is bad,Latinobarometer 2024,,0,Gender and social norms
+Parental leave is bad,Afro Barometer 2023,,0,Gender and social norms
+Parental leave is bad,Asian Barometer 2023,,0,Gender and social norms
+Parental leave is bad,Eurobarometer 2024 (Special),qd4_2,1,Gender and social norms
+Women take decisions more emotionally,Arab Barometer 2024,,0,Gender and social norms
+Women take decisions more emotionally,Latinobarometer 2024,,0,Gender and social norms
+Women take decisions more emotionally,Afro Barometer 2023,,0,Gender and social norms
+Women take decisions more emotionally,Asian Barometer 2023,,0,Gender and social norms
+Women take decisions more emotionally,Eurobarometer 2024 (Special),qd2_2,1,Gender and social norms
+Woman should take care of family,Arab Barometer 2024,,0,Gender and social norms
+Woman should take care of family,Latinobarometer 2024,,0,Gender and social norms
+Woman should take care of family,Afro Barometer 2023,,0,Gender and social norms
+Woman should take care of family,Asian Barometer 2023,,0,Gender and social norms
+Woman should take care of family,Eurobarometer 2024 (Special),qd2_4,1,Gender and social norms
+Democracy preferred,Arab Barometer 2024,q516a,1,Institutional
+Democracy preferred,Latinobarometer 2024,p11stgbs,1,Institutional
+Democracy preferred,Afro Barometer 2023,q23,1,Institutional
+Democracy preferred,Asian Barometer 2023,q124,1,Institutional
+Democracy preferred,Eurobarometer 2024 (Special),,0,Institutional
+Very interested in politics,Arab Barometer 2024,q404,1,Institutional
+Very interested in politics,Latinobarometer 2024,p36stgbs,1,Institutional
+Very interested in politics,Afro Barometer 2023,,0,Institutional
+Very interested in politics,Asian Barometer 2023,q47,1,Institutional
+Very interested in politics,Eurobarometer 2024 (Special),,0,Institutional
+Discuss politics,Arab Barometer 2024,,0,Institutional
+Discuss politics,Latinobarometer 2024,,0,Institutional
+Discuss politics,Afro Barometer 2023,q8,1,Institutional
+Discuss politics,Asian Barometer 2023,,0,Institutional
+Discuss politics,Eurobarometer 2024 (Special),polintr_1,1,Institutional
+Free to speak,Arab Barometer 2024,q521_1,1,Institutional
+Free to speak,Latinobarometer 2024,,0,Institutional
+Free to speak,Afro Barometer 2023,q9a,1,Institutional
+Free to speak,Asian Barometer 2023,q106,1,Institutional
+Free to speak,Eurobarometer 2024 (Special),,0,Institutional
+Free to take part in protests,Arab Barometer 2024,,0,Institutional
+Free to take part in protests,Latinobarometer 2024,,0,Institutional
+Free to take part in protests,Afro Barometer 2023,q10c,1,Institutional
+Free to take part in protests,Asian Barometer 2023,q76,1,Institutional
+Free to take part in protests,Eurobarometer 2024 (Special),,0,Institutional
+Media is free,Arab Barometer 2024,q521_2a,1,Institutional
+Media is free,Latinobarometer 2024,,0,Institutional
+Media is free,Afro Barometer 2023,q33h,1,Institutional
+Media is free,Asian Barometer 2023,q143c,1,Institutional
+Media is free,Eurobarometer 2024 (Special),,0,Institutional
+A lot of satisfaction with democracy,Arab Barometer 2024,,0,Institutional
+A lot of satisfaction with democracy,Latinobarometer 2024,p12stgbs_a,1,Institutional
+A lot of satisfaction with democracy,Afro Barometer 2023,q31,1,Institutional
+A lot of satisfaction with democracy,Asian Barometer 2023,q90,1,Institutional
+A lot of satisfaction with democracy,Eurobarometer 2024 (Special),sd18a,1,Institutional
+Gender issues are important,Arab Barometer 2024,,0,Institutional
+Gender issues are important,Latinobarometer 2024,p5stgbs,1,Institutional
+Gender issues are important,Afro Barometer 2023,q45pt1,1,Institutional
+Gender issues are important,Asian Barometer 2023,q97,1,Institutional
+Gender issues are important,Eurobarometer 2024 (Special),,0,Institutional
+Free to join pol org,Arab Barometer 2024,,0,Institutional
+Free to join pol org,Latinobarometer 2024,,0,Institutional
+Free to join pol org,Afro Barometer 2023,q9b,1,Institutional
+Free to join pol org,Asian Barometer 2023,,0,Institutional
+Free to join pol org,Eurobarometer 2024 (Special),,0,Institutional
+Got together with others to resolve local (community) problems,Arab Barometer 2024,,0,Institutional
+Got together with others to resolve local (community) problems,Latinobarometer 2024,,0,Institutional
+Got together with others to resolve local (community) problems,Afro Barometer 2023,,0,Institutional
+Got together with others to resolve local (community) problems,Asian Barometer 2023,q75,1,Institutional
+Got together with others to resolve local (community) problems,Eurobarometer 2024 (Special),,0,Institutional
+Did you vote in the national election,Arab Barometer 2024,,0,Institutional
+Did you vote in the national election,Latinobarometer 2024,,0,Institutional
+Did you vote in the national election,Afro Barometer 2023,,0,Institutional
+Did you vote in the national election,Asian Barometer 2023,q33,1,Institutional
+Did you vote in the national election,Eurobarometer 2024 (Special),,0,Institutional
+Have contacted elected officials,Arab Barometer 2024,,0,Institutional
+Have contacted elected officials,Latinobarometer 2024,,0,Institutional
+Have contacted elected officials,Afro Barometer 2023,,0,Institutional
+Have contacted elected officials,Asian Barometer 2023,q68,1,Institutional
+Have contacted elected officials,Eurobarometer 2024 (Special),,0,Institutional
