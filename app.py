@@ -601,8 +601,6 @@ def latest_page():
     df_all = load_csv("latest_round.csv").rename(columns={"chunk": "cluster"})
     df, choice = cluster_pills(df_all, "latest_cluster")
     n_vars = df["variable"].nunique()
-    st.caption(f"Common list of {df_all['variable'].nunique()} variables, the same for all five barometers, "
-               "checked in each barometer's most recent round.")
 
     latest = cdf[cdf["latest"] == 1].groupby("barometer")["country"].nunique()
     bar_order = load_csv("latest_round_counts.csv")["barometer"].tolist()
