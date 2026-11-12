@@ -31,10 +31,10 @@ Employment,Employed,Round 2024,S18.A,1
 Employment,Employed,Round 2020,S24.A,1
 Employment,Employed,Round 2017,S18.A,1
 Employment,Employed,Round 2015,S21.A,1
-Employment,Self-employed,Round 2024,S19,1
-Employment,Self-employed,Round 2020,S25,1
-Employment,Self-employed,Round 2017,S19,1
-Employment,Self-employed,Round 2015,S22,1
+Employment,Self-employed,Round 2024,S18.A,1
+Employment,Self-employed,Round 2020,S24.A,1
+Employment,Self-employed,Round 2017,S18.A,1
+Employment,Self-employed,Round 2015,S21.A,1
 Employment,Occupation,Round 2024,,0
 Employment,Occupation,Round 2020,S24.A,1
 Employment,Occupation,Round 2017,S18.A,1
@@ -99,3 +99,11 @@ Institutional,Satisfaction with democracy,Round 2024,P12STGBS.A,1
 Institutional,Satisfaction with democracy,Round 2020,P11STGBS_A,1
 Institutional,Satisfaction with democracy,Round 2017,P9STGBSC_A,1
 Institutional,Satisfaction with democracy,Round 2015,P12TG_A,1
+Gender and social norms,Trust in president/prime minister (a lot),Round 2024,P14ST.I,1
+Gender and social norms,Trust in president/prime minister (a lot),Round 2020,P13ST.I,1
+Gender and social norms,Trust in president/prime minister (a lot),Round 2017,,0
+Gender and social norms,Trust in president/prime minister (a lot),Round 2015,,0
+Institutional,Gender issues are important,Round 2024,P5STGBS,1
+Institutional,Gender issues are important,Round 2020,,0
+Institutional,Gender issues are important,Round 2017,,0
+Institutional,Gender issues are important,Round 2015,,0
