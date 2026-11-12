@@ -2,11 +2,11 @@ cluster,variable,period,code,available
 Socioeconomic,Gender,Round 2024,SEXO,1
 Socioeconomic,Gender,Round 2020,SEXO,1
 Socioeconomic,Gender,Round 2017,SEXO,1
-Socioeconomic,Gender,Round 2015,SEXO,1
+Socioeconomic,Gender,Round 2015,S12,1
 Socioeconomic,Age,Round 2024,EDAD,1
 Socioeconomic,Age,Round 2020,EDAD,1
 Socioeconomic,Age,Round 2017,EDAD,1
-Socioeconomic,Age,Round 2015,EDAD,1
+Socioeconomic,Age,Round 2015,S13,1
 Socioeconomic,Highest education achieved: Secondary,Round 2024,reeduc_1,1
 Socioeconomic,Highest education achieved: Secondary,Round 2020,S16,1
 Socioeconomic,Highest education achieved: Secondary,Round 2017,S14,1
@@ -24,7 +24,7 @@ Socioeconomic,Religion,Round 2020,S10,1
 Socioeconomic,Religion,Round 2017,S9,1
 Socioeconomic,Religion,Round 2015,S16,1
 Socioeconomic,household head,Round 2024,S9,1
-Socioeconomic,household head,Round 2020,S8.,1
+Socioeconomic,household head,Round 2020,S14,1
 Socioeconomic,household head,Round 2017,S12,1
 Socioeconomic,household head,Round 2015,S17,1
 Employment,Employed,Round 2024,S18.A,1
@@ -48,7 +48,7 @@ Access,Mobile phone,Round 2020,S26.F,1
 Access,Mobile phone,Round 2017,S17.G,1
 Access,Mobile phone,Round 2015,S24.G,1
 Access,Internet conecction at home,Round 2024,S20K,1
-Access,Internet conecction at home,Round 2020,N.NI,1
+Access,Internet conecction at home,Round 2020,M.NC,1
 Access,Internet conecction at home,Round 2017,,0
 Access,Internet conecction at home,Round 2015,,0
 Access,Food insecure,Round 2024,S3,1
@@ -71,17 +71,17 @@ Access,Victim of a crime,Round 2024,P50ST.A,1
 Access,Victim of a crime,Round 2020,P64ST,1
 Access,Victim of a crime,Round 2017,P65ST.B,1
 Access,Victim of a crime,Round 2015,P60ST,1
-Gender and social norms,Arrival of inmigrants,Round 2024,Q34ST,1
-Gender and social norms,Arrival of inmigrants,Round 2020,Q38N,1
+Gender and social norms,Arrival of inmigrants,Round 2024,P34ST,1
+Gender and social norms,Arrival of inmigrants,Round 2020,P38N,1
 Gender and social norms,Arrival of inmigrants,Round 2017,,0
 Gender and social norms,Arrival of inmigrants,Round 2015,,0
-Gender and social norms,Trust in people,Round 2024,Q10STGBS,1
-Gender and social norms,Trust in people,Round 2020,Q9STGBS,1
-Gender and social norms,Trust in people,Round 2017,Q13STGBS,1
-Gender and social norms,Trust in people,Round 2015,Q15STGBS,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2024,Q48ST,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2020,Q63ST,1
-Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2017,Q64STB,1
+Gender and social norms,Trust in people,Round 2024,P10STGBS,1
+Gender and social norms,Trust in people,Round 2020,P9STGBS,1
+Gender and social norms,Trust in people,Round 2017,P13STGBS,1
+Gender and social norms,Trust in people,Round 2015,P15STGBS,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2024,P48ST,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2020,P63ST,1
+Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2017,P64STB,1
 Gender and social norms,Which of the following types of violence do you think is more frequent where you live?- Domestic violence,Round 2015,,0
 Institutional,Support for democracy,Round 2024,P11STGBS,1
 Institutional,Support for democracy,Round 2020,P10STGBS,1
@@ -96,6 +96,6 @@ Institutional,Political participation,Round 2020,P47ST.A,1
 Institutional,Political participation,Round 2017,,0
 Institutional,Political participation,Round 2015,P50ST.A,1
 Institutional,Satisfaction with democracy,Round 2024,p12stgbs_a,1
-Institutional,Satisfaction with democracy,Round 2020,,0
-Institutional,Satisfaction with democracy,Round 2017,,0
-Institutional,Satisfaction with democracy,Round 2015,,0
+Institutional,Satisfaction with democracy,Round 2020,P11STGBS_A,1
+Institutional,Satisfaction with democracy,Round 2017,P9STGBSC_A,1
+Institutional,Satisfaction with democracy,Round 2015,P12TG_A,1

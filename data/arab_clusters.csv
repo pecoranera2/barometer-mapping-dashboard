@@ -6,7 +6,7 @@ Socioeconomic,Gender,2014 (Wave 3),q1002,1
 Socioeconomic,Age,2024 (Wave 8),Q1001,1
 Socioeconomic,Age,2021 (Wave 6),Q1001,1
 Socioeconomic,Age,2017 (Wave 4),q1001,1
-Socioeconomic,Age,2014 (Wave 3),,0
+Socioeconomic,Age,2014 (Wave 3),q1001,1
 Socioeconomic,Highest education achieved: Secondary,2024 (Wave 8),Q1003,1
 Socioeconomic,Highest education achieved: Secondary,2021 (Wave 6),Q1003,1
 Socioeconomic,Highest education achieved: Secondary,2017 (Wave 4),q1003,1
@@ -18,7 +18,7 @@ Socioeconomic,Married,2014 (Wave 3),q1010,1
 Socioeconomic,Ethnicity,2024 (Wave 8),Q1012B2,1
 Socioeconomic,Ethnicity,2021 (Wave 6),Q1012B,1
 Socioeconomic,Ethnicity,2017 (Wave 4),,0
-Socioeconomic,Ethnicity,2014 (Wave 3),q2001irq,1
+Socioeconomic,Ethnicity,2014 (Wave 3),q2001ir,1
 Socioeconomic,Religion,2024 (Wave 8),Q1012,1
 Socioeconomic,Religion,2021 (Wave 6),Q1012,1
 Socioeconomic,Religion,2017 (Wave 4),q1012,1
@@ -30,7 +30,7 @@ Socioeconomic,Do you have children,2014 (Wave 3),,0
 Socioeconomic,Religious,2024 (Wave 8),Q609,1
 Socioeconomic,Religious,2021 (Wave 6),Q609,1
 Socioeconomic,Religious,2017 (Wave 4),q609,1
-Socioeconomic,Religious,2014 (Wave 3),,0
+Socioeconomic,Religious,2014 (Wave 3),q609,1
 Socioeconomic,Household head,2024 (Wave 8),q1001f,1
 Socioeconomic,Household head,2021 (Wave 6),,0
 Socioeconomic,Household head,2017 (Wave 4),,0
@@ -52,7 +52,7 @@ Access,Internet user,2021 (Wave 6),Q409,1
 Access,Internet user,2017 (Wave 4),q409,1
 Access,Internet user,2014 (Wave 3),q409,1
 Access,Food insecure,2024 (Wave 8),q112_2,1
-Access,Food insecure,2021 (Wave 6),Q112,1
+Access,Food insecure,2021 (Wave 6),Q112_2,1
 Access,Food insecure,2017 (Wave 4),,0
 Access,Food insecure,2014 (Wave 3),,0
 Access,Safety of neighborhood,2024 (Wave 8),Q105A,1
@@ -64,8 +64,8 @@ Access,Urban,2021 (Wave 6),Q13A ,1
 Access,Urban,2017 (Wave 4),q13,1
 Access,Urban,2014 (Wave 3),Q13,1
 Access,Able to save,2024 (Wave 8),Q116,1
-Access,Able to save,2021 (Wave 6),,0
-Access,Able to save,2017 (Wave 4),q1016.1,1
+Access,Able to save,2021 (Wave 6),Q1016,1
+Access,Able to save,2017 (Wave 4),q1016,1
 Access,Able to save,2014 (Wave 3),q1016,1
 Access,Bank account,2024 (Wave 8),Q1025,1
 Access,Bank account,2021 (Wave 6),,0
@@ -76,23 +76,23 @@ Access,Water secure,2021 (Wave 6),,0
 Access,Water secure,2017 (Wave 4),,0
 Access,Water secure,2014 (Wave 3),,0
 Gender and social norms,Men make better political leaders,2024 (Wave 8),Q601.3,1
-Gender and social norms,Men make better political leaders,2021 (Wave 6),,0
-Gender and social norms,Men make better political leaders,2017 (Wave 4),q601,1
-Gender and social norms,Men make better political leaders,2014 (Wave 3),q601,1
+Gender and social norms,Men make better political leaders,2021 (Wave 6),Q601_3,1
+Gender and social norms,Men make better political leaders,2017 (Wave 4),q6013,1
+Gender and social norms,Men make better political leaders,2014 (Wave 3),q6013,1
 Gender and social norms,Trust in people,2024 (Wave 8),Q103,1
 Gender and social norms,Trust in people,2021 (Wave 6),,0
-Gender and social norms,Trust in people,2017 (Wave 4),103q,1
+Gender and social norms,Trust in people,2017 (Wave 4),q103,1
 Gender and social norms,Trust in people,2014 (Wave 3),q103,1
 Gender and social norms,University more important for men,2024 (Wave 8),Q601.4,1
 Gender and social norms,University more important for men,2021 (Wave 6),Q601.4,1
-Gender and social norms,University more important for men,2017 (Wave 4),q601,1
-Gender and social norms,University more important for men,2014 (Wave 3),q601,1
+Gender and social norms,University more important for men,2017 (Wave 4),q6014,1
+Gender and social norms,University more important for men,2014 (Wave 3),q6014,1
 Gender and social norms,A man should have final say in all decisions concerning the family.,2024 (Wave 8),q601_18,1
-Gender and social norms,A man should have final say in all decisions concerning the family.,2021 (Wave 6),Q601,1
-Gender and social norms,A man should have final say in all decisions concerning the family.,2017 (Wave 4),q601,1
+Gender and social norms,A man should have final say in all decisions concerning the family.,2021 (Wave 6),Q601_18,1
+Gender and social norms,A man should have final say in all decisions concerning the family.,2017 (Wave 4),q60118,1
 Gender and social norms,A man should have final say in all decisions concerning the family.,2014 (Wave 3),,0
-Institutional,Democracy always preferable,2024 (Wave 8),Q516A.3,1
-Institutional,Democracy always preferable,2021 (Wave 6),,0
+Institutional,Democracy always preferable,2024 (Wave 8),Q516A,1
+Institutional,Democracy always preferable,2021 (Wave 6),Q516A,1
 Institutional,Democracy always preferable,2017 (Wave 4),q516a,1
 Institutional,Democracy always preferable,2014 (Wave 3),,0
 Institutional,Interest in politics,2024 (Wave 8),Q404,1
@@ -101,13 +101,13 @@ Institutional,Interest in politics,2017 (Wave 4),q404,1
 Institutional,Interest in politics,2014 (Wave 3),q404,1
 Institutional,Freedom of speech,2024 (Wave 8),Q521.1,1
 Institutional,Freedom of speech,2021 (Wave 6),Q521.1,1
-Institutional,Freedom of speech,2017 (Wave 4),q521,1
-Institutional,Freedom of speech,2014 (Wave 3),q521,1
-Institutional,Freedom to participate in protests,2024 (Wave 8),Q521.2,1
+Institutional,Freedom of speech,2017 (Wave 4),q5211,1
+Institutional,Freedom of speech,2014 (Wave 3),q5211,1
+Institutional,Freedom to participate in protests,2024 (Wave 8),Q521_4,1
 Institutional,Freedom to participate in protests,2021 (Wave 6),Q521.4,1
-Institutional,Freedom to participate in protests,2017 (Wave 4),q521,1
-Institutional,Freedom to participate in protests,2014 (Wave 3),q521,1
+Institutional,Freedom to participate in protests,2017 (Wave 4),q5214,1
+Institutional,Freedom to participate in protests,2014 (Wave 3),q5214,1
 Institutional,Freedom of media,2024 (Wave 8),q521_2a,1
-Institutional,Freedom of media,2021 (Wave 6),,0
-Institutional,Freedom of media,2017 (Wave 4),,0
-Institutional,Freedom of media,2014 (Wave 3),,0
+Institutional,Freedom of media,2021 (Wave 6),Q521_2,1
+Institutional,Freedom of media,2017 (Wave 4),q5212,1
+Institutional,Freedom of media,2014 (Wave 3),q5212,1
