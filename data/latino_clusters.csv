@@ -7,10 +7,10 @@ Socioeconomic,Age,Round 2024,EDAD,1
 Socioeconomic,Age,Round 2020,EDAD,1
 Socioeconomic,Age,Round 2017,EDAD,1
 Socioeconomic,Age,Round 2015,S13,1
-Socioeconomic,Highest education achieved: Secondary,Round 2024,reeduc_1,1
+Socioeconomic,Highest education achieved: Secondary,Round 2024,REEDUC.1,1
 Socioeconomic,Highest education achieved: Secondary,Round 2020,S16,1
 Socioeconomic,Highest education achieved: Secondary,Round 2017,S14,1
-Socioeconomic,Highest education achieved: Secondary,Round 2015,S13,1
+Socioeconomic,Highest education achieved: Secondary,Round 2015,S19,1
 Socioeconomic,Married,Round 2024,,0
 Socioeconomic,Married,Round 2020,,0
 Socioeconomic,Married,Round 2017,S6,1
@@ -32,13 +32,13 @@ Employment,Employed,Round 2020,S24.A,1
 Employment,Employed,Round 2017,S18.A,1
 Employment,Employed,Round 2015,S21.A,1
 Employment,Self-employed,Round 2024,S19,1
-Employment,Self-employed,Round 2020,S15,1
+Employment,Self-employed,Round 2020,S25,1
 Employment,Self-employed,Round 2017,S19,1
-Employment,Self-employed,Round 2015,S20,1
+Employment,Self-employed,Round 2015,S22,1
 Employment,Occupation,Round 2024,,0
-Employment,Occupation,Round 2020,S24A,1
-Employment,Occupation,Round 2017,S18A,1
-Employment,Occupation,Round 2015,S21A,1
+Employment,Occupation,Round 2020,S24.A,1
+Employment,Occupation,Round 2017,S18.A,1
+Employment,Occupation,Round 2015,S21.A,1
 Access,Water,Round 2024,S20I,1
 Access,Water,Round 2020,S26.K,1
 Access,Water,Round 2017,S17.M,1
@@ -47,7 +47,7 @@ Access,Mobile phone,Round 2024,S20D,1
 Access,Mobile phone,Round 2020,S26.F,1
 Access,Mobile phone,Round 2017,S17.G,1
 Access,Mobile phone,Round 2015,S24.G,1
-Access,Internet conecction at home,Round 2024,S20K,1
+Access,Internet conecction at home,Round 2024,S20J,1
 Access,Internet conecction at home,Round 2020,M.NC,1
 Access,Internet conecction at home,Round 2017,,0
 Access,Internet conecction at home,Round 2015,,0
@@ -95,7 +95,7 @@ Institutional,Political participation,Round 2024,,0
 Institutional,Political participation,Round 2020,P47ST.A,1
 Institutional,Political participation,Round 2017,,0
 Institutional,Political participation,Round 2015,P50ST.A,1
-Institutional,Satisfaction with democracy,Round 2024,p12stgbs_a,1
+Institutional,Satisfaction with democracy,Round 2024,P12STGBS.A,1
 Institutional,Satisfaction with democracy,Round 2020,P11STGBS_A,1
 Institutional,Satisfaction with democracy,Round 2017,P9STGBSC_A,1
 Institutional,Satisfaction with democracy,Round 2015,P12TG_A,1

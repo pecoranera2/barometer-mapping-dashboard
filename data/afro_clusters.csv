@@ -23,7 +23,7 @@ Socioeconomic,Religion,2023 (Wave 9),Q95,1
 Socioeconomic,Religion,2022 (Wave 8),Q98A,1
 Socioeconomic,Religion,2019/20 (Wave 7),Q98,1
 Socioeconomic,Religion,2016 (Wave 6),q98a,1
-Socioeconomic,Religion,2013 (Wave 5),Q86a,1
+Socioeconomic,Religion,2013 (Wave 5),q98a,1
 Socioeconomic,Head of household,2023 (Wave 9),,0
 Socioeconomic,Head of household,2022 (Wave 8),q96b,1
 Socioeconomic,Head of household,2019/20 (Wave 7),q96a,1
@@ -162,12 +162,12 @@ Institutional,Freedom to join any political organization,2013 (Wave 5),Q17b,1
 Institutional,How free is news media,2023 (Wave 9),Q33H,1
 Institutional,How free is news media,2022 (Wave 8),Q56,1
 Institutional,How free is news media,2019/20 (Wave 7),Q17,1
-Institutional,How free is news media,2016 (Wave 6),q19b,1
+Institutional,How free is news media,2016 (Wave 6),q17,1
 Institutional,How free is news media,2013 (Wave 5),q20,1
 Institutional,Satisfaction with democracy,2023 (Wave 9),Q31,1
 Institutional,Satisfaction with democracy,2022 (Wave 8),Q37,1
 Institutional,Satisfaction with democracy,2019/20 (Wave 7),Q36,1
-Institutional,Satisfaction with democracy,2016 (Wave 6),q30,1
+Institutional,Satisfaction with democracy,2016 (Wave 6),q41,1
 Institutional,Satisfaction with democracy,2013 (Wave 5),Q43,1
 Institutional,Most important problems – 1 st response: gender issues,2023 (Wave 9),Q45pt1,1
 Institutional,Most important problems – 1 st response: gender issues,2022 (Wave 8),Q48pt1,1
