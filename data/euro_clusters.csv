@@ -14,11 +14,11 @@ Socioeconomic,Highest education achieved: Secondary,2023,d8,1
 Socioeconomic,Highest education achieved: Secondary,2019,d8,1
 Socioeconomic,Highest education achieved: Secondary,2017,d8,1
 Socioeconomic,Highest education achieved: Secondary,2015,d8,1
-Socioeconomic,Ethnicity,2024,,0
-Socioeconomic,Ethnicity,2023,,0
-Socioeconomic,Ethnicity,2019,sd2_1,1
-Socioeconomic,Ethnicity,2017,,0
-Socioeconomic,Ethnicity,2015,sd2_1,1
+Socioeconomic,Belongs to an ethnic minority,2024,,0
+Socioeconomic,Belongs to an ethnic minority,2023,qsd1_1,1
+Socioeconomic,Belongs to an ethnic minority,2019,sd2_1,1
+Socioeconomic,Belongs to an ethnic minority,2017,,0
+Socioeconomic,Belongs to an ethnic minority,2015,sd2_1,1
 Socioeconomic,Married,2024,d7,1
 Socioeconomic,Married,2023,d7,1
 Socioeconomic,Married,2019,d7,1
@@ -74,7 +74,7 @@ Gender and social norms,Men make better political leaders,2023,,0
 Gender and social norms,Men make better political leaders,2019,,0
 Gender and social norms,Men make better political leaders,2017,,0
 Gender and social norms,Men make better political leaders,2015,,0
-Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2024,,0
+Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2024,qd6_1,1
 Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2023,,0
 Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2019,,0
 Gender and social norms,Women are less interested than men in positions of responsibility in politics.,2017,qc7_1,1
