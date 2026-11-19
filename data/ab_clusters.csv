@@ -49,7 +49,7 @@ Access,Electricity,2016,ir11c,1
 Access,Electricity,2012,ir11c,1
 Access,Water,2023,ir11b,1
 Access,Water,2021,IR11b,1
-Access,Water,2016,ir11b_2,1
+Access,Water,2016,ir11b,1
 Access,Water,2012,ir11b,1
 Access,Mobile phone,2023,se15g,1
 Access,Mobile phone,2021,SE15G,1
@@ -147,7 +147,7 @@ Gender and social norms,Trust in president/prime minister (a lot),2023,q7,1
 Gender and social norms,Trust in president/prime minister (a lot),2021,q7,1
 Gender and social norms,Trust in president/prime minister (a lot),2016,q7,1
 Gender and social norms,Trust in president/prime minister (a lot),2012,,0
-Institutional,Media is free,2023,q143c,1
+Institutional,Media is free,2023,,0
 Institutional,Media is free,2021,q84,1
 Institutional,Media is free,2016,q81,1
 Institutional,Media is free,2012,q76,1

@@ -45,7 +45,7 @@ Do you have children?,Afro Barometer 2023,,0,Socioeconomic
 Do you have children?,Asian Barometer 2023,,0,Socioeconomic
 Do you have children?,Eurobarometer 2024 (Special),,0,Socioeconomic
 Religious,Arab Barometer 2024,q609,1,Socioeconomic
-Religious,Latinobarometer 2024,,0,Socioeconomic
+Religious,Latinobarometer 2024,s1a,1,Socioeconomic
 Religious,Afro Barometer 2023,,0,Socioeconomic
 Religious,Asian Barometer 2023,,0,Socioeconomic
 Religious,Eurobarometer 2024 (Special),,0,Socioeconomic
@@ -118,12 +118,12 @@ Internet user,Arab Barometer 2024,q409,1,Access
 Internet user,Latinobarometer 2024,,0,Access
 Internet user,Afro Barometer 2023,q90i,1,Access
 Internet user,Asian Barometer 2023,q50,1,Access
-Internet user,Eurobarometer 2024 (Special),,0,Access
+Internet user,Eurobarometer 2024 (Special),d62_1,1,Access
 Internet at home,Arab Barometer 2024,,0,Access
 Internet at home,Latinobarometer 2024,s20j,1,Access
 Internet at home,Afro Barometer 2023,,0,Access
 Internet at home,Asian Barometer 2023,,0,Access
-Internet at home,Eurobarometer 2024 (Special),d62_1,1,Access
+Internet at home,Eurobarometer 2024 (Special),,0,Access
 Food secure,Arab Barometer 2024,q112_2,1,Access
 Food secure,Latinobarometer 2024,s3,1,Access
 Food secure,Afro Barometer 2023,q6a,1,Access
@@ -189,12 +189,12 @@ Trust in people,Latinobarometer 2024,p10stgbs,1,Gender and social norms
 Trust in people,Afro Barometer 2023,q86d,1,Gender and social norms
 Trust in people,Asian Barometer 2023,q22,1,Gender and social norms
 Trust in people,Eurobarometer 2024 (Special),,0,Gender and social norms
-Trust in president/prime minister (a lot),Arab Barometer 2024,,0,Gender and social norms
+Trust in president/prime minister (a lot),Arab Barometer 2024,q201a_31b,1,Gender and social norms
 Trust in president/prime minister (a lot),Latinobarometer 2024,p14st_i,1,Gender and social norms
 Trust in president/prime minister (a lot),Afro Barometer 2023,q37a,1,Gender and social norms
 Trust in president/prime minister (a lot),Asian Barometer 2023,q7,1,Gender and social norms
 Trust in president/prime minister (a lot),Eurobarometer 2024 (Special),,0,Gender and social norms
-Trust in local government (a lot),Arab Barometer 2024,,0,Gender and social norms
+Trust in local government (a lot),Arab Barometer 2024,q201a_5,1,Gender and social norms
 Trust in local government (a lot),Latinobarometer 2024,,0,Gender and social norms
 Trust in local government (a lot),Afro Barometer 2023,q37d,1,Gender and social norms
 Trust in local government (a lot),Asian Barometer 2023,q15,1,Gender and social norms
@@ -208,12 +208,7 @@ Man should have final say,Arab Barometer 2024,q601_18,1,Gender and social norms
 Man should have final say,Latinobarometer 2024,,0,Gender and social norms
 Man should have final say,Afro Barometer 2023,,0,Gender and social norms
 Man should have final say,Asian Barometer 2023,,0,Gender and social norms
-Man should have final say,Eurobarometer 2024 (Special),,0,Gender and social norms
-Equality on paying job (agree and strongly agree),Arab Barometer 2024,q601_5,1,Gender and social norms
-Equality on paying job (agree and strongly agree),Latinobarometer 2024,,0,Gender and social norms
-Equality on paying job (agree and strongly agree),Afro Barometer 2023,q49a,1,Gender and social norms
-Equality on paying job (agree and strongly agree),Asian Barometer 2023,,0,Gender and social norms
-Equality on paying job (agree and strongly agree),Eurobarometer 2024 (Special),,0,Gender and social norms
+Man should have final say,Eurobarometer 2024 (Special),qd3_2,1,Gender and social norms
 Feels fairly treated,Arab Barometer 2024,,0,Gender and social norms
 Feels fairly treated,Latinobarometer 2024,,0,Gender and social norms
 Feels fairly treated,Afro Barometer 2023,q84b,1,Gender and social norms
@@ -278,26 +273,26 @@ Very interested in politics,Arab Barometer 2024,q404,1,Institutional
 Very interested in politics,Latinobarometer 2024,p36stgbs,1,Institutional
 Very interested in politics,Afro Barometer 2023,,0,Institutional
 Very interested in politics,Asian Barometer 2023,q47,1,Institutional
-Very interested in politics,Eurobarometer 2024 (Special),,0,Institutional
+Very interested in politics,Eurobarometer 2024 (Special),polintr_1,1,Institutional
 Discuss politics,Arab Barometer 2024,,0,Institutional
 Discuss politics,Latinobarometer 2024,,0,Institutional
 Discuss politics,Afro Barometer 2023,q8,1,Institutional
 Discuss politics,Asian Barometer 2023,,0,Institutional
-Discuss politics,Eurobarometer 2024 (Special),polintr_1,1,Institutional
+Discuss politics,Eurobarometer 2024 (Special),,0,Institutional
 Free to speak,Arab Barometer 2024,q521_1,1,Institutional
 Free to speak,Latinobarometer 2024,,0,Institutional
 Free to speak,Afro Barometer 2023,q9a,1,Institutional
 Free to speak,Asian Barometer 2023,q106,1,Institutional
 Free to speak,Eurobarometer 2024 (Special),,0,Institutional
-Free to take part in protests,Arab Barometer 2024,,0,Institutional
-Free to take part in protests,Latinobarometer 2024,,0,Institutional
-Free to take part in protests,Afro Barometer 2023,q10c,1,Institutional
-Free to take part in protests,Asian Barometer 2023,q76,1,Institutional
-Free to take part in protests,Eurobarometer 2024 (Special),,0,Institutional
+Attended a demonstration or protest march,Arab Barometer 2024,q552_1b,1,Institutional
+Attended a demonstration or protest march,Latinobarometer 2024,,0,Institutional
+Attended a demonstration or protest march,Afro Barometer 2023,q10c,1,Institutional
+Attended a demonstration or protest march,Asian Barometer 2023,q76,1,Institutional
+Attended a demonstration or protest march,Eurobarometer 2024 (Special),,0,Institutional
 Media is free,Arab Barometer 2024,q521_2a,1,Institutional
 Media is free,Latinobarometer 2024,,0,Institutional
 Media is free,Afro Barometer 2023,q33h,1,Institutional
-Media is free,Asian Barometer 2023,q143c,1,Institutional
+Media is free,Asian Barometer 2023,,0,Institutional
 Media is free,Eurobarometer 2024 (Special),,0,Institutional
 A lot of satisfaction with democracy,Arab Barometer 2024,,0,Institutional
 A lot of satisfaction with democracy,Latinobarometer 2024,p12stgbs_a,1,Institutional
@@ -319,13 +314,13 @@ Got together with others to resolve local (community) problems,Latinobarometer 2
 Got together with others to resolve local (community) problems,Afro Barometer 2023,,0,Institutional
 Got together with others to resolve local (community) problems,Asian Barometer 2023,q75,1,Institutional
 Got together with others to resolve local (community) problems,Eurobarometer 2024 (Special),,0,Institutional
-Did you vote in the national election,Arab Barometer 2024,,0,Institutional
+Did you vote in the national election,Arab Barometer 2024,q301a,1,Institutional
 Did you vote in the national election,Latinobarometer 2024,,0,Institutional
 Did you vote in the national election,Afro Barometer 2023,,0,Institutional
 Did you vote in the national election,Asian Barometer 2023,q33,1,Institutional
 Did you vote in the national election,Eurobarometer 2024 (Special),,0,Institutional
 Have contacted elected officials,Arab Barometer 2024,,0,Institutional
 Have contacted elected officials,Latinobarometer 2024,,0,Institutional
-Have contacted elected officials,Afro Barometer 2023,,0,Institutional
+Have contacted elected officials,Afro Barometer 2023,q11b,1,Institutional
 Have contacted elected officials,Asian Barometer 2023,q68,1,Institutional
 Have contacted elected officials,Eurobarometer 2024 (Special),,0,Institutional

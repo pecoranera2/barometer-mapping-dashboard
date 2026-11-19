@@ -1,6 +1,7 @@
 # Builds data/latest_round.csv (Latest round page) from inputs/Barometers_codebook.xlsx.
 import csv
 import os
+import re
 
 import openpyxl
 
@@ -23,7 +24,7 @@ MERGE = {"female": "Gender", "male": "Gender"}
 # typos in the codebook labels, corrected for display
 FIX = {
     "Arrival of inmigrants benefitial": "Arrival of immigrants beneficial",
-    "Free to apart in protests": "Free to take part in protests",
+    "Free to apart in protests": "Attended a demonstration or protest march",  # all surveys ask participation
     "Did you voted in the national election": "Did you vote in the national election",
     "Women has right to land": "Women have right to land",
     "Men decides how to spend money": "Men decide how to spend money",
@@ -32,14 +33,28 @@ FIX = {
 }
 
 
+# cells where the codebook entry is not a single code, or where the do-file uses a
+# different (correct) item; agreed with Natalia on 19 Nov 2026
+OVERRIDE = {
+    ("trust_pre", "Arab 2024"): "q201a_31b",  # do-file Arab_2024.do line 180 (codebook text names 31c)
+    ("trust_gov", "Arab 2024"): "q201a_5",    # codebook text: q201a ... 5 Local government
+    ("voted", "Asian 2023"): "q33",           # W6 q33 = did you vote; codebook says q32 (political disagreement)
+}
+
+
 def code_of(cell):
-    """First line of the cell is the code; text after a colon is the question."""
+    """First word of the first line is the code; the rest is the question."""
     if cell is None:
         return ""
     first = str(cell).strip().split("\n")[0].strip()
     if first.lower() in NOT_AVAILABLE:
         return ""
-    return first.split(":")[0].strip()
+    codes = []
+    for tok in first.split(":")[0].split():
+        if not re.fullmatch(r"[A-Za-z][\w.]*\d[\w.]*,?", tok):
+            break  # question text starts
+        codes.append(tok.rstrip(","))
+    return ", ".join(codes) if codes else first.split(":")[0].strip()
 
 
 ws = openpyxl.load_workbook(SRC, data_only=True)["Codebook"]
@@ -65,7 +80,7 @@ for r in rows[1:]:
         continue
     seen.add(label)
     for i, bar in col_idx.items():
-        code = code_of(r[i])
+        code = OVERRIDE.get((name, header[i])) or code_of(r[i])
         out.append({"variable": label, "barometer": bar, "code": code,
                     "available": "1" if code else "0", "chunk": cluster})
 
