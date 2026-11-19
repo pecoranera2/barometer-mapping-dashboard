@@ -1,4 +1,3 @@
-# Builds data/latest_round.csv (Latest round page) from inputs/Barometers_codebook.xlsx.
 import csv
 import os
 import re
@@ -9,7 +8,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "inputs", "Barometers_codebook.xlsx")
 OUT = os.path.join(HERE, "data", "latest_round.csv")
 
-# codebook column -> barometer name used by the app
 COLUMNS = {
     "Arab 2024": "Arab Barometer 2024",
     "Latino 2024": "Latinobarometer 2024",
@@ -19,12 +17,11 @@ COLUMNS = {
 }
 CLUSTERS = {"Socioeconomic", "Employment", "Access", "Gender and social norms", "Institutional"}
 NOT_AVAILABLE = {"", "-", "not available", "not created"}
-# female and male come from the same question, shown as one row
 MERGE = {"female": "Gender", "male": "Gender"}
-# typos in the codebook labels, corrected for display
+# label typos
 FIX = {
     "Arrival of inmigrants benefitial": "Arrival of immigrants beneficial",
-    "Free to apart in protests": "Attended a demonstration or protest march",  # all surveys ask participation
+    "Free to apart in protests": "Attended a demonstration or protest march",
     "Did you voted in the national election": "Did you vote in the national election",
     "Women has right to land": "Women have right to land",
     "Men decides how to spend money": "Men decide how to spend money",
@@ -33,17 +30,14 @@ FIX = {
 }
 
 
-# cells where the codebook entry is not a single code, or where the do-file uses a
-# different (correct) item; agreed with Natalia on 19 Nov 2026
 OVERRIDE = {
-    ("trust_pre", "Arab 2024"): "q201a_31b",  # do-file Arab_2024.do line 180 (codebook text names 31c)
-    ("trust_gov", "Arab 2024"): "q201a_5",    # codebook text: q201a ... 5 Local government
-    ("voted", "Asian 2023"): "q33",           # W6 q33 = did you vote; codebook says q32 (political disagreement)
+    ("trust_pre", "Arab 2024"): "q201a_31b",
+    ("trust_gov", "Arab 2024"): "q201a_5",
+    ("voted", "Asian 2023"): "q33",
 }
 
 
 def code_of(cell):
-    """First word of the first line is the code; the rest is the question."""
     if cell is None:
         return ""
     first = str(cell).strip().split("\n")[0].strip()
@@ -52,7 +46,7 @@ def code_of(cell):
     codes = []
     for tok in first.split(":")[0].split():
         if not re.fullmatch(r"[A-Za-z][\w.]*\d[\w.]*,?", tok):
-            break  # question text starts
+            break
         codes.append(tok.rstrip(","))
     return ", ".join(codes) if codes else first.split(":")[0].strip()
 
@@ -69,7 +63,7 @@ for r in rows[1:]:
         cluster = name
         continue
     if not name or cluster is None:
-        continue  # blank rows; the Weights block has no cluster
+        continue
     if name == "Weights":
         cluster = None
         continue

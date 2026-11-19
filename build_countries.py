@@ -1,12 +1,9 @@
-"""Builds data/countries.csv: which countries each barometer covered in each round.
-Arab/Latino/Afro lists come from the barometers' published documentation (hardcoded below);
-Asian Barometer and Eurobarometer are read from the raw .dta files on Natalia's OneDrive."""
 import csv, glob, os
 import pandas as pd
 import pyreadstat
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "countries.csv")
-WB = r"C:\Users\pecor\OneDrive\WB 2026"
+WB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ISO3 = {
  "Algeria":"DZA","Angola":"AGO","Bahrain":"BHR","Benin":"BEN","Botswana":"BWA","Burkina Faso":"BFA","Burundi":"BDI",
@@ -35,7 +32,7 @@ EB_ISO2 = {"AL":("Albania","ALB"),"AT":("Austria","AUT"),"BA":("Bosnia and Herze
  "SI":("Slovenia","SVN"),"SK":("Slovakia","SVK"),"TR":("Turkey","TUR")}
 
 ROMAN = {"III": 3, "IV": 4, "VI": 6, "VIII": 8}
-rows = []  # barometer, round, year, period, country, iso3, latest
+rows = []
 
 
 def add(bar, rnd, year, period, names, latest=False):
@@ -43,7 +40,7 @@ def add(bar, rnd, year, period, names, latest=False):
         rows.append((bar, rnd, year, period, n, ISO3[n], int(latest)))
 
 
-# ---- Arab Barometer (arabbarometer.org/survey-data/data-downloads) ----
+# Arab Barometer
 AR = {
  "III": ("2012-2014", "2012-2016", ["Algeria","Egypt","Iraq","Jordan","Kuwait","Lebanon","Libya","Morocco","Palestine","Sudan","Tunisia","Yemen"]),
  "IV":  ("2016-2017", "2016-2019", ["Algeria","Egypt","Jordan","Lebanon","Morocco","Palestine","Tunisia","Qatar"]),
@@ -51,28 +48,25 @@ AR = {
  "VI":  ("2020-2021", "2020-2022", ["Algeria","Jordan","Lebanon","Libya","Morocco","Tunisia","Iraq"]),
  "VII": ("2021-2022", "2020-2022", ["Algeria","Egypt","Iraq","Jordan","Kuwait","Lebanon","Libya","Mauritania","Morocco","Palestine","Sudan","Tunisia"]),
  "VIII": ("2023-2024", "2023-2025", ["Iraq","Jordan","Kuwait","Lebanon","Mauritania","Morocco","Palestine","Tunisia"]),
- # Wave IX: only the countries already fielded (Mauritania planned, not yet surveyed)
  "IX":  ("2025-2026", "2023-2025", ["Egypt","Iraq","Jordan","Lebanon","Morocco","Palestine","Syria","Tunisia"]),
 }
-# only the waves Lucia mapped are shown: period label = year + wave
 AR_MAPPED = {"VIII": "2024 (Wave 8)", "VI": "2021 (Wave 6)", "IV": "2017 (Wave 4)", "III": "2014 (Wave 3)"}
 for r, (y, p, c) in AR.items():
     if r in AR_MAPPED:
         add("Arab Barometer", f"Wave {ROMAN[r]}", AR_MAPPED[r].split(" ")[0], AR_MAPPED[r], c, latest=(r == "VIII"))
 
-# ---- Latinobarometro (latinobarometro.org/latinobarometro-YYYY) ----
+# Latinobarometro
 L18 = ["Argentina","Bolivia","Brazil","Chile","Colombia","Costa Rica","Dominican Republic","Ecuador","El Salvador","Guatemala",
        "Honduras","Mexico","Nicaragua","Panama","Paraguay","Peru","Uruguay","Venezuela"]
-L17 = [c for c in L18 if c != "Nicaragua"]   # 2023 report: Nicaragua not surveyed
+L17 = [c for c in L18 if c != "Nicaragua"]  # Nicaragua not surveyed
 LAT = [("2013","2012-2016",L18),("2015","2012-2016",L18),("2016","2012-2016",L18),("2017","2016-2019",L18),
        ("2018","2016-2019",L18),("2020","2020-2022",L18),("2023","2023-2025",L17),("2024","2023-2025",L17)]
-# only the rounds Lucia mapped are shown (Latinobarometro rounds have no number)
 LAT_MAPPED = {"2024": "Round 2024", "2020": "Round 2020", "2017": "Round 2017", "2015": "Round 2015"}
 for y, p, c in LAT:
     if y in LAT_MAPPED:
         add("Latinobarometro", LAT_MAPPED[y], y, LAT_MAPPED[y], c, latest=(y == "2024"))
 
-# ---- Afrobarometer (World Bank Microdata Library / DataFirst merged-round catalog) ----
+# Afrobarometer
 R5 = ["Algeria","Benin","Botswana","Burkina Faso","Burundi","Cameroon","Cabo Verde","Côte d'Ivoire","Egypt","Ghana","Guinea","Kenya",
       "Lesotho","Liberia","Madagascar","Malawi","Mali","Mauritius","Morocco","Mozambique","Namibia","Niger","Nigeria","Senegal",
       "Sierra Leone","South Africa","Sudan","eSwatini","Tanzania","Togo","Tunisia","Uganda","Zambia","Zimbabwe"]
@@ -95,7 +89,7 @@ for r, y, p, c in [("Wave 5","2013","2013 (Wave 5)",R5), ("Wave 6","2016","2016 
                    ("Wave 9","2023","2023 (Wave 9)",R9)]:
     add("Afrobarometer", r, y, p, c, latest=(r == "Wave 9"))
 
-# ---- Asian Barometer (raw .dta) ----
+# Asian Barometer
 AB_NAME = {"Korea": "South Korea", "Mainland China": "China"}
 
 
@@ -113,7 +107,7 @@ assert len(glob.glob(os.path.join(WB, "Asian Barometer", "W6 data", "*.dta"))) =
 add("Asian Barometer", "Wave 6", "2021-2023", "2023", W6, latest=True)
 
 
-# ---- Eurobarometer (raw .dta: isocntry) ----
+# Eurobarometer
 def add_eb(rnd, year, period, path, latest=False):
     df = pyreadstat.read_dta(path, usecols=["isocntry"])[0]
     for n, i in sorted({EB_ISO2[c] for c in df["isocntry"].astype(str).unique()}):
@@ -129,7 +123,7 @@ for rnd, y, f in [("Special EB 83.4","2015","Special EB modules/ZA6595_v3-0-0.dt
     add_eb(rnd, y, y, os.path.join(EB, f), latest=(rnd == "Special EB 100.3"))
 
 with open(OUT, "w", newline="", encoding="utf-8") as fh:
-    w = csv.writer(fh)
+    w = csv.writer(fh, lineterminator="\n")
     w.writerow(["barometer", "round", "year", "period", "country", "iso3", "latest"])
     w.writerows(rows)
 d = pd.read_csv(OUT)

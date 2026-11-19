@@ -8,7 +8,7 @@ import streamlit as st
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
-# ---- shared palette (same as the R/ggplot2 deliverable) ----
+# palette
 COL_AVAILABLE = "#2a78d6"
 COL_UNAVAILABLE = "#e1e0d9"
 COL_INK = "#0b0b0b"
@@ -21,7 +21,7 @@ FONT_FAMILY = "Georgia, 'Times New Roman', Times, serif"
 
 CLUSTER_ORDER = ["Socioeconomic", "Employment", "Access", "Gender and social norms", "Institutional"]
 
-# one identity colour per barometer (Okabe-Ito based; distinct from the blue/gray availability tiles)
+# barometer colours
 BAROMETERS = ["Arab Barometer", "Latinobarometro", "Afrobarometer", "Asian Barometer", "Eurobarometer"]
 BAR_COLOR = {
     "Arab Barometer": "#d55e00",
@@ -37,7 +37,7 @@ LATEST_SHORT = {
     "Afro Barometer 2023": "Afrobarometer", "Asian Barometer 2023": "Asian Barometer",
     "Eurobarometer 2024 (Special)": "Eurobarometer",
 }
-# source file + period columns per barometer (cluster pages)
+# files and periods by barometer
 BAR_PAGES = {
     "Arab Barometer": ("arab_clusters.csv", ["2014 (Wave 3)", "2017 (Wave 4)", "2021 (Wave 6)", "2024 (Wave 8)"],
                        "",
@@ -103,7 +103,6 @@ def _read_csv(name, mtime):
 
 
 def load_csv(name):
-    # the file's modification time is part of the cache key, so a data update is never served from a stale cache
     return _read_csv(name, _mtime(name))
 
 
@@ -117,8 +116,6 @@ def load_countries():
 
 
 def ordered_variables(df, cluster_col="cluster"):
-    """Contiguous cluster blocks (Socioeconomic first ... Institutional last),
-    most-available variable at the top of each block."""
     d = df.copy()
     d["available_i"] = (d["available"] == "1").astype(int)
     cov = d.groupby([cluster_col, "variable"])["available_i"].sum().reset_index()
@@ -129,8 +126,6 @@ def ordered_variables(df, cluster_col="cluster"):
 
 def build_heatmap(df, x_col, x_order, cluster_col="cluster", code_col="code",
                   x_header_map=None, height=None):
-    """A two-panel Plotly heatmap: a narrow cluster swatch column + the
-    availability grid, sharing one categorical y-axis so rows line up."""
     var_order = ordered_variables(df, cluster_col)
     n_rows = len(var_order)
     if n_rows == 0:
@@ -150,9 +145,7 @@ def build_heatmap(df, x_col, x_order, cluster_col="cluster", code_col="code",
 
     x_labels = [x_header_map.get(c, c) if x_header_map else c for c in x_order]
 
-    # Two separate x-axes (not one shared categorical axis) - Plotly's hover
-    # lookup misaligns customdata when two Heatmap traces share one categorical
-    # axis but occupy different category subsets, so each panel gets its own axis.
+    # separate x-axes keep hover text aligned
     fig = make_subplots(rows=1, cols=2, column_widths=[0.045, 0.955],
                         shared_yaxes=True, horizontal_spacing=0.006)
 
@@ -188,7 +181,6 @@ def build_heatmap(df, x_col, x_order, cluster_col="cluster", code_col="code",
             continue
         start = boundary
         boundary += n_in_cluster
-        # cluster name next to the grid, with a thin bracket spanning its rows
         annotations.append(dict(
             xref="paper", x=1.02, yref="y", y=start + (n_in_cluster - 1) / 2, text=f"<b>{c}</b>",
             showarrow=False, xanchor="left", yanchor="middle", align="left",
@@ -226,7 +218,6 @@ def build_heatmap(df, x_col, x_order, cluster_col="cluster", code_col="code",
 
 
 def cluster_pills(df, key):
-    """Buttons for each cluster present in df; returns the filtered frame."""
     clusters = [c for c in CLUSTER_ORDER if c in df["cluster"].unique()]
     choice = st.pills("Cluster", ["All"] + clusters, default="All", key=key,
                       label_visibility="collapsed")
@@ -235,9 +226,8 @@ def cluster_pills(df, key):
     return df[df["cluster"] == choice], choice
 
 
-# ------------------------------------------------------------------ map helpers
+# map
 def _fade(hex_color, amount=0.6):
-    """Blend a colour toward the page surface (used for barometers that are not selected)."""
     c = hex_color.lstrip("#")
     s = COL_SURFACE.lstrip("#")
     mix = [round(int(c[i:i + 2], 16) * (1 - amount) + int(s[i:i + 2], 16) * amount) for i in (0, 2, 4)]
@@ -260,14 +250,12 @@ def base_geo(fig, height):
 
 
 def overview_map(cdf, selected):
-    """World map of the countries covered in each barometer's latest round.
-    selected = 'All' or a barometer name (others fade)."""
     latest = cdf[cdf["latest"] == 1]
     by_country = {}
     for r in latest.itertuples():
         by_country.setdefault((r.iso3, r.country), []).append((r.barometer, r.round, r.year))
 
-    groups = {}  # (name, colour) -> dict(iso, text)
+    groups = {}
     for (iso, country), items in by_country.items():
         names = [b for b, _, _ in items]
         if selected != "All" and selected in names:
@@ -317,9 +305,8 @@ def round_map(cdf_round, colour, height=430):
     return fig
 
 
-# ------------------------------------------------------------------ latest-round views
+# latest round
 def _avail_matrix(df):
-    """variable x barometer boolean matrix (+ code lookup) from the long latest-round frame."""
     d = df.assign(bar=df["barometer"].map(LATEST_SHORT), a=(df["available"] == "1"))
     avail = d.pivot_table(index="variable", columns="bar", values="a", aggfunc="first").reindex(columns=BAROMETERS).fillna(False)
     codes = d.pivot_table(index="variable", columns="bar", values="code", aggfunc="first").reindex(columns=BAROMETERS).fillna("")
@@ -328,8 +315,6 @@ def _avail_matrix(df):
 
 
 def ladder_html(df):
-    """Variables grouped by how many barometers cover them; one card per variable with
-    five dots in the barometer colours (filled = available, hollow = not)."""
     avail, codes, cluster = _avail_matrix(df)
     n_cov = avail.sum(axis=1)
     rank = {c: i for i, c in enumerate(CLUSTER_ORDER)}
@@ -363,13 +348,11 @@ def ladder_html(df):
 
 
 def coverage_fig(df):
-    """Grouped horizontal bars: share of each cluster's variables available in each barometer's latest round."""
     d = df.assign(bar=df["barometer"].map(LATEST_SHORT), a=(df["available"] == "1").astype(int))
     clusters = [c for c in CLUSTER_ORDER if c in d["cluster"].unique()]
     n_in = {c: d[d["cluster"] == c]["variable"].nunique() for c in clusters}
     ylabels = [f"{c} ({n_in[c]})" for c in clusters]
     fig = go.Figure()
-    # white text on the darker bars, dark text on the lighter (yellow / pink) ones
     TEXT_ON = {"Arab Barometer": "#ffffff", "Latinobarometro": "#ffffff", "Afrobarometer": COL_INK,
                "Asian Barometer": COL_INK, "Eurobarometer": "#ffffff"}
     for b in BAROMETERS:
@@ -394,7 +377,6 @@ def coverage_fig(df):
 
 
 def overlap_fig(df):
-    """5x5 matrix: number of variables available in both barometers (diagonal = barometer's own total)."""
     avail, _, _ = _avail_matrix(df)
     a = avail.astype(int)
     m = a.T.dot(a).values.astype(float)
@@ -431,9 +413,8 @@ def overlap_fig(df):
     return fig, m, names
 
 
-# ------------------------------------------------------------------ barometer-by-wave views
+# barometer by wave
 def _wave_matrix(df, periods):
-    """variable x period boolean matrix + code lookup from a long cluster frame."""
     d = df.assign(a=(df["available"] == "1"))
     avail = d.pivot_table(index="variable", columns="period", values="a", aggfunc="first").reindex(columns=periods).fillna(False)
     codes = d.pivot_table(index="variable", columns="period", values="code", aggfunc="first").reindex(columns=periods).fillna("")
@@ -442,7 +423,6 @@ def _wave_matrix(df, periods):
 
 
 def timeline_html(df, periods, colour, bar_countries, show_rounds=True):
-    """One card per wave/period: countries, variables available, and variables added/dropped vs the previous one."""
     avail, _, _ = _wave_matrix(df, periods)
     cards = []
     for i, p in enumerate(periods):
@@ -466,7 +446,6 @@ def timeline_html(df, periods, colour, bar_countries, show_rounds=True):
 
 
 def continuity_html(df, periods, colour):
-    """Variables grouped by how they persist across waves; one dot per wave."""
     avail, codes, cluster = _wave_matrix(df, periods)
     last = len(periods) - 1
     groups = {"every": [], "added": [], "dropped": [], "onoff": []}
@@ -515,7 +494,7 @@ def continuity_html(df, periods, colour):
     return "".join(parts)
 
 
-# ------------------------------------------------------------------ pages
+# pages
 def overview_page():
     cdf = load_countries()
     st.title("Cross-Barometer Variable Mapping")
@@ -536,7 +515,6 @@ def overview_page():
     event = st.plotly_chart(overview_map(cdf, selected), use_container_width=True,
                             on_select="rerun", selection_mode="points", key="overview_map",
                             config={"displayModeBar": False, "scrollZoom": False})
-    # click on a country -> highlight its barometer (first one if the country is in two)
     pts = event.selection.get("points", []) if event and event.selection else []
     if pts:
         cd = pts[0].get("customdata")
@@ -608,7 +586,6 @@ def latest_page():
                           for b in bar_order)
     st.caption(detail)
 
-    # coverage summary for the selected cluster
     avail = df.assign(a=(df["available"] == "1").astype(int)).groupby("barometer")["a"].sum()
     cols = st.columns(5)
     for col, b in zip(cols, bar_order):
